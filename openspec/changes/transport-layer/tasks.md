@@ -20,9 +20,9 @@
 
 ## 4. Sync client
 
-- [ ] 4.1 Implement `SyncTransport` over `httpx.Client`: `get(path)`, `set_cf_clearance`, `set_user_agent`, `close`, context manager; apply throttle + retry + `classify_response`
-- [ ] 4.2 Tests (httpx.MockTransport/respx): 200 returns HTML; cf_clearance cookie + User-Agent attached; 404→NotFoundError; CF→CloudflareChallengeError; 429→RateLimitedError (not retried); transient retried then succeeds; retries exhausted→TransientTransportError; CF/404 not retried
-- [ ] 4.3 Tests: `set_cf_clearance`/`set_user_agent` update values used by subsequent requests; min_interval enforced between two requests
+- [x] 4.1 Implement `SyncTransport` over `httpx.Client`: `get(path)`, `set_cf_clearance`, `set_user_agent`, `close`, context manager; apply throttle + retry + `classify_response`
+- [x] 4.2 Tests (httpx.MockTransport/respx): 200 returns HTML; cf_clearance cookie + User-Agent attached; 404→NotFoundError; CF→CloudflareChallengeError; 429→RateLimitedError (not retried); transient retried then succeeds; retries exhausted→TransientTransportError; CF/404 not retried
+- [x] 4.3 Tests: `set_cf_clearance`/`set_user_agent` update values used by subsequent requests; min_interval enforced between two requests
 
 ## 5. Async client
 

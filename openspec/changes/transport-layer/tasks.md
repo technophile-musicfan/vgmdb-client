@@ -32,5 +32,5 @@
 
 ## 6. Packaging & wiring
 
-- [ ] 6.1 Export `SyncTransport`, `AsyncTransport`, `TransportConfig`, and the error types from `transport/__init__.py`
-- [ ] 6.2 Run ruff, mypy, and the full test suite; fix issues until green
+- [x] 6.1 Export `SyncTransport`, `AsyncTransport`, `TransportConfig`, and the error types from `transport/__init__.py`
+- [x] 6.2 Run ruff, mypy, and the full test suite; fix issues until green

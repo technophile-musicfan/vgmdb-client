@@ -12,11 +12,11 @@
 
 ## 3. Sans-I/O core
 
-- [ ] 3.1 Implement `classify_response(status, headers, text)` in `transport/core.py` per the detection order (404 → CF challenge → 429 → transient → OK)
-- [ ] 3.2 Unit-test `classify_response` truth table: 200 OK, 404, 403+`cf-mitigated`, 503+body signature, 429 (+retry_after), generic 5xx
-- [ ] 3.3 Implement request assembly (URL join against base_url, header/cookie construction) as pure helpers
-- [ ] 3.4 Implement the tenacity retry policy/predicate (retry only `TransientTransportError`; exponential backoff + jitter bounded by max_retries/backoff_max) and the throttle wait-time calculation
-- [ ] 3.5 Unit-test the throttle wait-time calculation (monkeypatched clock): positive interval enforced, `0` disables
+- [x] 3.1 Implement `classify_response(status, headers, text)` in `transport/core.py` per the detection order (404 → CF challenge → 429 → transient → OK)
+- [x] 3.2 Unit-test `classify_response` truth table: 200 OK, 404, 403+`cf-mitigated`, 503+body signature, 429 (+retry_after), generic 5xx
+- [x] 3.3 Implement request assembly (URL join against base_url, header/cookie construction) as pure helpers — header/cookie assembly in `core.py` (`build_headers`/`build_cookies`); URL joining delegated to httpx `base_url`
+- [x] 3.4 Implement the tenacity retry policy/predicate (retry only `TransientTransportError`; exponential backoff + jitter bounded by max_retries/backoff_max) and the throttle wait-time calculation
+- [x] 3.5 Unit-test the throttle wait-time calculation (monkeypatched clock): positive interval enforced, `0` disables
 
 ## 4. Sync client
 

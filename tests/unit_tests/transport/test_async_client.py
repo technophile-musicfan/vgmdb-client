@@ -213,6 +213,20 @@ def test_async_context_manager_closes_client() -> None:
 
 
 @respx.mock
+def test_async_redirects_are_followed() -> None:
+    respx.get(URL).mock(
+        return_value=httpx.Response(302, headers={"location": f"{BASE}/album/123/"})
+    )
+    respx.get(f"{URL}/").mock(return_value=httpx.Response(200, text="<html>final</html>"))
+
+    async def scenario() -> str:
+        async with AsyncTransport(_config()) as transport:
+            return await transport.get("album/123")
+
+    assert _run(scenario()) == "<html>final</html>"
+
+
+@respx.mock
 def test_sync_and_async_parity_success() -> None:
     respx.get(URL).mock(return_value=httpx.Response(200, text="<html>"))
     with SyncTransport(_config()) as sync_transport:

@@ -135,6 +135,16 @@ def test_min_interval_enforced_between_requests(monkeypatch: pytest.MonkeyPatch)
 
 
 @respx.mock
+def test_redirects_are_followed() -> None:
+    respx.get(URL).mock(
+        return_value=httpx.Response(302, headers={"location": f"{BASE}/album/123/"})
+    )
+    respx.get(f"{URL}/").mock(return_value=httpx.Response(200, text="<html>final</html>"))
+    with SyncTransport(_config()) as transport:
+        assert transport.get("album/123") == "<html>final</html>"
+
+
+@respx.mock
 def test_context_manager_closes_client() -> None:
     respx.get(URL).mock(return_value=httpx.Response(200, text="ok"))
     transport = SyncTransport(_config())

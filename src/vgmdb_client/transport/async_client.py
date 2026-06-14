@@ -32,6 +32,7 @@ class AsyncTransport:
             cookies=build_cookies(config.cf_clearance),
             timeout=config.timeout,
             proxy=config.proxy,
+            follow_redirects=True,
         )
 
     async def get(self, path: str) -> str:

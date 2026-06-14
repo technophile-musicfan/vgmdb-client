@@ -1,0 +1,52 @@
+site_name: vgmdb-client
+repo_url: https://github.com/HOZHENWAI/vgmdb-client
+site_url: https://HOZHENWAI.github.io/vgmdb-client
+site_description: A tentative client for vgmdb.net
+site_author: HOZHENWAI
+edit_uri: edit/main/docs/
+repo_name: HOZHENWAI/vgmdb-client
+copyright: Maintained by <a href="https://HOZHENWAI.com">HOZHENWAI</a>.
+
+nav:
+  - Home: index.md
+  - Modules: modules.md
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: ["src/vgmdb_client"]
+theme:
+  name: material
+  feature:
+    tabs: true
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/HOZHENWAI/vgmdb-client
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/vgmdb-client
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true

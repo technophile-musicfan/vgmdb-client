@@ -1,8 +1,8 @@
 ## 1. Dependencies & scaffolding
 
-- [ ] 1.1 Add runtime deps `httpx`, `tenacity`, `pydantic` and dev dep `respx` to `pyproject.toml`; sync the lockfile
-- [ ] 1.2 Create the `src/vgmdb_client/transport/` package and an empty `tests/unit_tests/transport/` test package
-- [ ] 1.3 Add `src/vgmdb_client/errors.py` with the library-wide base `VgmdbClientError`
+- [x] 1.1 Add runtime deps `httpx`, `tenacity`, `pydantic` and dev dep `respx` to `pyproject.toml`; sync the lockfile
+- [x] 1.2 Create the `src/vgmdb_client/transport/` package and an empty `tests/unit_tests/transport/` test package
+- [x] 1.3 Add `src/vgmdb_client/errors.py` with the library-wide base `VgmdbClientError`
 
 ## 2. Errors & config
 

@@ -6,9 +6,9 @@
 
 ## 2. Errors & config
 
-- [ ] 2.1 Add `transport/errors.py`: `TransportError(VgmdbClientError)` and subclasses `CloudflareChallengeError`, `NotFoundError`, `RateLimitedError` (with `retry_after`), `TransientTransportError`
-- [ ] 2.2 Test the error hierarchy: each specific error is catchable as `TransportError` and as `VgmdbClientError`
-- [ ] 2.3 Add `transport/config.py`: pydantic v2 `TransportConfig` (base_url, user_agent, cf_clearance, timeout, max_retries, backoff_base, backoff_max, min_interval, proxy) with defaults from the design
+- [x] 2.1 Add `transport/errors.py`: `TransportError(VgmdbClientError)` and subclasses `CloudflareChallengeError`, `NotFoundError`, `RateLimitedError` (with `retry_after`), `TransientTransportError`
+- [x] 2.2 Test the error hierarchy: each specific error is catchable as `TransportError` and as `VgmdbClientError`
+- [x] 2.3 Add `transport/config.py`: pydantic v2 `TransportConfig` (base_url, user_agent, cf_clearance, timeout, max_retries, backoff_base, backoff_max, min_interval, proxy) with defaults from the design
 
 ## 3. Sans-I/O core
 

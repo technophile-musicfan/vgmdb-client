@@ -17,6 +17,11 @@ classifiers = [
     "Programming Language :: Python :: 3.14",
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
+dependencies = [
+    "httpx>=0.27",
+    "tenacity>=8.5",
+    "pydantic>=2.7",
+]
 
 [project.urls]
 Homepage = "https://HOZHENWAI.github.io/vgmdb-client/"
@@ -32,6 +37,7 @@ dev = [
     "mypy>=1.19.1",
     "pytest-cov>=7.0.0",
     "ruff>=0.15.7",
+    "respx>=0.21",
     "mkdocs>=1.6.1",
     "mkdocs-material>=9.7.6",
     "mkdocstrings[python]>=1.0.3",

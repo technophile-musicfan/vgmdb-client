@@ -67,6 +67,8 @@ throttling — rejected; cheap insurance now.
 **D7 — pydantic `TransportConfig`, stdlib `logging`.**
 Config is a pydantic v2 model (consistent with library models). Logging uses stdlib `logging`
 (module logger) rather than `structlog`, to avoid forcing a logging framework on consumers.
+*Deferred:* the debug-level per-request logging itself is not implemented in this change (it is
+not a spec requirement). Tracked as bead `vgmdb-v9g.4.7`.
 
 **D8 — New runtime deps `httpx`, `tenacity`, `pydantic`; dev dep `respx`.**
 First runtime deps for the project. Tests use `httpx.MockTransport`/`respx` — no live network.

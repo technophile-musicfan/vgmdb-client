@@ -26,9 +26,9 @@
 
 ## 5. Async client
 
-- [ ] 5.1 Implement `AsyncTransport` over `httpx.AsyncClient`: async `get`/`aclose`, async context manager, `set_*`; reuse the shared core (throttle via `asyncio.sleep`)
-- [ ] 5.2 Async tests mirroring 4.2/4.3 (challenge/404/429/transient/throttle/refresh)
-- [ ] 5.3 Parity test: the same response yields the same result or error type across sync and async
+- [x] 5.1 Implement `AsyncTransport` over `httpx.AsyncClient`: async `get`/`aclose`, async context manager, `set_*`; reuse the shared core (throttle via `asyncio.sleep`)
+- [x] 5.2 Async tests mirroring 4.2/4.3 (challenge/404/429/transient/throttle/refresh)
+- [x] 5.3 Parity test: the same response yields the same result or error type across sync and async
 
 ## 6. Packaging & wiring
 

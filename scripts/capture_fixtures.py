@@ -38,6 +38,10 @@ ROOT = Path(__file__).resolve().parent.parent
 FIXTURES_DIR = ROOT / "tests" / "fixtures" / "vgmdb"
 MANIFEST_PATH = FIXTURES_DIR / "manifest.json"
 
+# Bulk capture is gentler than the transport's per-request default: a cf_clearance token
+# tolerates only a limited request rate before Cloudflare re-challenges mid-batch.
+DEFAULT_CAPTURE_INTERVAL = 5.0
+
 
 class CaptureError(Exception):
     """A capture could not proceed (bad config or manifest)."""
@@ -78,11 +82,12 @@ def _require_env(name: str) -> str:
     return value
 
 
-def _build_transport() -> SyncTransport:
+def _build_transport(min_interval: float) -> SyncTransport:
     config = TransportConfig(
         user_agent=_require_env("VGMDB_USER_AGENT"),
         cf_clearance=_require_env("VGMDB_CF_CLEARANCE"),
         base_url=os.environ.get("VGMDB_BASE_URL") or DEFAULT_BASE_URL,
+        min_interval=min_interval,
     )
     return SyncTransport(config)
 
@@ -135,6 +140,16 @@ def _parse_args(argv: list[str] | None = None) -> argparse.Namespace:
         metavar="KEY",
         help="Capture only these manifest keys (e.g. album/271 search/multi-hit).",
     )
+    parser.add_argument(
+        "--min-interval",
+        type=float,
+        default=float(os.environ.get("VGMDB_MIN_INTERVAL") or DEFAULT_CAPTURE_INTERVAL),
+        metavar="SECONDS",
+        help=(
+            "Minimum seconds between requests (default: VGMDB_MIN_INTERVAL or "
+            f"{DEFAULT_CAPTURE_INTERVAL:g}s). Raise it if Cloudflare challenges mid-batch."
+        ),
+    )
     return parser.parse_args(argv)
 
 
@@ -144,10 +159,12 @@ def main(argv: list[str] | None = None) -> int:
 
     try:
         targets = _select_targets(args.only)
-        transport = _build_transport()
+        transport = _build_transport(args.min_interval)
     except CaptureError as exc:
         print(f"error: {exc}", file=sys.stderr)
         return 2
+
+    print(f"capturing {len(targets)} target(s) at >={args.min_interval:g}s/request")
 
     captured = skipped = 0
     try:

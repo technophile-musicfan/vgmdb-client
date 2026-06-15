@@ -22,8 +22,7 @@
       "tracks": [
         {
           "titles": {
-            "Romaji": "NONSTOP DANCER",
-            "Japanese": "NONSTOP DANCER"
+            "Romaji": "NONSTOP DANCER"
           },
           "number": 1,
           "length": "4:28"
@@ -148,7 +147,10 @@
       "role": "Music",
       "artists": [
         {
-          "names": { "English": "Ichiro Nitta", "Japanese": "新田一郎" },
+          "names": {
+            "English": "Ichiro Nitta",
+            "Japanese": "新田一郎"
+          },
           "id": 9692,
           "link": "https://vgmdb.net/artist/9692"
         }
@@ -158,17 +160,26 @@
       "role": "Composer",
       "artists": [
         {
-          "names": { "English": "Ichiro Nitta", "Japanese": "新田一郎" },
+          "names": {
+            "English": "Ichiro Nitta",
+            "Japanese": "新田一郎"
+          },
           "id": 9692,
           "link": "https://vgmdb.net/artist/9692"
         },
         {
-          "names": { "English": "Masayoshi Takanaka", "Japanese": "高中正義" },
+          "names": {
+            "English": "Masayoshi Takanaka",
+            "Japanese": "高中正義"
+          },
           "id": 10428,
           "link": "https://vgmdb.net/artist/10428"
         },
         {
-          "names": { "English": "Tetsuya Komuro", "Japanese": "小室哲哉" },
+          "names": {
+            "English": "Tetsuya Komuro",
+            "Japanese": "小室哲哉"
+          },
           "id": 5903,
           "link": "https://vgmdb.net/artist/5903"
         }
@@ -178,17 +189,26 @@
       "role": "Arranger",
       "artists": [
         {
-          "names": { "English": "Ichiro Nitta", "Japanese": "新田一郎" },
+          "names": {
+            "English": "Ichiro Nitta",
+            "Japanese": "新田一郎"
+          },
           "id": 9692,
           "link": "https://vgmdb.net/artist/9692"
         },
         {
-          "names": { "English": "Masayoshi Takanaka", "Japanese": "高中正義" },
+          "names": {
+            "English": "Masayoshi Takanaka",
+            "Japanese": "高中正義"
+          },
           "id": 10428,
           "link": "https://vgmdb.net/artist/10428"
         },
         {
-          "names": { "English": "Nobuyuki Shimizu", "Japanese": "清水信之" },
+          "names": {
+            "English": "Nobuyuki Shimizu",
+            "Japanese": "清水信之"
+          },
           "id": 842,
           "link": "https://vgmdb.net/artist/842"
         }
@@ -198,12 +218,18 @@
       "role": "Lyricist",
       "artists": [
         {
-          "names": { "English": "Masumi Kawamura", "Japanese": "川村真澄" },
+          "names": {
+            "English": "Masumi Kawamura",
+            "Japanese": "川村真澄"
+          },
           "id": 6403,
           "link": "https://vgmdb.net/artist/6403"
         },
         {
-          "names": { "English": "Keiko Aso", "Japanese": "麻生圭子" },
+          "names": {
+            "English": "Keiko Aso",
+            "Japanese": "麻生圭子"
+          },
           "id": 8473,
           "link": "https://vgmdb.net/artist/8473"
         }
@@ -213,7 +239,10 @@
       "role": "Vocals",
       "artists": [
         {
-          "names": { "English": "Yoko Oginome", "Japanese": "荻野目洋子" },
+          "names": {
+            "English": "Yoko Oginome",
+            "Japanese": "荻野目洋子"
+          },
           "id": 19344,
           "link": "https://vgmdb.net/artist/19344"
         }
@@ -223,7 +252,9 @@
       "role": "Performer",
       "artists": [
         {
-          "names": { "English": "B.B. BAND" },
+          "names": {
+            "English": "B.B. BAND"
+          },
           "id": null,
           "link": null
         }
@@ -233,7 +264,10 @@
       "role": "Director",
       "artists": [
         {
-          "names": { "English": "Hideaki Kaneko", "Japanese": "金子秀昭" },
+          "names": {
+            "English": "Hideaki Kaneko",
+            "Japanese": "金子秀昭"
+          },
           "id": 41946,
           "link": "https://vgmdb.net/artist/41946"
         }
@@ -243,7 +277,10 @@
       "role": "Engineer",
       "artists": [
         {
-          "names": { "English": "Toshiyuki Yoshida", "Japanese": "吉田俊之" },
+          "names": {
+            "English": "Toshiyuki Yoshida",
+            "Japanese": "吉田俊之"
+          },
           "id": 11308,
           "link": "https://vgmdb.net/artist/11308"
         }
@@ -253,12 +290,17 @@
       "role": "Recording Studio",
       "artists": [
         {
-          "names": { "English": "VICTOR AOYAMA STUDIO", "Japanese": "ビクター青山スタジオ" },
+          "names": {
+            "English": "VICTOR AOYAMA STUDIO",
+            "Japanese": "ビクター青山スタジオ"
+          },
           "id": 33934,
           "link": "https://vgmdb.net/artist/33934"
         },
         {
-          "names": { "English": "ONKIO STUDIO" },
+          "names": {
+            "English": "ONKIO STUDIO"
+          },
           "id": 33930,
           "link": "https://vgmdb.net/artist/33930"
         }

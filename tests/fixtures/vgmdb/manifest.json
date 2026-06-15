@@ -65,7 +65,7 @@
       "source_url": "https://vgmdb.net/album/90000",
       "captured_date": null,
       "status": "candidate",
-      "diversity": ["single-disc", "single-language", "year-only-date"]
+      "diversity": ["single-disc", "single-language"]
     },
     {
       "id": 4,
@@ -82,6 +82,14 @@
       "captured_date": null,
       "status": "candidate",
       "diversity": ["single-disc", "unusual-catalog", "freeform-heavy-notes"]
+    },
+    {
+      "id": 18536,
+      "kind": "album",
+      "source_url": "https://vgmdb.net/album/18536",
+      "captured_date": null,
+      "status": "candidate",
+      "diversity": ["year-only-date"]
     }
   ],
   "search": [

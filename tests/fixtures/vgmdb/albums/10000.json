@@ -1,0 +1,57 @@
+{
+  "id": 10000,
+  "link": "https://vgmdb.net/album/10000",
+  "titles": {
+    "English": "Bare Knuckle Dokka~n!",
+    "Japanese": "BARE KNUCKLE ドッカ～ン！",
+    "Romaji": "Bare Knuckle Dokka~n!"
+  },
+  "catalog": "NAON-0002",
+  "release_date": { "year": 2004, "month": 10, "day": 9 },
+  "classification": "Original Work",
+  "cover_small": "https://thumb-media.vgm.io/albums/00/10000/10000-e40490dd5ca7.jpg",
+  "cover_full": "https://medium-media.vgm.io/albums/00/10000/10000-e40490dd5ca7.jpg",
+  "discs": [
+    {
+      "number": 1,
+      "name": null,
+      "tracks": [
+        { "titles": { "English": "Fighting street of rage", "Japanese": "Fighting street of rage" }, "number": 1, "length": "4:18" },
+        { "titles": { "English": "TRANSLATION", "Japanese": "TRANSLATION" }, "number": 2, "length": "1:21" },
+        { "titles": { "English": "Dead Line", "Japanese": "Dead Line" }, "number": 3, "length": "4:50" },
+        { "titles": { "English": "Battle in the splash beach", "Japanese": "Battle in the splash beach" }, "number": 4, "length": "3:09" },
+        { "titles": { "English": "Deadly Combat", "Japanese": "Deadly Combat" }, "number": 5, "length": "3:57" },
+        { "titles": { "English": "Wangan Bare Knuckle", "Japanese": "湾岸ベアナックル" }, "number": 6, "length": "4:14" },
+        { "titles": { "English": "Dark Moon", "Japanese": "Dark Moon" }, "number": 7, "length": "5:00" },
+        { "titles": { "English": "Root 201", "Japanese": "Root 201" }, "number": 8, "length": "3:09" },
+        { "titles": { "English": "Ancient beat", "Japanese": "Ancient beat" }, "number": 9, "length": "2:35" },
+        { "titles": { "English": "Temple", "Japanese": "Temple" }, "number": 10, "length": "3:49" },
+        { "titles": { "English": "Wild Ambience", "Japanese": "Wild Ambience" }, "number": 11, "length": "7:10" },
+        { "titles": { "English": "I'll save yuzo all my justice", "Japanese": "I'll save yuzo all my justice" }, "number": 12, "length": "3:43" },
+        { "titles": { "English": "Onihime's Trap", "Japanese": "鬼姫の罠" }, "number": 13, "length": "4:39" },
+        { "titles": { "English": "Power Expander", "Japanese": "Power Expander" }, "number": 14, "length": "3:20" },
+        { "titles": { "English": "MegaDriver's Eye (Last Boss Theme)", "Japanese": "MegaDriver's Eye (Last Boss Theme)" }, "number": 15, "length": "2:55" },
+        { "titles": { "English": "Chiptune Japan tour 2004 in Osaka, shogun used music #1", "Japanese": "Chiptune Japan tour 2004 in Osaka, shogun used music #1" }, "number": 16, "length": "2:14" },
+        { "titles": { "English": "MegaDriver's Eye (MIDI version)", "Japanese": "MegaDriver's Eye (MIDI version)" }, "number": 17, "length": "4:14" },
+        { "titles": { "English": "Caravan Osaka 2nd Recollection", "Japanese": "キャラバン大阪2nd回想" }, "number": 18, "length": "2:32" }
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "role": "Composer",
+      "artists": [
+        { "names": { "English": "Shogun" }, "id": 10251, "link": "/artist/10251" },
+        { "names": { "English": "hex125" }, "id": 10268, "link": "/artist/10268" }
+      ]
+    },
+    {
+      "role": "Arranger",
+      "artists": [
+        { "names": { "English": "Shogun" }, "id": 10251, "link": "/artist/10251" },
+        { "names": { "English": "hex125" }, "id": 10268, "link": "/artist/10268" }
+      ]
+    }
+  ],
+  "notes": "Tracks 1,4,5,6,9,10,12,13,14,15,16,17,18\nComposed & Arranged by SHOGUN\n\nTracks 2,3,7,8,11\nComposed & Arranged by HEX125"
+}

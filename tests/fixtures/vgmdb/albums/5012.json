@@ -1,0 +1,91 @@
+{
+  "id": 5012,
+  "link": "https://vgmdb.net/album/5012",
+  "titles": {
+    "English": "Akumajo Dracula: Yami no Juin Prelude of Revenge",
+    "Japanese": "悪魔城ドラキュラ 闇の呪印 復讐の序曲",
+    "Romaji": "Akumajo Dracula: Yami no Juin Fukusyuu no Jyokyoku"
+  },
+  "catalog": "KMJ-00050",
+  "release_date": {
+    "year": 2005,
+    "month": 11,
+    "day": 24
+  },
+  "classification": "Original Soundtrack",
+  "cover_small": "https://thumb-media.vgm.io/albums/21/5012/5012-1233603684.jpg",
+  "cover_full": "https://medium-media.vgm.io/albums/21/5012/5012-1233603684.jpg",
+  "discs": [
+    {
+      "number": 1,
+      "name": "Disc 1",
+      "tracks": [
+        {
+          "titles": {
+            "English": "\"the Baljhet Mountains\" a Background of the Mountains",
+            "Japanese": "「バルジット山脈」 山岳地帯BGM",
+            "Romaji": "\"Baljhet Sanmyaku\" Sangakuchitai BGM"
+          },
+          "number": 1,
+          "length": "5:25"
+        },
+        {
+          "titles": {
+            "English": "\"the Garibaldi Cathedral\" a Background for the Stained Glass",
+            "Japanese": "「ガリバルディ大聖堂」 大聖堂ステンドグラスのBGM",
+            "Romaji": "\"Garibaldi Daiseidou\" Daiseidou Stained Glass no BGM"
+          },
+          "number": 2,
+          "length": "5:22"
+        },
+        {
+          "titles": {
+            "English": "\"Belmondo - The Legend\" the Fight against Bermont",
+            "Japanese": "「伝説のベルモンド」 対ベルモンド戦",
+            "Romaji": "\"Densetsu no Belmont\" Tai Belmont Ikusa"
+          },
+          "number": 3,
+          "length": "3:45"
+        },
+        {
+          "titles": {
+            "English": "\"the Portrait of Zead\" an Arrangement of the Zeado's Event",
+            "Japanese": "「ゼアドの肖像」 ゼアド、イベントBGMのアレンジ",
+            "Romaji": "\"Zead no Shouzou\" Zead, Event BGM no Arrange"
+          },
+          "number": 4,
+          "length": "4:11"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "role": "Composer",
+      "artists": [
+        {
+          "names": {
+            "English": "Michiru Yamane",
+            "Japanese": "山根ミチル"
+          },
+          "id": 334,
+          "link": "https://vgmdb.net/artist/334"
+        }
+      ]
+    },
+    {
+      "role": "Arranger",
+      "artists": [
+        {
+          "names": {
+            "English": "Michiru Yamane",
+            "Japanese": "山根ミチル"
+          },
+          "id": 334,
+          "link": "https://vgmdb.net/artist/334"
+        }
+      ]
+    }
+  ],
+  "notes": "Given away to those who pre-ordered the game in Japan."
+}

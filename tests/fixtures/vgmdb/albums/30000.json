@@ -1,0 +1,49 @@
+{
+  "id": 30000,
+  "link": "https://vgmdb.net/album/30000",
+  "titles": {
+    "English": "Till I Reach Your Tomorrow Drama CD 'Kyou no Kimi ni, Shukuhai wo!'",
+    "Japanese": "ドラマCD 明日の君と逢うために 「今日の君に、祝杯を!」",
+    "Romaji": "Till I Reach Your Tomorrow Drama CD 'Kyou no Kimi ni, Shukuhai wo!'"
+  },
+  "catalog": "PURPLE-047",
+  "release_date": { "year": 2009, "month": 12, "day": 27 },
+  "classification": "Drama, Talk",
+  "cover_small": "https://thumb-media.vgm.io/albums/00/30000/30000-1321123254.jpg",
+  "cover_full": "https://medium-media.vgm.io/albums/00/30000/30000-1321123254.jpg",
+  "discs": [
+    {
+      "number": 1,
+      "name": "Disc 1",
+      "tracks": [
+        { "titles": { "English": "(no title available)" }, "number": 1, "length": "6:38" },
+        { "titles": { "English": "(no title available)" }, "number": 2, "length": "9:57" },
+        { "titles": { "English": "(no title available)" }, "number": 3, "length": "5:44" },
+        { "titles": { "English": "(no title available)" }, "number": 4, "length": "8:29" },
+        { "titles": { "English": "(no title available)" }, "number": 5, "length": "10:33" },
+        { "titles": { "English": "(no title available)" }, "number": 6, "length": "5:06" },
+        { "titles": { "English": "(no title available)" }, "number": 7, "length": "6:02" },
+        { "titles": { "English": "(no title available)" }, "number": 8, "length": "12:35" }
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "role": "Performer",
+      "artists": [
+        { "names": { "English": "Kenji Nojima", "Japanese": "野島健児" }, "id": 4106, "link": "https://vgmdb.net/artist/4106" },
+        { "names": { "English": "Hikaru Isshiki", "Japanese": "一色ヒカル" }, "id": 3417, "link": "https://vgmdb.net/artist/3417" },
+        { "names": { "English": "Oto Agumi", "Japanese": "安玖深音" }, "id": 2005, "link": "https://vgmdb.net/artist/2005" },
+        { "names": { "English": "祢乃照果" }, "id": null, "link": null },
+        { "names": { "English": "Nazuna Gogyou", "Japanese": "五行なずな" }, "id": 6921, "link": "https://vgmdb.net/artist/6921" },
+        { "names": { "English": "Honoka Imuraya", "Japanese": "井村屋ほのか" }, "id": 4829, "link": "https://vgmdb.net/artist/4829" },
+        { "names": { "English": "沢野みりか" }, "id": null, "link": null },
+        { "names": { "English": "Kazane", "Japanese": "風音" }, "id": 1797, "link": "https://vgmdb.net/artist/1797" },
+        { "names": { "English": "Minami Hokuto", "Japanese": "北都南" }, "id": 2040, "link": "https://vgmdb.net/artist/2040" },
+        { "names": { "English": "城樹翔" }, "id": null, "link": null },
+        { "names": { "English": "Takezou Koike", "Japanese": "小池竹蔵" }, "id": 9308, "link": "https://vgmdb.net/artist/9308" }
+      ]
+    }
+  ],
+  "notes": "Volume 6 in the drama series. Released at 秋葉原電気外祭り２.\n\nM01~M07 - Drama tracks\nM08 - Cast Comment\n\nCast:\n　八代修司： Kenji Nojima\n　御風里佳： Hikaru Isshiki\n　若宮明日香： Oto Agumi\n　泉水小夜： 祢乃照果\n　夕霧瑠璃子： Nazuna Gogyou\n　藤崎あさひ： Honoka Imuraya\n　月野舞： 沢野みりか\n　七海美菜： Kazane\n　御風りん： Minami Hokuto\n　瀬戸和也： 城樹翔\n　夕霧直輝： Takezou Koike"
+}

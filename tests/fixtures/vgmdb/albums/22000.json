@@ -1,0 +1,149 @@
+{
+  "id": 22000,
+  "link": "https://vgmdb.net/album/22000",
+  "titles": {
+    "English": "From 8 to ∞"
+  },
+  "catalog": "BC008",
+  "release_date": {
+    "year": 2010,
+    "month": 10,
+    "day": 21
+  },
+  "classification": "Arrangement",
+  "cover_small": null,
+  "cover_full": "https://medium-media.vgm.io/albums/00/22000/22000-1290288586.jpg",
+  "discs": [
+    {
+      "number": 1,
+      "name": null,
+      "tracks": [
+        {
+          "titles": {
+            "English": "Contra Force"
+          },
+          "number": 1,
+          "length": "3:01"
+        },
+        {
+          "titles": {
+            "English": "Alien 3 Level"
+          },
+          "number": 2,
+          "length": "5:05"
+        },
+        {
+          "titles": {
+            "English": "Silver Surfer"
+          },
+          "number": 3,
+          "length": "3:33"
+        },
+        {
+          "titles": {
+            "English": "TMNT 3"
+          },
+          "number": 4,
+          "length": "2:56"
+        },
+        {
+          "titles": {
+            "English": "Dr. Mario"
+          },
+          "number": 5,
+          "length": "4:15"
+        },
+        {
+          "titles": {
+            "English": "Batman: Return Of The Joker"
+          },
+          "number": 6,
+          "length": "4:21"
+        },
+        {
+          "titles": {
+            "English": "Alien 3 Intro"
+          },
+          "number": 7,
+          "length": "4:38"
+        },
+        {
+          "titles": {
+            "English": "Journey To Silius"
+          },
+          "number": 8,
+          "length": "4:13"
+        },
+        {
+          "titles": {
+            "English": "Robocop 3"
+          },
+          "number": 9,
+          "length": "5:36"
+        },
+        {
+          "titles": {
+            "English": "Final Mission"
+          },
+          "number": 10,
+          "length": "4:50"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "role": "Composer",
+      "artists": [
+        {
+          "names": {
+            "English": "Jeroen Tel"
+          },
+          "id": 1955,
+          "link": "https://vgmdb.net/artist/1955"
+        },
+        {
+          "names": {
+            "English": "Hirokazu Tanaka",
+            "Japanese": "田中宏和"
+          },
+          "id": 363,
+          "link": "https://vgmdb.net/artist/363"
+        },
+        {
+          "names": {
+            "English": "Kiyohiro Sada",
+            "Japanese": "禎清宏"
+          },
+          "id": 2891,
+          "link": "https://vgmdb.net/artist/2891"
+        }
+      ]
+    },
+    {
+      "role": "Arranger",
+      "artists": [
+        {
+          "names": {
+            "English": "Zubareus"
+          },
+          "id": 15276,
+          "link": "https://vgmdb.net/artist/15276"
+        }
+      ]
+    },
+    {
+      "role": "Performer",
+      "artists": [
+        {
+          "names": {
+            "English": "Zubareus"
+          },
+          "id": 15276,
+          "link": "https://vgmdb.net/artist/15276"
+        }
+      ]
+    }
+  ],
+  "notes": "Original compositions by: Kenichi Matsubara, Tomoya Tomita (01); Jeroen Tel (02, 07); Tim Follin, Geoff Follin (03); Yuichi Sakakura, Tomoya Tomita, Kouzou Nakamura (04); Hirokazu Tanaka (05); Naoki Kodaka, Nobuyuki Hara, Shinichi Seya (06); Nobuyuki Hara, Naoki Kodaka, Shinichi Seya (08); ??? (09); Kiyohiro Sada (10)"
+}

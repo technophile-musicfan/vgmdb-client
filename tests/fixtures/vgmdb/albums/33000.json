@@ -1,0 +1,72 @@
+{
+  "id": 33000,
+  "link": "https://vgmdb.net/album/33000",
+  "titles": {
+    "English": "Blossom"
+  },
+  "catalog": "SSC-0013",
+  "release_date": {
+    "year": 2012,
+    "month": 5,
+    "day": 27
+  },
+  "classification": "Arrangement, Vocal, Remix",
+  "cover_small": "https://thumb-media.vgm.io/albums/00/33000/33000-1336800844.jpg",
+  "cover_full": "https://medium-media.vgm.io/albums/00/33000/33000-1336800844.jpg",
+  "discs": [
+    {
+      "number": 1,
+      "name": null,
+      "tracks": [
+        { "titles": { "English": "a blossom (Radio Edit)" }, "number": 1, "length": "2:47" },
+        { "titles": { "English": "monochrome" }, "number": 2, "length": "6:09" },
+        { "titles": { "English": "Solitude Children" }, "number": 3, "length": "6:16" },
+        { "titles": { "English": "R.I.N." }, "number": 4, "length": "7:26" },
+        { "titles": { "English": "Coward" }, "number": 5, "length": "4:25" },
+        { "titles": { "English": "Cloudy, later fair" }, "number": 6, "length": "4:35" },
+        { "titles": { "English": "lost thing" }, "number": 7, "length": "3:42" },
+        { "titles": { "English": "Close to you (and me)" }, "number": 8, "length": "5:49" },
+        { "titles": { "English": "the starry heavens (Radio Edit)" }, "number": 9, "length": "3:20" },
+        { "titles": { "English": "invulnerable" }, "number": 10, "length": "6:08" },
+        { "titles": { "English": "aqua" }, "number": 11, "length": "2:39" },
+        { "titles": { "English": "monochrome (Tomoyuki Sakakida Remix)" }, "number": 12, "length": "4:42" }
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "role": "Composer",
+      "artists": [
+        { "names": { "English": "ZUN" }, "id": 1, "link": "https://vgmdb.net/artist/1" },
+        { "names": { "English": "Syrufit" }, "id": 6762, "link": "https://vgmdb.net/artist/6762" },
+        { "names": { "English": "hiro.na" }, "id": 6763, "link": "https://vgmdb.net/artist/6763" }
+      ]
+    },
+    {
+      "role": "Arranger",
+      "artists": [
+        { "names": { "English": "Shibayan" }, "id": 4672, "link": "https://vgmdb.net/artist/4672" },
+        { "names": { "English": "Syrufit" }, "id": 6762, "link": "https://vgmdb.net/artist/6762" },
+        { "names": { "English": "hiro.na" }, "id": 6763, "link": "https://vgmdb.net/artist/6763" },
+        { "names": { "English": "Linjin", "Japanese": "隣人" }, "id": 2498, "link": "https://vgmdb.net/artist/2498" },
+        { "names": { "English": "Nhato" }, "id": 2735, "link": "https://vgmdb.net/artist/2735" },
+        { "names": { "English": "Taishi" }, "id": 2454, "link": "https://vgmdb.net/artist/2454" },
+        { "names": { "English": "Tomoyuki Sakakida" }, "id": 50063, "link": "https://vgmdb.net/artist/50063" }
+      ]
+    },
+    {
+      "role": "Performer",
+      "artists": [
+        { "names": { "English": "Mei Ayakura", "Japanese": "綾倉盟" }, "id": 7301, "link": "https://vgmdb.net/artist/7301" }
+      ]
+    },
+    {
+      "role": "Lyricist",
+      "artists": [
+        { "names": { "English": "Mei Ayakura", "Japanese": "綾倉盟" }, "id": 7301, "link": "https://vgmdb.net/artist/7301" },
+        { "names": { "English": "Linjin", "Japanese": "隣人" }, "id": 2498, "link": "https://vgmdb.net/artist/2498" }
+      ]
+    }
+  ],
+  "notes": "Reitaisai 9 release.\n\nArrangement by\n   Syrufit (2, 3, 5, 7, 10 -- Compose: 1, 9)\n   Shibayan [Shibayan Records] (4)\n   Linjin [ZYTOKINE] (6)\n   Nhato [Otographic Music] (8)\n   Taishi [Compllege] (10)\n   Tomoyuki Sakakida (12)\n\nVocals by Mei Ayakura.\n\nLyrics by\n   Linjin\n   Mei Ayakura\n\nJacket Illustration by duca.\n\nTrack origins:\n1. --\n2. Touhou Kaikidan / Doll Story ~ Doll of Misery\n3. Touhou Kaikidan / Romantic Children\n4. Touhou Chireiden / Corpse Voyage ~ Be of good cheer!\n5. Touhou Reiiden / Now, Until the Moment You Die\n6. Touhou Eiyashou / Cinderella Cage ~ Kagome-Kagome\n7. Touhou Yumejikuu / Ghostly Person's Holiday\n8. Touhou Fuujinroku / The Venerable Ancient Battlefield ~ Suwa Foughten Field\n9. --\n10. Touhou Youyoumu / Ghostly Band ~ Phantom Ensemble\n11. Touhou Fuumaroku / Forest of Tohno\n12. Touhou Kaikidan / Doll Story ~ Doll of Misery"
+}

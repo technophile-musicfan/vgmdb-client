@@ -100,7 +100,9 @@
       "source_url": "https://vgmdb.net/search?q=final+fantasy",
       "captured_date": "2026-06-15",
       "status": "captured",
-      "diversity": ["multi-hit"]
+      "diversity": ["multi-hit"],
+      "golden_scope": "first-10",
+      "golden_note": "Page lists 1106 album results; the golden transcribes only the first 10 rows (in page order). Parser-vs-golden comparison for this fixture must compare against the first 10 results only."
     },
     {
       "slug": "near-empty",

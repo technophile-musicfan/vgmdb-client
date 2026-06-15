@@ -41,6 +41,11 @@ Capture is a manual dev step (not run in CI):
 
 ## Golden outputs
 
+> **Search `multi-hit` is a first-N sample.** Its page lists 1106 album results; the golden
+> transcribes only the **first 10 rows** (in page order). The manifest entry records this via
+> `golden_scope: "first-10"`, so any parser-vs-golden comparison (M3/B2) must compare against the
+> first 10 results only. `near-empty` is the 0-results case (`albums: []`).
+
 Golden JSON is authored **by hand, by reading the captured HTML directly — no parser involved** —
 so it is an independent ground truth rather than a mirror of our parser. Each golden is the
 `model_dump(mode="json")` form of the expected M1 model and is loaded via `model_validate_json`, so

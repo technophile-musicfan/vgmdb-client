@@ -1,9 +1,9 @@
 ## 1. Value types (common.py)
 
-- [ ] 1.1 Implement `LocalizedText` (`RootModel[dict[str, str]]`) with `prefer(*langs)`, `default`, `all`, `__str__`; test prefer hit/fallback, default English/Romaji preference, empty→None
-- [ ] 1.2 Implement `PartialDate` (year + optional month/day) with range validation, day-requires-month rule, `precision`, `__str__`; test valid/invalid construction and rendering per precision
-- [ ] 1.3 Add `PartialDate.parse` classmethod for `YYYY` / `YYYY-MM` / `YYYY-MM-DD`; test round-trips and `None` on unparseable input
-- [ ] 1.4 Implement `ArtistRef` (names: LocalizedText, id/link optional); test construction with and without id/link
+- [x] 1.1 Implement `LocalizedText` (`RootModel[dict[str, str]]`) with `prefer(*langs)`, `default`, `all`, `__str__`; test prefer hit/fallback, default English/Romaji preference, empty→None
+- [x] 1.2 Implement `PartialDate` (year + optional month/day) with range validation, day-requires-month rule, `precision`, `__str__`; test valid/invalid construction and rendering per precision
+- [x] 1.3 Add `PartialDate.parse` classmethod for `YYYY` / `YYYY-MM` / `YYYY-MM-DD`; test round-trips and `None` on unparseable input
+- [x] 1.4 Implement `ArtistRef` (names: LocalizedText, id/link optional); test construction with and without id/link
 
 ## 2. Album entity (album.py)
 

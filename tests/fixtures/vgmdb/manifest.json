@@ -4,20 +4,12 @@
   "note": "Album ids below are CANDIDATES proposed for their intended diversity dimension. They MUST be confirmed (or swapped) at capture time by checking the live page actually exhibits the tagged quirk; set status to \"captured\" and fill captured_date when done. See README.md.",
   "albums": [
     {
-      "id": 1,
-      "kind": "album",
-      "source_url": "https://vgmdb.net/album/1",
-      "captured_date": null,
-      "status": "candidate",
-      "diversity": ["multi-disc", "multi-language", "rich-credits", "full-date"]
-    },
-    {
       "id": 271,
       "kind": "album",
       "source_url": "https://vgmdb.net/album/271",
       "captured_date": null,
       "status": "candidate",
-      "diversity": ["single-disc", "multi-language", "full-date"]
+      "diversity": ["single-disc", "english-only", "full-date"]
     },
     {
       "id": 5012,
@@ -25,7 +17,7 @@
       "source_url": "https://vgmdb.net/album/5012",
       "captured_date": null,
       "status": "candidate",
-      "diversity": ["multi-disc", "rich-credits", "freeform-heavy-notes"]
+      "diversity": ["single-disc", "multi-language", "sparse-credits"]
     },
     {
       "id": 10000,
@@ -33,7 +25,7 @@
       "source_url": "https://vgmdb.net/album/10000",
       "captured_date": null,
       "status": "candidate",
-      "diversity": ["single-disc", "sparse-credits", "year-only-date"]
+      "diversity": ["single-disc", "sparse-credits", "near-empty"]
     },
     {
       "id": 22000,
@@ -49,7 +41,7 @@
       "source_url": "https://vgmdb.net/album/33000",
       "captured_date": null,
       "status": "candidate",
-      "diversity": ["multi-disc", "unusual-catalog"]
+      "diversity": ["english-only", "single-disc"]
     },
     {
       "id": 45000,
@@ -65,15 +57,7 @@
       "source_url": "https://vgmdb.net/album/60000",
       "captured_date": null,
       "status": "candidate",
-      "diversity": ["single-disc", "year-only-date", "sparse-credits"]
-    },
-    {
-      "id": 75000,
-      "kind": "album",
-      "source_url": "https://vgmdb.net/album/75000",
-      "captured_date": null,
-      "status": "candidate",
-      "diversity": ["english-only", "full-date", "unusual-catalog"]
+      "diversity": ["single-disc", "sparse-credits"]
     },
     {
       "id": 90000,
@@ -81,7 +65,23 @@
       "source_url": "https://vgmdb.net/album/90000",
       "captured_date": null,
       "status": "candidate",
-      "diversity": ["multi-disc", "multi-language", "freeform-heavy-notes"]
+      "diversity": ["single-disc", "single-language"]
+    },
+    {
+      "id": 4,
+      "kind": "album",
+      "source_url": "https://vgmdb.net/album/4",
+      "captured_date": null,
+      "status": "candidate",
+      "diversity": ["multi-disc", "multi-language", "rich-credits", "full-date"]
+    },
+    {
+      "id": 30000,
+      "kind": "album",
+      "source_url": "https://vgmdb.net/album/30000",
+      "captured_date": null,
+      "status": "candidate",
+      "diversity": ["multi-disc", "unusual-catalog", "freeform-heavy-notes", "year-only-date"]
     }
   ],
   "search": [
@@ -101,7 +101,7 @@
       "source_url": "https://vgmdb.net/search?q=zzqxnonexistentquery",
       "captured_date": null,
       "status": "candidate",
-      "diversity": ["near-empty"]
+      "diversity": ["empty"]
     }
   ]
 }

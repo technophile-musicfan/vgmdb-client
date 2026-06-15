@@ -17,6 +17,6 @@
 
 ## 4. Conventions & wiring
 
-- [ ] 4.1 Apply `model_config = ConfigDict(extra="forbid", frozen=True)` to all models; test mutation rejected and unknown field rejected
-- [ ] 4.2 Export the public model surface from `models/__init__.py` (and re-export from the package as appropriate); test imports
-- [ ] 4.3 Run ruff, mypy, and the full test suite; fix until green
+- [x] 4.1 Apply `model_config = ConfigDict(extra="forbid", frozen=True)` to all models; test mutation rejected and unknown field rejected
+- [x] 4.2 Export the public model surface from `models/__init__.py` (and re-export from the package as appropriate); test imports
+- [x] 4.3 Run ruff, mypy, and the full test suite; fix until green

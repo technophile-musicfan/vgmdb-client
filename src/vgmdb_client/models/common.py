@@ -5,7 +5,7 @@ from __future__ import annotations
 import re
 from typing import Literal
 
-from pydantic import BaseModel, Field, RootModel, ValidationError, model_validator
+from pydantic import BaseModel, ConfigDict, Field, RootModel, ValidationError, model_validator
 
 # Default language preference order when no explicit preference is given.
 _DEFAULT_PREFERENCE = ("English", "Romaji")
@@ -14,12 +14,20 @@ _DEFAULT_PREFERENCE = ("English", "Romaji")
 _PARTIAL_DATE_RE = re.compile(r"^(\d{4})(?:-(\d{2})(?:-(\d{2}))?)?$")
 
 
+class VgmdbModel(BaseModel):
+    """Base for vgmdb models: immutable value objects that reject unknown fields."""
+
+    model_config = ConfigDict(extra="forbid", frozen=True)
+
+
 class LocalizedText(RootModel[dict[str, str]]):
     """Multi-language text (language label -> text) with selection helpers.
 
     vgmdb labels languages as e.g. "English", "Japanese", "Romaji"; those
     labels are stored verbatim.
     """
+
+    model_config = ConfigDict(frozen=True)
 
     @property
     def all(self) -> dict[str, str]:
@@ -45,7 +53,7 @@ class LocalizedText(RootModel[dict[str, str]]):
         return self.default or ""
 
 
-class PartialDate(BaseModel):
+class PartialDate(VgmdbModel):
     """A possibly-incomplete date: a required year with optional month and day."""
 
     year: int
@@ -89,7 +97,7 @@ class PartialDate(BaseModel):
             return None
 
 
-class ArtistRef(BaseModel):
+class ArtistRef(VgmdbModel):
     """A lightweight pointer to an artist (distinct from the full Artist entity)."""
 
     names: LocalizedText

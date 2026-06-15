@@ -2,12 +2,12 @@
 
 from __future__ import annotations
 
-from pydantic import BaseModel, Field
+from pydantic import Field
 
-from vgmdb_client.models.common import LocalizedText, PartialDate
+from vgmdb_client.models.common import LocalizedText, PartialDate, VgmdbModel
 
 
-class AlbumSearchResult(BaseModel):
+class AlbumSearchResult(VgmdbModel):
     """A single album entry in search results."""
 
     id: int
@@ -17,7 +17,7 @@ class AlbumSearchResult(BaseModel):
     release_date: PartialDate | None = None
 
 
-class SearchResults(BaseModel):
+class SearchResults(VgmdbModel):
     """Results of an album search."""
 
     query: str

@@ -2,12 +2,12 @@
 
 from __future__ import annotations
 
-from pydantic import BaseModel, Field
+from pydantic import Field
 
-from vgmdb_client.models.common import ArtistRef, LocalizedText, PartialDate
+from vgmdb_client.models.common import ArtistRef, LocalizedText, PartialDate, VgmdbModel
 
 
-class Track(BaseModel):
+class Track(VgmdbModel):
     """A single track on a disc."""
 
     titles: LocalizedText
@@ -15,7 +15,7 @@ class Track(BaseModel):
     length: str | None = None
 
 
-class Disc(BaseModel):
+class Disc(VgmdbModel):
     """A disc within an album, holding its tracks."""
 
     number: int | None = None
@@ -23,14 +23,14 @@ class Disc(BaseModel):
     tracks: list[Track] = Field(default_factory=list)
 
 
-class Credit(BaseModel):
+class Credit(VgmdbModel):
     """An album credit: an open-ended role and the artists fulfilling it."""
 
     role: str
     artists: list[ArtistRef] = Field(default_factory=list)
 
 
-class Album(BaseModel):
+class Album(VgmdbModel):
     """A vgmdb album (core subset of fields)."""
 
     id: int

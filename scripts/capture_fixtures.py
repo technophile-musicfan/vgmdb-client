@@ -32,6 +32,7 @@ from vgmdb_client.transport import (
     TransportConfig,
     TransportError,
 )
+from vgmdb_client.transport.config import DEFAULT_BASE_URL
 
 ROOT = Path(__file__).resolve().parent.parent
 FIXTURES_DIR = ROOT / "tests" / "fixtures" / "vgmdb"
@@ -63,6 +64,13 @@ class UnknownTargetsError(CaptureError):
         super().__init__(f"--only keys not in manifest: {', '.join(keys)}")
 
 
+class MalformedManifestError(CaptureError):
+    """A manifest entry is missing a required field."""
+
+    def __init__(self, field: str) -> None:
+        super().__init__(f"manifest entry missing required field {field!r}")
+
+
 def _require_env(name: str) -> str:
     value = os.environ.get(name)
     if not value:
@@ -74,7 +82,7 @@ def _build_transport() -> SyncTransport:
     config = TransportConfig(
         user_agent=_require_env("VGMDB_USER_AGENT"),
         cf_clearance=_require_env("VGMDB_CF_CLEARANCE"),
-        base_url=os.environ.get("VGMDB_BASE_URL") or TransportConfig.model_fields["base_url"].default,
+        base_url=os.environ.get("VGMDB_BASE_URL") or DEFAULT_BASE_URL,
     )
     return SyncTransport(config)
 
@@ -88,14 +96,17 @@ def _load_targets() -> list[tuple[str, str, str]]:
         raise ManifestNotFoundError(MANIFEST_PATH)
     manifest = json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
 
-    targets: list[tuple[str, str, str]] = []
-    for entry in manifest.get("albums", []):
-        album_id = entry["id"]
-        targets.append((f"album/{album_id}", f"/album/{album_id}", f"albums/{album_id}.html"))
-    for entry in manifest.get("search", []):
-        slug = entry["slug"]
-        path = f"/search?q={quote_plus(entry['query'])}"
-        targets.append((f"search/{slug}", path, f"search/{slug}.html"))
+    try:
+        targets: list[tuple[str, str, str]] = []
+        for entry in manifest.get("albums", []):
+            album_id = entry["id"]
+            targets.append((f"album/{album_id}", f"/album/{album_id}", f"albums/{album_id}.html"))
+        for entry in manifest.get("search", []):
+            slug = entry["slug"]
+            path = f"/search?q={quote_plus(entry['query'])}"
+            targets.append((f"search/{slug}", path, f"search/{slug}.html"))
+    except KeyError as exc:
+        raise MalformedManifestError(exc.args[0]) from exc
     return targets
 
 
@@ -149,7 +160,9 @@ def main(argv: list[str] | None = None) -> int:
             print(f"fetch  {key} -> {request_path}")
             html = transport.get(request_path)
             out_path.parent.mkdir(parents=True, exist_ok=True)
-            out_path.write_text(html, encoding="utf-8")
+            # Write bytes (not write_text) so the captured HTML is byte-identical across OSes —
+            # text mode would translate \n to \r\n on Windows and make fixtures non-reproducible.
+            out_path.write_bytes(html.encode("utf-8"))
             captured += 1
     except CloudflareChallengeError:
         print(

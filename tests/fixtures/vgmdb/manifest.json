@@ -57,7 +57,7 @@
       "source_url": "https://vgmdb.net/album/60000",
       "captured_date": null,
       "status": "candidate",
-      "diversity": ["single-disc", "sparse-credits", "year-only-date"]
+      "diversity": ["single-disc", "sparse-credits", "year-month-date"]
     },
     {
       "id": 90000,
@@ -65,7 +65,7 @@
       "source_url": "https://vgmdb.net/album/90000",
       "captured_date": null,
       "status": "candidate",
-      "diversity": ["single-disc", "single-language"]
+      "diversity": ["single-disc", "single-language", "year-only-date"]
     },
     {
       "id": 4,

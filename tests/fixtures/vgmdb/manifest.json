@@ -7,88 +7,88 @@
       "id": 271,
       "kind": "album",
       "source_url": "https://vgmdb.net/album/271",
-      "captured_date": null,
-      "status": "candidate",
+      "captured_date": "2026-06-15",
+      "status": "captured",
       "diversity": ["single-disc", "english-only", "full-date"]
     },
     {
       "id": 5012,
       "kind": "album",
       "source_url": "https://vgmdb.net/album/5012",
-      "captured_date": null,
-      "status": "candidate",
+      "captured_date": "2026-06-15",
+      "status": "captured",
       "diversity": ["single-disc", "multi-language", "sparse-credits"]
     },
     {
       "id": 10000,
       "kind": "album",
       "source_url": "https://vgmdb.net/album/10000",
-      "captured_date": null,
-      "status": "candidate",
+      "captured_date": "2026-06-15",
+      "status": "captured",
       "diversity": ["single-disc", "sparse-credits", "near-empty"]
     },
     {
       "id": 22000,
       "kind": "album",
       "source_url": "https://vgmdb.net/album/22000",
-      "captured_date": null,
-      "status": "candidate",
+      "captured_date": "2026-06-15",
+      "status": "captured",
       "diversity": ["english-only", "single-disc"]
     },
     {
       "id": 33000,
       "kind": "album",
       "source_url": "https://vgmdb.net/album/33000",
-      "captured_date": null,
-      "status": "candidate",
+      "captured_date": "2026-06-15",
+      "status": "captured",
       "diversity": ["english-only", "single-disc"]
     },
     {
       "id": 45000,
       "kind": "album",
       "source_url": "https://vgmdb.net/album/45000",
-      "captured_date": null,
-      "status": "candidate",
+      "captured_date": "2026-06-15",
+      "status": "captured",
       "diversity": ["multi-language", "rich-credits"]
     },
     {
       "id": 60000,
       "kind": "album",
       "source_url": "https://vgmdb.net/album/60000",
-      "captured_date": null,
-      "status": "candidate",
+      "captured_date": "2026-06-15",
+      "status": "captured",
       "diversity": ["single-disc", "sparse-credits", "year-month-date"]
     },
     {
       "id": 90000,
       "kind": "album",
       "source_url": "https://vgmdb.net/album/90000",
-      "captured_date": null,
-      "status": "candidate",
+      "captured_date": "2026-06-15",
+      "status": "captured",
       "diversity": ["single-disc", "single-language"]
     },
     {
       "id": 4,
       "kind": "album",
       "source_url": "https://vgmdb.net/album/4",
-      "captured_date": null,
-      "status": "candidate",
+      "captured_date": "2026-06-15",
+      "status": "captured",
       "diversity": ["multi-disc", "multi-language", "rich-credits", "full-date"]
     },
     {
       "id": 30000,
       "kind": "album",
       "source_url": "https://vgmdb.net/album/30000",
-      "captured_date": null,
-      "status": "candidate",
+      "captured_date": "2026-06-15",
+      "status": "captured",
       "diversity": ["single-disc", "unusual-catalog", "freeform-heavy-notes"]
     },
     {
       "id": 18536,
       "kind": "album",
       "source_url": "https://vgmdb.net/album/18536",
-      "captured_date": null,
-      "status": "candidate",
+      "captured_date": "2026-06-15",
+      "status": "captured",
       "diversity": ["year-only-date"]
     }
   ],
@@ -98,8 +98,8 @@
       "kind": "search",
       "query": "final fantasy",
       "source_url": "https://vgmdb.net/search?q=final+fantasy",
-      "captured_date": null,
-      "status": "candidate",
+      "captured_date": "2026-06-15",
+      "status": "captured",
       "diversity": ["multi-hit"]
     },
     {
@@ -107,8 +107,8 @@
       "kind": "search",
       "query": "zzqxnonexistentquery",
       "source_url": "https://vgmdb.net/search?q=zzqxnonexistentquery",
-      "captured_date": null,
-      "status": "candidate",
+      "captured_date": "2026-06-15",
+      "status": "captured",
       "diversity": ["empty"]
     }
   ]

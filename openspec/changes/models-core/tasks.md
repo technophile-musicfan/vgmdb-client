@@ -7,9 +7,9 @@
 
 ## 2. Album entity (album.py)
 
-- [ ] 2.1 Implement `Track` (titles, number?, length?) and `Disc` (number?, name?, tracks); test construction and defaults
-- [ ] 2.2 Implement `Credit` (role, artists: list[ArtistRef]); test open-ended role + artist list
-- [ ] 2.3 Implement `Album` core subset (id, link?, titles, catalog?, release_date?, classification?, cover_small?, cover_full?, discs, credits, notes?); test full and partial construction (optional defaults applied)
+- [x] 2.1 Implement `Track` (titles, number?, length?) and `Disc` (number?, name?, tracks); test construction and defaults
+- [x] 2.2 Implement `Credit` (role, artists: list[ArtistRef]); test open-ended role + artist list
+- [x] 2.3 Implement `Album` core subset (id, link?, titles, catalog?, release_date?, classification?, cover_small?, cover_full?, discs, credits, notes?); test full and partial construction (optional defaults applied)
 
 ## 3. Search models (search.py)
 

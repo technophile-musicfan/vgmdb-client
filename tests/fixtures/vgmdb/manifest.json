@@ -57,7 +57,7 @@
       "source_url": "https://vgmdb.net/album/60000",
       "captured_date": null,
       "status": "candidate",
-      "diversity": ["single-disc", "sparse-credits"]
+      "diversity": ["single-disc", "sparse-credits", "year-only-date"]
     },
     {
       "id": 90000,
@@ -81,7 +81,7 @@
       "source_url": "https://vgmdb.net/album/30000",
       "captured_date": null,
       "status": "candidate",
-      "diversity": ["multi-disc", "unusual-catalog", "freeform-heavy-notes", "year-only-date"]
+      "diversity": ["single-disc", "unusual-catalog", "freeform-heavy-notes"]
     }
   ],
   "search": [

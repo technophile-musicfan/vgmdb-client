@@ -41,15 +41,15 @@
     {
       "role": "Composer",
       "artists": [
-        { "names": { "English": "Shogun" }, "id": 10251, "link": "/artist/10251" },
-        { "names": { "English": "hex125" }, "id": 10268, "link": "/artist/10268" }
+        { "names": { "English": "Shogun" }, "id": 10251, "link": "https://vgmdb.net/artist/10251" },
+        { "names": { "English": "hex125" }, "id": 10268, "link": "https://vgmdb.net/artist/10268" }
       ]
     },
     {
       "role": "Arranger",
       "artists": [
-        { "names": { "English": "Shogun" }, "id": 10251, "link": "/artist/10251" },
-        { "names": { "English": "hex125" }, "id": 10268, "link": "/artist/10268" }
+        { "names": { "English": "Shogun" }, "id": 10251, "link": "https://vgmdb.net/artist/10251" },
+        { "names": { "English": "hex125" }, "id": 10268, "link": "https://vgmdb.net/artist/10268" }
       ]
     }
   ],

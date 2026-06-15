@@ -61,6 +61,13 @@
       "artists": [
         {
           "names": {
+            "English": "Almighty Associates"
+          },
+          "id": null,
+          "link": null
+        },
+        {
+          "names": {
             "English": "Shiro Hamaguchi",
             "Japanese": "浜口史郎"
           },

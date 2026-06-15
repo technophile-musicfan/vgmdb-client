@@ -13,7 +13,7 @@
 
 ## 3. Search models (search.py)
 
-- [ ] 3.1 Implement `AlbumSearchResult` (id, link?, titles, catalog?, release_date?) and `SearchResults` (query, albums); test construction and that results carry album entries
+- [x] 3.1 Implement `AlbumSearchResult` (id, link?, titles, catalog?, release_date?) and `SearchResults` (query, albums); test construction and that results carry album entries
 
 ## 4. Conventions & wiring
 

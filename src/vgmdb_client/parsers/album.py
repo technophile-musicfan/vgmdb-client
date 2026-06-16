@@ -9,7 +9,7 @@ from lxml.html import HtmlElement
 
 from vgmdb_client.models import Album, ArtistRef, Credit, Disc, LocalizedText, Track, normalize_role
 from vgmdb_client.parsers import _dom
-from vgmdb_client.parsers.errors import ParseError
+from vgmdb_client.parsers.errors import NotAnAlbumPageError
 
 _ALBUM_ID = re.compile(r"/album/(\d+)")
 _BR = re.compile(r"<br\s*/?>", re.IGNORECASE)
@@ -22,12 +22,12 @@ def parse_album(html: str) -> Album:
     canonical = tree.xpath('//link[@rel="canonical"]/@href')
     match = _ALBUM_ID.search(canonical[0]) if canonical else None
     if match is None:
-        raise ParseError("Not a vgmdb album page (no canonical /album/<id>).")
+        raise NotAnAlbumPageError()
     album_id = int(match.group(1))
 
     titles = _dom.localized_text(tree.xpath('//h1/span[@class="albumtitle"]'))
     if not titles.all:
-        raise ParseError("Album page has no title.")
+        raise NotAnAlbumPageError()
 
     info = _info_fields(tree)
     cover_full = _first_url(tree, "medium-media.vgm.io")
@@ -78,58 +78,90 @@ def _first_url(tree: HtmlElement, host: str) -> str | None:
     return None
 
 
+# A parsed track row: (number, length, title_text). Discs: (disc_number, list[_RawTrack]).
+_RawTrack = tuple[int | None, str | None, str]
+_RawDisc = tuple[int | None, list[_RawTrack]]
+
+
 def _discs(tree: HtmlElement) -> list[Disc]:
-    """Parse discs/tracks from the active tracklist language span(s)."""
+    """Parse discs/tracks, merging per-language tracklist tabs into multi-language titles."""
     tl_spans = tree.xpath('//*[@id="tracklist"]//span[@class="tl"]')
     if not tl_spans:
         return []
-    primary = tl_spans[0]
+
+    lang_of = {
+        a.get("rel"): _dom.text(a)
+        for a in tree.xpath('//ul[contains(@class, "tabnav")]//a[@rel]')
+        if (a.get("rel") or "").startswith("tl")
+    }
+    per_lang: dict[str, list[_RawDisc]] = {}
+    primary_label: str | None = None
+    for span in tl_spans:
+        label = lang_of.get(span.get("id"), "English")
+        if primary_label is None:
+            primary_label = label
+        per_lang[label] = _parse_tl(span)
+
+    structure = per_lang[primary_label] if primary_label else []
     discs: list[Disc] = []
-    current: Disc | None = None
-    tracks: list[Track] = []
-
-    def flush() -> None:
-        nonlocal current, tracks
-        if current is not None:
-            discs.append(current.model_copy(update={"tracks": tracks}))
-        tracks = []
-
-    for node in primary.iter():
-        if node.tag == "b" and node.text and node.text.strip().lower().startswith("disc"):
-            flush()
-            num = re.search(r"\d+", node.text)
-            current = Disc(number=int(num.group()) if num else None, name=None, tracks=[])
-        elif node.tag == "tr" and "rolebit" in (node.get("class") or ""):
-            if current is None:
-                current = Disc(number=1, name=None, tracks=[])
-            tracks.append(_track(node))
-    flush()
-    if not discs and tracks:
-        discs.append(Disc(number=1, name=None, tracks=tracks))
+    for di, (number, raw_tracks) in enumerate(structure):
+        tracks: list[Track] = []
+        for ti, (tnum, tlen, _title) in enumerate(raw_tracks):
+            values: dict[str, str] = {}
+            for label, lang_discs in per_lang.items():
+                if di < len(lang_discs) and ti < len(lang_discs[di][1]):
+                    values[label] = lang_discs[di][1][ti][2]
+            tracks.append(Track(titles=_dom.localized_from_labels(values), number=tnum, length=tlen or None))
+        discs.append(Disc(number=number, name=None, tracks=tracks))
     return discs
 
 
-def _track(row: HtmlElement) -> Track:
-    cells = row.xpath("./td")
+def _parse_tl(span: HtmlElement) -> list[_RawDisc]:
+    """Parse one language tracklist span into (disc_number, [(number, length, title)]) groups."""
+    discs: list[_RawDisc] = []
+    number: int | None = None
+    tracks: list[_RawTrack] = []
+    started = False
+
+    def flush() -> None:
+        nonlocal tracks
+        if started:
+            discs.append((number, tracks))
+        tracks = []
+
+    for node in span.iter():
+        if node.tag == "b" and node.text and node.text.strip().lower().startswith("disc"):
+            flush()
+            started = True
+            m = re.search(r"\d+", node.text)
+            number = int(m.group()) if m else None
+        elif node.tag == "tr" and "rolebit" in (node.get("class") or ""):
+            tracks.append(_raw_track(node))
+    flush()
+    if not discs and tracks:
+        discs.append((1, tracks))
+    return discs
+
+
+def _raw_track(row: HtmlElement) -> _RawTrack:
     num_el = row.xpath('.//span[@class="label"]')
     number = None
     if num_el:
-        n = re.search(r"\d+", _dom.text(num_el[0]))
-        number = int(n.group()) if n else None
+        m = re.search(r"\d+", _dom.text(num_el[0]))
+        number = int(m.group()) if m else None
     time_el = row.xpath('.//span[@class="time"]')
     length = _dom.text(time_el[0]) if time_el else None
-    # title cell: the wide colspan cell (no label/time span)
     title = ""
-    for cell in cells:
+    for cell in row.xpath("./td"):
         if cell.xpath('.//span[@class="label"] | .//span[@class="time"]'):
             continue
         title = _dom.text(cell)
         break
-    return Track(titles=LocalizedText({"English": title}), number=number, length=length or None)
+    return number, length, title
 
 
 def _credits(tree: HtmlElement) -> list[Credit]:
-    credits: list[Credit] = []
+    result: list[Credit] = []
     for row in tree.xpath('//*[@id="collapse_credits"]//tr[@class="maincred"]'):
         label_spans = row.xpath('./td[1]//span[@class="artistname"]')
         role_raw = _dom.text(label_spans[0]) if label_spans else _dom.text(row.xpath("./td[1]")[0])
@@ -137,8 +169,8 @@ def _credits(tree: HtmlElement) -> list[Credit]:
         if not role_raw or not value_td:
             continue
         artists = _artists(value_td[0])
-        credits.append(Credit(role=normalize_role(role_raw), role_raw=role_raw, artists=artists))
-    return credits
+        result.append(Credit(role=normalize_role(role_raw), role_raw=role_raw, artists=artists))
+    return result
 
 
 def _artists(value_td: HtmlElement) -> list[ArtistRef]:

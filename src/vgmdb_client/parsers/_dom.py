@@ -55,6 +55,25 @@ def localized_text(spans: list[HtmlElement]) -> LocalizedText:
     return LocalizedText(out)
 
 
+def localized_from_labels(values: dict[str, str]) -> LocalizedText:
+    """Build :class:`LocalizedText` from already-labelled values, applying the placeholder rule.
+
+    Keys are the display labels ("English"/"Japanese"/"Romaji"). English is kept when present;
+    Japanese only when it contains real Japanese script; Romaji only when it differs from English.
+    """
+    english = values.get("English", "")
+    out: dict[str, str] = {}
+    if english:
+        out["English"] = english
+    japanese = values.get("Japanese")
+    if japanese and _CJK.search(japanese):
+        out["Japanese"] = japanese
+    romaji = values.get("Romaji")
+    if romaji and romaji != english:
+        out["Romaji"] = romaji
+    return LocalizedText(out)
+
+
 def partial_date(href_or_text: str | None) -> PartialDate | None:
     """Parse a vgmdb date: prefer the ``#YYYYMMDD`` calendar fragment, else ``PartialDate.parse``."""
     if not href_or_text:

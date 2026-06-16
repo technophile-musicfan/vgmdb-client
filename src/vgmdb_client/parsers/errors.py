@@ -10,3 +10,17 @@ class ParseError(VgmdbClientError):
 
     def __init__(self, message: str = "Could not parse the page.") -> None:
         super().__init__(message)
+
+
+class NotAnAlbumPageError(ParseError):
+    """Raised when the HTML lacks the essential anchors of an album page."""
+
+    def __init__(self) -> None:
+        super().__init__("Not a vgmdb album page (missing album id or title).")
+
+
+class NotASearchPageError(ParseError):
+    """Raised when the HTML lacks the essential anchors of a search-results page."""
+
+    def __init__(self) -> None:
+        super().__init__("Not a vgmdb search-results page (missing results container).")

@@ -13,7 +13,6 @@ from vgmdb_client.parsers.errors import ParseError
 
 _ALBUM_ID = re.compile(r"/album/(\d+)")
 _BR = re.compile(r"<br\s*/?>", re.IGNORECASE)
-_SPLIT_NAMES = re.compile(r"\s*,\s*|\s+and\s+")
 
 
 def parse_album(html: str) -> Album:
@@ -143,26 +142,39 @@ def _credits(tree: HtmlElement) -> list[Credit]:
 
 
 def _artists(value_td: HtmlElement) -> list[ArtistRef]:
-    """Extract artists: linked /artist/ entries, then plain-text names split on ',' / 'and'."""
+    """Extract the artists in a credit value cell, in document order.
+
+    Walks the cell as an ordered stream of text runs and ``/artist/`` links. Linked artists are
+    kept verbatim (with their localized names + id/link). Plain-text runs are split into names on
+    a *list comma* — a comma NOT preceded by whitespace — so a ``"Studio , City"`` venue stays
+    whole while ``"A, B, C"`` splits; ``" and "`` is never a separator. A trailing ``(affiliation)``
+    is stripped from each name.
+    """
     artists: list[ArtistRef] = []
-    links = value_td.xpath('.//a[contains(@href, "/artist/")]')
-    if links:
-        for a in links:
-            href = a.get("href")
-            aid = _ALBUM_ID_ARTIST.search(href)
-            spans = a.xpath('.//span[@class="artistname"]')
-            names = _dom.localized_text(spans) if spans else LocalizedText({"English": _dom.text(a)})
+
+    def emit_text(run: str) -> None:
+        for raw in _LIST_COMMA.split(run):
+            name = _TRAILING_PAREN.sub("", raw.strip(" ,")).strip(" ,")
+            if name:
+                artists.append(ArtistRef(names=LocalizedText({"English": name}), id=None, link=None))
+
+    emit_text(value_td.text or "")
+    for child in value_td:
+        href = child.get("href")
+        if child.tag == "a" and href and "/artist/" in href:
+            aid = _ARTIST_ID.search(href)
+            spans = child.xpath('.//span[@class="artistname"]')
+            names = _dom.localized_text(spans) if spans else LocalizedText({"English": _dom.text(child)})
             artists.append(ArtistRef(names=names, id=int(aid.group(1)) if aid else None, link=_dom.absolute_url(href)))
-        return artists
-    # no links: split the plain text into individual names
-    for name in _SPLIT_NAMES.split(_dom.text(value_td)):
-        cleaned = name.strip()
-        if cleaned:
-            artists.append(ArtistRef(names=LocalizedText({"English": cleaned}), id=None, link=None))
+        else:
+            emit_text(child.text_content())
+        emit_text(child.tail or "")
     return artists
 
 
-_ALBUM_ID_ARTIST = re.compile(r"/artist/(\d+)")
+_ARTIST_ID = re.compile(r"/artist/(\d+)")
+_LIST_COMMA = re.compile(r"(?<=\S),\s*")
+_TRAILING_PAREN = re.compile(r"\s*\([^)]*\)$")
 
 
 def _notes(tree: HtmlElement) -> str | None:

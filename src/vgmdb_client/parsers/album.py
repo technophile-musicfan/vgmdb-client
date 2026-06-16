@@ -202,7 +202,9 @@ def _artists(value_td: HtmlElement) -> list[ArtistRef]:
     kept verbatim (with their localized names + id/link). Plain-text runs are split into names on
     a *list comma* — a comma NOT preceded by whitespace — so a ``"Studio , City"`` venue stays
     whole while ``"A, B, C"`` splits; ``" and "`` is never a separator. A trailing ``(affiliation)``
-    is stripped from each name.
+    is stripped from each name. A linked artist enclosed in parentheses right after another (e.g.
+    ``"Syrufit (hiro.na)"``) is a parenthetical/aka and is dropped — the parens are in the markup,
+    so this is a structural rule, not a semantic one.
     """
     artists: list[ArtistRef] = []
 
@@ -213,17 +215,24 @@ def _artists(value_td: HtmlElement) -> list[ArtistRef]:
                 key = "Japanese" if _dom.has_cjk(name) else "English"
                 artists.append(ArtistRef(names=LocalizedText({key: name}), id=None, link=None))
 
-    emit_text(value_td.text or "")
+    prev_text = value_td.text or ""
+    emit_text(prev_text)
     for child in value_td:
         href = child.get("href")
+        tail = child.tail or ""
         if child.tag == "a" and href and "/artist/" in href:
-            aid = _ARTIST_ID.search(href)
-            spans = child.xpath('.//span[@class="artistname"]')
-            names = _dom.localized_text(spans) if spans else LocalizedText({"English": _dom.text(child)})
-            artists.append(ArtistRef(names=names, id=int(aid.group(1)) if aid else None, link=_dom.absolute_url(href)))
+            parenthetical = prev_text.rstrip().endswith("(") and tail.lstrip().startswith(")")
+            if not parenthetical:
+                aid = _ARTIST_ID.search(href)
+                spans = child.xpath('.//span[@class="artistname"]')
+                names = _dom.localized_text(spans) if spans else LocalizedText({"English": _dom.text(child)})
+                artists.append(
+                    ArtistRef(names=names, id=int(aid.group(1)) if aid else None, link=_dom.absolute_url(href))
+                )
         else:
             emit_text(child.text_content())
-        emit_text(child.tail or "")
+        emit_text(tail)
+        prev_text = tail
     return artists
 
 

@@ -17,7 +17,7 @@
   "discs": [
     {
       "number": 1,
-      "name": null,
+      "name": "Disc 1",
       "tracks": [
         {
           "titles": {

@@ -32,8 +32,8 @@ def parse_album(html: str) -> Album:
         raise NotAnAlbumPageError()
 
     info = _info_fields(tree)
-    cover_full = _first_url(tree, "medium-media.vgm.io")
-    cover_small = _first_url(tree, "thumb-media.vgm.io")
+    cover_full = _cover_url(tree, "medium-media.vgm.io", album_id)
+    cover_small = _cover_url(tree, "thumb-media.vgm.io", album_id)
 
     return Album(
         id=album_id,
@@ -77,11 +77,18 @@ def _value_text(td: HtmlElement) -> str:
     return " ".join(" ".join(parts).split())
 
 
-def _first_url(tree: HtmlElement, host: str) -> str | None:
+def _cover_url(tree: HtmlElement, host: str, album_id: int) -> str | None:
+    """First media URL on ``host`` that belongs to THIS album.
+
+    The cover URL path contains the album-id segment (e.g. ``/albums/17/271/271-...``); requiring
+    it avoids grabbing a related-album thumbnail that merely precedes the cover in the document.
+    """
+    needle = f"/{album_id}/"
+    pattern = re.compile(rf"https?://{re.escape(host)}[^\"' )]+")
     for attr in tree.xpath("//@src | //@href | //@style"):
-        if host in attr:
-            m = re.search(rf"https?://{re.escape(host)}[^\"' )]+", attr)
-            if m:
+        if host in attr and needle in attr:
+            m = pattern.search(attr)
+            if m and needle in m.group(0):
                 return m.group(0)
     return None
 
@@ -225,7 +232,8 @@ def _artists(value_td: HtmlElement) -> list[ArtistRef]:
         href = child.get("href")
         tail = child.tail or ""
         if child.tag == "a" and href and "/artist/" in href:
-            parenthetical = prev_text.rstrip().endswith("(") and tail.lstrip().startswith(")")
+            # An aka in parens only makes sense AFTER a preceding artist in this cell.
+            parenthetical = bool(artists) and prev_text.rstrip().endswith("(") and tail.lstrip().startswith(")")
             if not parenthetical:
                 aid = _ARTIST_ID.search(href)
                 spans = child.xpath('.//span[@class="artistname"]')

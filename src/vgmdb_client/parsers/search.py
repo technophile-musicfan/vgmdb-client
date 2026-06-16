@@ -10,7 +10,6 @@ from vgmdb_client.models import AlbumSearchResult, SearchResults
 from vgmdb_client.parsers import _dom
 from vgmdb_client.parsers.errors import NotASearchPageError
 
-_BASE = "https://vgmdb.net"
 _ALBUM_ID = re.compile(r"/album/(\d+)")
 _QUERY = re.compile(r'results for "(.*)"\s*$')
 
@@ -54,9 +53,12 @@ def _result_row(row: HtmlElement) -> AlbumSearchResult | None:
     if catalog in ("", "N/A"):
         catalog = None
 
-    cells = row.xpath("./td")
+    # Find the release-date cell, skipping the catalog and title cells so a numeric catalog
+    # (e.g. "3939") can't be mistaken for a year.
     release_date = None
-    for cell in cells:
+    for cell in row.xpath("./td"):
+        if cell.xpath('.//span[contains(@class, "catalog")] | .//a[contains(@href, "/album/")]'):
+            continue
         parsed = _dom.partial_date(_dom.text(cell))
         if parsed is not None:
             release_date = parsed
@@ -64,7 +66,7 @@ def _result_row(row: HtmlElement) -> AlbumSearchResult | None:
 
     return AlbumSearchResult(
         id=album_id,
-        link=f"{_BASE}/album/{album_id}",
+        link=_dom.absolute_url(f"/album/{album_id}"),
         titles=titles,
         catalog=catalog,
         release_date=release_date,

@@ -10,10 +10,9 @@ from lxml.html import HtmlElement
 from vgmdb_client.models import LocalizedText, PartialDate
 
 _BASE = "https://vgmdb.net"
-_LANG_LABELS = {"en": "English", "ja": "Japanese", "ja-Latn": "Romaji"}
 _CJK = re.compile(r"[぀-ヿ㐀-䶿一-鿿＀-￯]")
 _DATE_FRAGMENT = re.compile(r"#(\d{4})(\d{2})?(\d{2})?$")
-_DATE_QUERY = re.compile(r"year=(\d{1,4})(?:&month=(\d{1,2}))?(?:&day=(\d{1,2}))?")
+_DATE_QUERY = re.compile(r"year=(\d{4})(?:&month=(\d{1,2}))?(?:&day=(\d{1,2}))?")
 _LEADING_SLASH = re.compile(r"^/\s*")
 
 
@@ -40,44 +39,31 @@ def _span_text(span: HtmlElement) -> str:
     return _LEADING_SLASH.sub("", text(span)).strip()
 
 
-def localized_text(spans: list[HtmlElement]) -> LocalizedText:
-    """Build :class:`LocalizedText` from language spans, applying the placeholder rule.
+def _placeholder_rule(english: str, japanese: str | None, romaji: str | None) -> LocalizedText:
+    """Apply the multi-language placeholder rule shared by both title sources.
 
-    ``en`` -> English; ``ja`` -> Japanese only when it contains real Japanese script;
-    ``ja-Latn`` -> Romaji only when it differs from the English text. Placeholder
-    duplicates (other-language spans that merely echo the English Latin text) are dropped.
+    English is kept when present; Japanese only when it contains real Japanese script; Romaji
+    only when it differs from the English text. Placeholder duplicates are dropped.
     """
-    by_lang = {span.get("lang"): _span_text(span) for span in spans if span.get("lang")}
-    english = by_lang.get("en", "")
     out: dict[str, str] = {}
     if english:
         out["English"] = english
-    japanese = by_lang.get("ja")
     if japanese and _CJK.search(japanese):
         out["Japanese"] = japanese
-    romaji = by_lang.get("ja-Latn")
     if romaji and romaji != english:
         out["Romaji"] = romaji
     return LocalizedText(out)
+
+
+def localized_text(spans: list[HtmlElement]) -> LocalizedText:
+    """Build :class:`LocalizedText` from language spans (lang attributes en/ja/ja-Latn)."""
+    by_lang = {span.get("lang"): _span_text(span) for span in spans if span.get("lang")}
+    return _placeholder_rule(by_lang.get("en", ""), by_lang.get("ja"), by_lang.get("ja-Latn"))
 
 
 def localized_from_labels(values: dict[str, str]) -> LocalizedText:
-    """Build :class:`LocalizedText` from already-labelled values, applying the placeholder rule.
-
-    Keys are the display labels ("English"/"Japanese"/"Romaji"). English is kept when present;
-    Japanese only when it contains real Japanese script; Romaji only when it differs from English.
-    """
-    english = values.get("English", "")
-    out: dict[str, str] = {}
-    if english:
-        out["English"] = english
-    japanese = values.get("Japanese")
-    if japanese and _CJK.search(japanese):
-        out["Japanese"] = japanese
-    romaji = values.get("Romaji")
-    if romaji and romaji != english:
-        out["Romaji"] = romaji
-    return LocalizedText(out)
+    """Build :class:`LocalizedText` from already-labelled values (keys English/Japanese/Romaji)."""
+    return _placeholder_rule(values.get("English", ""), values.get("Japanese"), values.get("Romaji"))
 
 
 def partial_date(href_or_text: str | None) -> PartialDate | None:

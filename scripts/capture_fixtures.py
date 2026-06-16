@@ -75,6 +75,13 @@ class MalformedManifestError(CaptureError):
         super().__init__(f"manifest entry missing required field {field!r}")
 
 
+class InvalidIntervalError(CaptureError):
+    """The requested throttle interval is not a non-negative number."""
+
+    def __init__(self, value: str) -> None:
+        super().__init__(f"invalid --min-interval / VGMDB_MIN_INTERVAL: {value!r} (need a number >= 0)")
+
+
 def _require_env(name: str) -> str:
     value = os.environ.get(name)
     if not value:
@@ -90,6 +97,26 @@ def _build_transport(min_interval: float) -> SyncTransport:
         min_interval=min_interval,
     )
     return SyncTransport(config)
+
+
+def _resolve_min_interval(arg: float | None) -> float:
+    """Resolve the throttle interval from the flag, else VGMDB_MIN_INTERVAL, else the default.
+
+    Reads the env var here (after ``load_dotenv``) so a value set in ``.env`` is honored.
+    """
+    if arg is not None:
+        value = arg
+    else:
+        raw = os.environ.get("VGMDB_MIN_INTERVAL")
+        if not raw:
+            return DEFAULT_CAPTURE_INTERVAL
+        try:
+            value = float(raw)
+        except ValueError as exc:
+            raise InvalidIntervalError(raw) from exc
+    if value < 0:
+        raise InvalidIntervalError(str(value))
+    return value
 
 
 def _load_targets() -> list[tuple[str, str, str]]:
@@ -143,7 +170,7 @@ def _parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser.add_argument(
         "--min-interval",
         type=float,
-        default=float(os.environ.get("VGMDB_MIN_INTERVAL") or DEFAULT_CAPTURE_INTERVAL),
+        default=None,
         metavar="SECONDS",
         help=(
             "Minimum seconds between requests (default: VGMDB_MIN_INTERVAL or "
@@ -154,17 +181,18 @@ def _parse_args(argv: list[str] | None = None) -> argparse.Namespace:
 
 
 def main(argv: list[str] | None = None) -> int:
-    args = _parse_args(argv)
     load_dotenv(ROOT / ".env")
+    args = _parse_args(argv)
 
     try:
+        min_interval = _resolve_min_interval(args.min_interval)
         targets = _select_targets(args.only)
-        transport = _build_transport(args.min_interval)
+        transport = _build_transport(min_interval)
     except CaptureError as exc:
         print(f"error: {exc}", file=sys.stderr)
         return 2
 
-    print(f"capturing {len(targets)} target(s) at >={args.min_interval:g}s/request")
+    print(f"capturing {len(targets)} target(s) at >={min_interval:g}s/request")
 
     captured = skipped = 0
     try:

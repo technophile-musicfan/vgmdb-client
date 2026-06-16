@@ -1,5 +1,5 @@
 {
-  "query": "final fantasy",
+  "query": "final, fantasy",
   "albums": [
     {
       "id": 99285,
@@ -9,7 +9,11 @@
         "Japanese": "ファイナルファンタジーX Original Soundtrack"
       },
       "catalog": "FF-10~3",
-      "release_date": { "year": 2001, "month": null, "day": null }
+      "release_date": {
+        "year": 2001,
+        "month": null,
+        "day": null
+      }
     },
     {
       "id": 20425,
@@ -19,7 +23,11 @@
         "Japanese": "ファイナルファンタジーXIV バトル・トラックス"
       },
       "catalog": "SQEX-10204",
-      "release_date": { "year": 2010, "month": 9, "day": 29 }
+      "release_date": {
+        "year": 2010,
+        "month": 9,
+        "day": 29
+      }
     },
     {
       "id": 20424,
@@ -29,7 +37,11 @@
         "Japanese": "ファイナルファンタジーXIV フィールド・トラックス"
       },
       "catalog": "SQEX-10203",
-      "release_date": { "year": 2010, "month": 9, "day": 29 }
+      "release_date": {
+        "year": 2010,
+        "month": 9,
+        "day": 29
+      }
     },
     {
       "id": 144674,
@@ -38,7 +50,11 @@
         "English": "#SQkawaii Sounds -FINAL FANTASY-"
       },
       "catalog": "SQEX-11148",
-      "release_date": { "year": 2025, "month": 3, "day": 5 }
+      "release_date": {
+        "year": 2025,
+        "month": 3,
+        "day": 5
+      }
     },
     {
       "id": 12145,
@@ -47,7 +63,11 @@
         "English": "20020220 music from FINAL FANTASY"
       },
       "catalog": null,
-      "release_date": { "year": 2005, "month": 5, "day": 10 }
+      "release_date": {
+        "year": 2005,
+        "month": 5,
+        "day": 10
+      }
     },
     {
       "id": 18674,
@@ -56,7 +76,11 @@
         "English": "20020220 music from FINAL FANTASY"
       },
       "catalog": "KO-99025~6",
-      "release_date": { "year": 2005, "month": null, "day": null }
+      "release_date": {
+        "year": 2005,
+        "month": null,
+        "day": null
+      }
     },
     {
       "id": 46,
@@ -66,7 +90,11 @@
         "Japanese": "20020220 ミュージック・フロム ファイナルファンタジー ファイナルファンタジー オーケストラ・コンサート"
       },
       "catalog": "SSCX-10065~6",
-      "release_date": { "year": 2002, "month": 5, "day": 9 }
+      "release_date": {
+        "year": 2002,
+        "month": 5,
+        "day": 9
+      }
     },
     {
       "id": 3401,
@@ -76,7 +104,11 @@
         "Japanese": "20020220 ミュージック・フロム ファイナルファンタジー ファイナルファンタジー オーケストラ・コンサート"
       },
       "catalog": "SQEX-10030~1",
-      "release_date": { "year": 2004, "month": 7, "day": 22 }
+      "release_date": {
+        "year": 2004,
+        "month": 7,
+        "day": 22
+      }
     },
     {
       "id": 66009,
@@ -86,7 +118,11 @@
         "Japanese": "20020220 ミュージック・フロム ファイナルファンタジー ファイナルファンタジー オーケストラ・コンサート"
       },
       "catalog": "ALCA-8036~7",
-      "release_date": { "year": 2002, "month": null, "day": null }
+      "release_date": {
+        "year": 2002,
+        "month": null,
+        "day": null
+      }
     },
     {
       "id": 128179,
@@ -96,7 +132,11 @@
         "Japanese": "20020220 ミュージック・フロム ファイナルファンタジー ファイナルファンタジー オーケストラ・コンサート"
       },
       "catalog": "KA-002~3",
-      "release_date": { "year": 2002, "month": null, "day": null }
+      "release_date": {
+        "year": 2002,
+        "month": null,
+        "day": null
+      }
     }
   ]
 }

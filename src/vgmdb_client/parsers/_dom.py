@@ -93,7 +93,34 @@ def partial_date(href_or_text: str | None) -> PartialDate | None:
             return PartialDate(year=year, month=month, day=day)
         except ValueError:
             return None
-    return PartialDate.parse(href_or_text)
+    return PartialDate.parse(href_or_text) or _parse_text_date(href_or_text)
+
+
+_MONTHS = {
+    m: i
+    for i, m in enumerate(["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"], start=1)
+}
+_TEXT_DATE = re.compile(r"^([A-Za-z]{3})[a-z]*(?:\s+(\d{1,2}),)?\s+(\d{4})$")
+_YEAR_ONLY = re.compile(r"^(\d{4})$")
+
+
+def _parse_text_date(text: str) -> PartialDate | None:
+    """Parse human date text: 'Mon DD, YYYY', 'Mon YYYY', or 'YYYY'."""
+    value = text.strip()
+    year_only = _YEAR_ONLY.match(value)
+    if year_only:
+        return PartialDate(year=int(year_only.group(1)))
+    match = _TEXT_DATE.match(value)
+    if not match:
+        return None
+    month = _MONTHS.get(match.group(1).lower())
+    if month is None:
+        return None
+    day = int(match.group(2)) if match.group(2) else None
+    try:
+        return PartialDate(year=int(match.group(3)), month=month, day=day)
+    except ValueError:
+        return None
 
 
 def absolute_url(href: str | None) -> str | None:

@@ -16,24 +16,120 @@
   "discs": [
     {
       "number": 1,
-      "name": "Original Soundtrack",
+      "name": null,
       "tracks": [
-        { "titles": { "English": "Enter The Gungeon" }, "number": 1, "length": null },
-        { "titles": { "English": "Lean On A Villain" }, "number": 2, "length": null },
-        { "titles": { "English": "Go Rogue Go" }, "number": 3, "length": null },
-        { "titles": { "English": "Deep In Reap" }, "number": 4, "length": null },
-        { "titles": { "English": "Forever Of Door" }, "number": 5, "length": null },
-        { "titles": { "English": "Fire Within Fight" }, "number": 6, "length": null },
-        { "titles": { "English": "Heart In Halves" }, "number": 7, "length": null },
-        { "titles": { "English": "Below Below" }, "number": 8, "length": null },
-        { "titles": { "English": "Enter The Gungeon (Instrumental)" }, "number": 9, "length": null },
-        { "titles": { "English": "Lean On A Villain (Instrumental)" }, "number": 10, "length": null },
-        { "titles": { "English": "Go Rogue Go (Instrumental)" }, "number": 11, "length": null },
-        { "titles": { "English": "Deep In Reap (Instrumental)" }, "number": 12, "length": null },
-        { "titles": { "English": "Forever Of Door (Instrumental)" }, "number": 13, "length": null },
-        { "titles": { "English": "Fire Within Fight (Instrumental)" }, "number": 14, "length": null },
-        { "titles": { "English": "Heart In Halves (Instrumental)" }, "number": 15, "length": null },
-        { "titles": { "English": "Below Below (Instrumental)" }, "number": 16, "length": null }
+        {
+          "titles": {
+            "English": "Enter The Gungeon"
+          },
+          "number": 1,
+          "length": null
+        },
+        {
+          "titles": {
+            "English": "Lean On A Villain"
+          },
+          "number": 2,
+          "length": null
+        },
+        {
+          "titles": {
+            "English": "Go Rogue Go"
+          },
+          "number": 3,
+          "length": null
+        },
+        {
+          "titles": {
+            "English": "Deep In Reap"
+          },
+          "number": 4,
+          "length": null
+        },
+        {
+          "titles": {
+            "English": "Forever Of Door"
+          },
+          "number": 5,
+          "length": null
+        },
+        {
+          "titles": {
+            "English": "Fire Within Fight"
+          },
+          "number": 6,
+          "length": null
+        },
+        {
+          "titles": {
+            "English": "Heart In Halves"
+          },
+          "number": 7,
+          "length": null
+        },
+        {
+          "titles": {
+            "English": "Below Below"
+          },
+          "number": 8,
+          "length": null
+        },
+        {
+          "titles": {
+            "English": "Enter The Gungeon (Instrumental)"
+          },
+          "number": 9,
+          "length": null
+        },
+        {
+          "titles": {
+            "English": "Lean On A Villain (Instrumental)"
+          },
+          "number": 10,
+          "length": null
+        },
+        {
+          "titles": {
+            "English": "Go Rogue Go (Instrumental)"
+          },
+          "number": 11,
+          "length": null
+        },
+        {
+          "titles": {
+            "English": "Deep In Reap (Instrumental)"
+          },
+          "number": 12,
+          "length": null
+        },
+        {
+          "titles": {
+            "English": "Forever Of Door (Instrumental)"
+          },
+          "number": 13,
+          "length": null
+        },
+        {
+          "titles": {
+            "English": "Fire Within Fight (Instrumental)"
+          },
+          "number": 14,
+          "length": null
+        },
+        {
+          "titles": {
+            "English": "Heart In Halves (Instrumental)"
+          },
+          "number": 15,
+          "length": null
+        },
+        {
+          "titles": {
+            "English": "Below Below (Instrumental)"
+          },
+          "number": 16,
+          "length": null
+        }
       ]
     }
   ],
@@ -41,13 +137,25 @@
     {
       "role": "Music",
       "artists": [
-        { "names": { "English": "doseone" }, "id": 17306, "link": "https://vgmdb.net/artist/17306" }
+        {
+          "names": {
+            "English": "doseone"
+          },
+          "id": 17306,
+          "link": "https://vgmdb.net/artist/17306"
+        }
       ]
     },
     {
       "role": "Vinyl Pre-mastering",
       "artists": [
-        { "names": { "English": "Joe Caithness" }, "id": 55484, "link": "https://vgmdb.net/artist/55484" }
+        {
+          "names": {
+            "English": "Joe Caithness"
+          },
+          "id": 55484,
+          "link": "https://vgmdb.net/artist/55484"
+        }
       ]
     }
   ],

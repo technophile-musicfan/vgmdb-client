@@ -22,7 +22,6 @@
         {
           "titles": {
             "English": "Chrono Cross -Scars of Time-",
-            "English (unofficial)": "CHRONO CROSS ~The Scars of Time~",
             "Japanese": "CHRONO CROSS ～時の傷跡～",
             "Romaji": "CHRONO CROSS ~Toki no Kizuato~"
           },
@@ -32,7 +31,6 @@
         {
           "titles": {
             "English": "The Brink of Death",
-            "English (unofficial)": "The Brink of Death",
             "Japanese": "死線",
             "Romaji": "Shisen"
           },
@@ -42,7 +40,6 @@
         {
           "titles": {
             "English": "Arni (Home World)",
-            "English (unofficial)": "Arni Village: Home",
             "Japanese": "アルニ村 ホーム",
             "Romaji": "Arni Mura: Home"
           },
@@ -52,7 +49,6 @@
         {
           "titles": {
             "English": "Plains of Time (Home World)",
-            "English (unofficial)": "The Grasslands of Time: Home World",
             "Japanese": "時の草原 ホーム・ワールド",
             "Romaji": "Toki no Sougen: Home World"
           },
@@ -62,7 +58,6 @@
         {
           "titles": {
             "English": "Dances with Lizards",
-            "English (unofficial)": "Dance with the Lizards",
             "Japanese": "トカゲと踊れ",
             "Romaji": "Tokage to Odore"
           },
@@ -72,7 +67,6 @@
         {
           "titles": {
             "English": "Reminisce -Enduring Thoughts-",
-            "English (unofficial)": "Reminiscence ~Undying Feelings~",
             "Japanese": "回想 ～消せない想い～",
             "Romaji": "Kaisou ~Kesenai Omoi~"
           },
@@ -82,7 +76,6 @@
         {
           "titles": {
             "English": "Shore of Dreams (Another World)",
-            "English (unofficial)": "On the Shores of a Dream: Another World",
             "Japanese": "夢の岸辺に アナザー・ワールド",
             "Romaji": "Yume no Kishibe ni: Another World"
           },
@@ -92,7 +85,6 @@
         {
           "titles": {
             "English": "Arni (Another World)",
-            "English (unofficial)": "Arni Village: Another",
             "Japanese": "アルニ村 アナザー",
             "Romaji": "Arni Mura: Another"
           },
@@ -102,7 +94,6 @@
         {
           "titles": {
             "English": "Fleeting Thoughts",
-            "English (unofficial)": "Ephemeral Feelings",
             "Japanese": "うたかたの想い",
             "Romaji": "Utakata no Omoi"
           },
@@ -112,7 +103,6 @@
         {
           "titles": {
             "English": "Missing Piece",
-            "English (unofficial)": "Lost Fragments",
             "Japanese": "失われた欠片",
             "Romaji": "Ushinawareta Kakera"
           },
@@ -122,7 +112,6 @@
         {
           "titles": {
             "English": "Fossil Valley",
-            "English (unofficial)": "Fossil Valley",
             "Japanese": "溺れ谷",
             "Romaji": "Obore Tani"
           },
@@ -132,7 +121,6 @@
         {
           "titles": {
             "English": "Termina (Another World)",
-            "English (unofficial)": "Termina: Another",
             "Japanese": "テルミナ アナザー",
             "Romaji": "Termina: Another"
           },
@@ -142,7 +130,6 @@
         {
           "titles": {
             "English": "The Departed Ones",
-            "English (unofficial)": "Those Who Have Departed",
             "Japanese": "去りにし者ども",
             "Romaji": "Sari ni Shi Monodomo"
           },
@@ -152,7 +139,6 @@
         {
           "titles": {
             "English": "Shadow Forest",
-            "English (unofficial)": "Shadow Forest",
             "Japanese": "影切りの森",
             "Romaji": "Kage Kiri no Mori"
           },
@@ -162,7 +148,6 @@
         {
           "titles": {
             "English": "Viper Manor",
-            "English (unofficial)": "Viper Manor",
             "Japanese": "蛇骨館",
             "Romaji": "Jakotsukan"
           },
@@ -172,7 +157,6 @@
         {
           "titles": {
             "English": "Victory -Boon of Spring-",
-            "English (unofficial)": "Victory ~Gift of Spring~",
             "Japanese": "勝利 ～春の贈り物～",
             "Romaji": "Shouri ~Haru no Okurimono~"
           },
@@ -182,7 +166,6 @@
         {
           "titles": {
             "English": "Lost in Time",
-            "English (unofficial)": "Lost Child of Time",
             "Japanese": "時の迷い子",
             "Romaji": "Toki no Maigo"
           },
@@ -192,7 +175,6 @@
         {
           "titles": {
             "English": "Guldove (Another World)",
-            "English (unofficial)": "Guldove: Another",
             "Japanese": "ガルドーブ アナザー",
             "Romaji": "Guldove: Another"
           },
@@ -202,7 +184,6 @@
         {
           "titles": {
             "English": "Hydra Marshes",
-            "English (unofficial)": "Hydra Marshes",
             "Japanese": "ヒドラの沼",
             "Romaji": "Hydra no Numa"
           },
@@ -212,7 +193,6 @@
         {
           "titles": {
             "English": "Fragments of a Dream",
-            "English (unofficial)": "Fragments of a Dream",
             "Japanese": "夢のかけら",
             "Romaji": "Yume no Kakera"
           },
@@ -222,7 +202,6 @@
         {
           "titles": {
             "English": "Sailing (Another World)",
-            "English (unofficial)": "Voyage: Another World",
             "Japanese": "航海 アナザー・ワールド",
             "Romaji": "Koukai: Another World"
           },
@@ -232,7 +211,6 @@
         {
           "titles": {
             "English": "Ghost Ship",
-            "English (unofficial)": "Ghost Ship",
             "Japanese": "幽霊船",
             "Romaji": "Yuureisen"
           },
@@ -242,7 +220,6 @@
         {
           "titles": {
             "English": "Mount Pyre",
-            "English (unofficial)": "Mount Pyre",
             "Japanese": "死炎山",
             "Romaji": "Shienzan"
           },
@@ -252,7 +229,6 @@
         {
           "titles": {
             "English": "Fort Dragonia",
-            "English (unofficial)": "Fort Dragonia",
             "Japanese": "古龍の砦",
             "Romaji": "Koryuu no Toride"
           },
@@ -262,7 +238,6 @@
         {
           "titles": {
             "English": "Sorrow",
-            "English (unofficial)": "Grief",
             "Japanese": "悲愴",
             "Romaji": "Hisou"
           },
@@ -278,7 +253,6 @@
         {
           "titles": {
             "English": "Prelude to a Dream",
-            "English (unofficial)": "The Beginning of the Dream",
             "Japanese": "夢のはじまり",
             "Romaji": "Yume no Hajimari"
           },
@@ -288,7 +262,6 @@
         {
           "titles": {
             "English": "The Bend of Time",
-            "English (unofficial)": "The Bend of Time",
             "Japanese": "次元の狭間",
             "Romaji": "Jigen no Hazama"
           },
@@ -298,7 +271,6 @@
         {
           "titles": {
             "English": "Termina (Home World)",
-            "English (unofficial)": "Termina: Home",
             "Japanese": "テルミナ ホーム",
             "Romaji": "Termina: Home"
           },
@@ -308,7 +280,6 @@
         {
           "titles": {
             "English": "Dragoons",
-            "English (unofficial)": "The Dragoons",
             "Japanese": "龍の騎士",
             "Romaji": "Ryuu no Kishi"
           },
@@ -318,7 +289,6 @@
         {
           "titles": {
             "English": "Sailing (Home World)",
-            "English (unofficial)": "Voyage: Home World",
             "Japanese": "航海 ホーム・ワールド",
             "Romaji": "Koukai: Home World"
           },
@@ -328,7 +298,6 @@
         {
           "titles": {
             "English": "Guldove (Home World)",
-            "English (unofficial)": "Guldove: Home",
             "Japanese": "ガルドーブ ホーム",
             "Romaji": "Guldove: Home"
           },
@@ -338,7 +307,6 @@
         {
           "titles": {
             "English": "Marbule (Home World)",
-            "English (unofficial)": "Marbule: Home",
             "Japanese": "マブーレ ホーム",
             "Romaji": "Marbule: Home"
           },
@@ -348,7 +316,6 @@
         {
           "titles": {
             "English": "Zelbess",
-            "English (unofficial)": "Zelbess",
             "Japanese": "ゼルベス"
           },
           "number": 8,
@@ -357,7 +324,6 @@
         {
           "titles": {
             "English": "Miraculous & Mystifying",
-            "English (unofficial)": "The Super Astonishingly Great Magic Troupe",
             "Japanese": "天晴驚愕大奇術団",
             "Romaji": "Appare Kyougaku Daikijutsudan"
           },
@@ -367,7 +333,6 @@
         {
           "titles": {
             "English": "Slumber",
-            "English (unofficial)": "Nap",
             "Japanese": "まどろみ",
             "Romaji": "Madoromi"
           },
@@ -377,7 +342,6 @@
         {
           "titles": {
             "English": "Chronomantic",
-            "English (unofficial)": "Chronomantique",
             "Japanese": "クロノマンティーク",
             "Romaji": "Chronomantique"
           },
@@ -387,7 +351,6 @@
         {
           "titles": {
             "English": "Peril",
-            "English (unofficial)": "Predicament",
             "Japanese": "窮地",
             "Romaji": "Kyuuchi"
           },
@@ -397,7 +360,6 @@
         {
           "titles": {
             "English": "Paradise",
-            "English (unofficial)": "Optimism",
             "Japanese": "楽天",
             "Romaji": "Rakuten"
           },
@@ -407,7 +369,6 @@
         {
           "titles": {
             "English": "Isle of the Damned",
-            "English (unofficial)": "Isle of the Damned",
             "Japanese": "亡者の島",
             "Romaji": "Mouja no Shima"
           },
@@ -417,7 +378,6 @@
         {
           "titles": {
             "English": "The Dead Sea -Tower of Geddon-",
-            "English (unofficial)": "The Dead Sea - Tower of Geddon",
             "Japanese": "死海・滅びの塔",
             "Romaji": "Shikai / Horobi no Tou"
           },
@@ -427,7 +387,6 @@
         {
           "titles": {
             "English": "Bound by Fate",
-            "English (unofficial)": "Those Imprisoned by Fate",
             "Japanese": "運命に囚われし者たち",
             "Romaji": "Unmei ni Torawareshi Monotachi"
           },
@@ -437,7 +396,6 @@
         {
           "titles": {
             "English": "Light Cast on the Lost",
-            "English (unofficial)": "Light, Already Lost",
             "Japanese": "あらかじめ失われし、ともしび",
             "Romaji": "Arakajime Ushinawareshi, Tomoshibi"
           },
@@ -447,7 +405,6 @@
         {
           "titles": {
             "English": "Earth Dragon Isle",
-            "English (unofficial)": "Earth Dragon Isle",
             "Japanese": "土龍の島",
             "Romaji": "Doryuu no Shima"
           },
@@ -457,7 +414,6 @@
         {
           "titles": {
             "English": "Gaea's Navel",
-            "English (unofficial)": "Gaea's Navel",
             "Japanese": "世界のへそ",
             "Romaji": "Sekai no Heso"
           },
@@ -467,7 +423,6 @@
         {
           "titles": {
             "English": "Whirlwind",
-            "English (unofficial)": "Gale",
             "Japanese": "疾風",
             "Romaji": "Shippuu"
           },
@@ -477,7 +432,6 @@
         {
           "titles": {
             "English": "Victory -Call of Summer-",
-            "English (unofficial)": "Victory ~Call of Summer~",
             "Japanese": "勝利 ～夏の呼び声～",
             "Romaji": "Shouri ~Natsu no Yobigoe~"
           },
@@ -487,7 +441,6 @@
         {
           "titles": {
             "English": "Marbule (Another World)",
-            "English (unofficial)": "Marbule: Another",
             "Japanese": "マブーレ アナザー",
             "Romaji": "Marbule: Another"
           },
@@ -497,7 +450,6 @@
         {
           "titles": {
             "English": "Fairy Magic",
-            "English (unofficial)": "Magic from the Fairies",
             "Japanese": "妖精のくれた魔法",
             "Romaji": "Yousei no Kureta Mahou"
           },
@@ -507,7 +459,6 @@
         {
           "titles": {
             "English": "Étude 1",
-            "English (unofficial)": "Etude 1",
             "Japanese": "エチュード1",
             "Romaji": "Etude 1"
           },
@@ -517,7 +468,6 @@
         {
           "titles": {
             "English": "Étude 2",
-            "English (unofficial)": "Etude 2",
             "Japanese": "エチュード2",
             "Romaji": "Etude 2"
           },
@@ -527,7 +477,6 @@
         {
           "titles": {
             "English": "Magical Dreamers -Wind, Stars, and Waves-",
-            "English (unofficial)": "MAGICAL DREAMERS ~Wind, Stars, and Waves~",
             "Japanese": "MAGICAL DREAMERS ～風と星と波と～",
             "Romaji": "MAGICAL DREAMERS ~Kaze to Hoshi to Nami to~"
           },
@@ -543,7 +492,6 @@
         {
           "titles": {
             "English": "The Sea of Eden",
-            "English (unofficial)": "Sea of Eden",
             "Japanese": "神の庭",
             "Romaji": "Kami no Niwa"
           },
@@ -553,7 +501,6 @@
         {
           "titles": {
             "English": "Chronopolis",
-            "English (unofficial)": "Chronopolis",
             "Japanese": "クロノポリス"
           },
           "number": 2,
@@ -562,7 +509,6 @@
         {
           "titles": {
             "English": "Fates -Divine Destiny-",
-            "English (unofficial)": "FATES ~God of Destiny~",
             "Japanese": "FATES ～運命の神～",
             "Romaji": "FATES ~Unmei no Kami~"
           },
@@ -572,7 +518,6 @@
         {
           "titles": {
             "English": "The El Nido Triangle",
-            "English (unofficial)": "Jellyfish Sea",
             "Japanese": "海月海",
             "Romaji": "Kuragekai"
           },
@@ -582,7 +527,6 @@
         {
           "titles": {
             "English": "Burning Orphanage",
-            "English (unofficial)": "Orphanage in Flames",
             "Japanese": "炎の孤児院",
             "Romaji": "Honoo no Kojiin"
           },
@@ -592,7 +536,6 @@
         {
           "titles": {
             "English": "The Girl Who Stole the Stars",
-            "English (unofficial)": "The Girl Who Stole the Stars",
             "Japanese": "星を盗んだ少女",
             "Romaji": "Hoshi wo Nusunda Shoujo"
           },
@@ -602,7 +545,6 @@
         {
           "titles": {
             "English": "Dreams of the Ages",
-            "English (unofficial)": "The Dream Time Dreams",
             "Japanese": "時のみる夢",
             "Romaji": "Toki no Miru Yume"
           },
@@ -612,7 +554,6 @@
         {
           "titles": {
             "English": "Dragon Prayers",
-            "English (unofficial)": "Prayer of the Dragons",
             "Japanese": "龍の祈り",
             "Romaji": "Ryuu no Inori"
           },
@@ -622,7 +563,6 @@
         {
           "titles": {
             "English": "Terra Tower",
-            "English (unofficial)": "Terra Tower",
             "Japanese": "星の塔",
             "Romaji": "Hoshi no Tou"
           },
@@ -632,7 +572,6 @@
         {
           "titles": {
             "English": "The Frozen Flame",
-            "English (unofficial)": "Frozen Flame",
             "Japanese": "凍てついた炎",
             "Romaji": "Itetsuita Honoo"
           },
@@ -642,7 +581,6 @@
         {
           "titles": {
             "English": "Dragon God",
-            "English (unofficial)": "Dragon God",
             "Japanese": "龍神",
             "Romaji": "Ryuujin"
           },
@@ -652,7 +590,6 @@
         {
           "titles": {
             "English": "The Darkness of Time",
-            "English (unofficial)": "In the Darkness of Time",
             "Japanese": "時の闇にて",
             "Romaji": "Toki no Yami nite"
           },
@@ -662,7 +599,6 @@
         {
           "titles": {
             "English": "Life -A Distant Promise-",
-            "English (unofficial)": "Life ~A Distant Promise~",
             "Japanese": "生命 ～遠い約束～",
             "Romaji": "Seimei ~Tooi Yakusoku~"
           },
@@ -672,7 +608,6 @@
         {
           "titles": {
             "English": "Reminisce -Enduring Thoughts-",
-            "English (unofficial)": "Reminiscence ~Undying Feelings~",
             "Japanese": "回想 ～消せない想い～",
             "Romaji": "Kaisou ~Kesenai Omoi~"
           },
@@ -682,7 +617,6 @@
         {
           "titles": {
             "English": "Radical Dreamers -Le Trésor Interdit-",
-            "English (unofficial)": "RADICAL DREAMERS ~Le Trésor Interdit~",
             "Japanese": "RADICAL DREAMERS ～盗めない宝石～",
             "Romaji": "RADICAL DREAMERS ~Nusumenai Houseki~"
           },
@@ -692,7 +626,6 @@
         {
           "titles": {
             "English": "Fragments of a Dream",
-            "English (unofficial)": "Fragments of a Dream",
             "Japanese": "夢のかけら",
             "Romaji": "Yume no Kakera"
           },

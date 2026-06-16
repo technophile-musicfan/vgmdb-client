@@ -637,7 +637,7 @@
   ],
   "credits": [
     {
-      "role": "Music Produced by",
+      "role": "producer",
       "artists": [
         {
           "names": {
@@ -647,10 +647,11 @@
           "id": 146,
           "link": "https://vgmdb.net/artist/146"
         }
-      ]
+      ],
+      "role_raw": "Music Produced by"
     },
     {
-      "role": "Music Composed by",
+      "role": "composer",
       "artists": [
         {
           "names": {
@@ -660,10 +661,11 @@
           "id": 146,
           "link": "https://vgmdb.net/artist/146"
         }
-      ]
+      ],
+      "role_raw": "Music Composed by"
     },
     {
-      "role": "Music Arranged by",
+      "role": "arranger",
       "artists": [
         {
           "names": {
@@ -673,10 +675,11 @@
           "id": 146,
           "link": "https://vgmdb.net/artist/146"
         }
-      ]
+      ],
+      "role_raw": "Music Arranged by"
     },
     {
-      "role": "Synthesizer Programmer",
+      "role": "performer",
       "artists": [
         {
           "names": {
@@ -686,10 +689,11 @@
           "id": 533,
           "link": "https://vgmdb.net/artist/533"
         }
-      ]
+      ],
+      "role_raw": "Synthesizer Programmer"
     },
     {
-      "role": "Sound Programmer",
+      "role": "other",
       "artists": [
         {
           "names": {
@@ -699,10 +703,11 @@
           "id": 11307,
           "link": "https://vgmdb.net/artist/11307"
         }
-      ]
+      ],
+      "role_raw": "Sound Programmer"
     },
     {
-      "role": "Recording Engineer",
+      "role": "engineer",
       "artists": [
         {
           "names": {
@@ -720,10 +725,11 @@
           "id": 3701,
           "link": "https://vgmdb.net/artist/3701"
         }
-      ]
+      ],
+      "role_raw": "Recording Engineer"
     },
     {
-      "role": "Mixing Engineer",
+      "role": "mixing",
       "artists": [
         {
           "names": {
@@ -741,10 +747,11 @@
           "id": 3701,
           "link": "https://vgmdb.net/artist/3701"
         }
-      ]
+      ],
+      "role_raw": "Mixing Engineer"
     },
     {
-      "role": "Mastered by",
+      "role": "mastering",
       "artists": [
         {
           "names": {
@@ -762,10 +769,11 @@
           "id": 12995,
           "link": "https://vgmdb.net/artist/12995"
         }
-      ]
+      ],
+      "role_raw": "Mastered by"
     },
     {
-      "role": "Art Direction",
+      "role": "artwork",
       "artists": [
         {
           "names": {
@@ -775,10 +783,11 @@
           "id": 37035,
           "link": "https://vgmdb.net/artist/37035"
         }
-      ]
+      ],
+      "role_raw": "Art Direction"
     },
     {
-      "role": "Design",
+      "role": "other",
       "artists": [
         {
           "names": {
@@ -788,10 +797,11 @@
           "id": 37035,
           "link": "https://vgmdb.net/artist/37035"
         }
-      ]
+      ],
+      "role_raw": "Design"
     },
     {
-      "role": "Directed by",
+      "role": "director",
       "artists": [
         {
           "names": {
@@ -809,10 +819,11 @@
           "id": 37037,
           "link": "https://vgmdb.net/artist/37037"
         }
-      ]
+      ],
+      "role_raw": "Directed by"
     },
     {
-      "role": "Sales Promotion",
+      "role": "other",
       "artists": [
         {
           "names": {
@@ -822,10 +833,11 @@
           "id": 37030,
           "link": "https://vgmdb.net/artist/37030"
         }
-      ]
+      ],
+      "role_raw": "Sales Promotion"
     },
     {
-      "role": "Production Coordinator",
+      "role": "producer",
       "artists": [
         {
           "names": {
@@ -835,10 +847,11 @@
           "id": 37038,
           "link": "https://vgmdb.net/artist/37038"
         }
-      ]
+      ],
+      "role_raw": "Production Coordinator"
     },
     {
-      "role": "Production Assistant",
+      "role": "producer",
       "artists": [
         {
           "names": {
@@ -848,10 +861,11 @@
           "id": 37039,
           "link": "https://vgmdb.net/artist/37039"
         }
-      ]
+      ],
+      "role_raw": "Production Assistant"
     },
     {
-      "role": "Production Manager",
+      "role": "producer",
       "artists": [
         {
           "names": {
@@ -861,10 +875,11 @@
           "id": 37040,
           "link": "https://vgmdb.net/artist/37040"
         }
-      ]
+      ],
+      "role_raw": "Production Manager"
     },
     {
-      "role": "Supervisor",
+      "role": "other",
       "artists": [
         {
           "names": {
@@ -882,10 +897,11 @@
           "id": 37033,
           "link": "https://vgmdb.net/artist/37033"
         }
-      ]
+      ],
+      "role_raw": "Supervisor"
     },
     {
-      "role": "Co-executive Producer",
+      "role": "producer",
       "artists": [
         {
           "names": {
@@ -895,10 +911,11 @@
           "id": 35973,
           "link": "https://vgmdb.net/artist/35973"
         }
-      ]
+      ],
+      "role_raw": "Co-executive Producer"
     },
     {
-      "role": "Executive Producer",
+      "role": "producer",
       "artists": [
         {
           "names": {
@@ -908,10 +925,11 @@
           "id": 77,
           "link": "https://vgmdb.net/artist/77"
         }
-      ]
+      ],
+      "role_raw": "Executive Producer"
     },
     {
-      "role": "Acoustic Guitar",
+      "role": "performer",
       "artists": [
         {
           "names": {
@@ -921,10 +939,11 @@
           "id": 3701,
           "link": "https://vgmdb.net/artist/3701"
         }
-      ]
+      ],
+      "role_raw": "Acoustic Guitar"
     },
     {
-      "role": "Bouzouki",
+      "role": "performer",
       "artists": [
         {
           "names": {
@@ -934,10 +953,11 @@
           "id": 3701,
           "link": "https://vgmdb.net/artist/3701"
         }
-      ]
+      ],
+      "role_raw": "Bouzouki"
     },
     {
-      "role": "Shinobue",
+      "role": "performer",
       "artists": [
         {
           "names": {
@@ -947,10 +967,11 @@
           "id": 4467,
           "link": "https://vgmdb.net/artist/4467"
         }
-      ]
+      ],
+      "role_raw": "Shinobue"
     },
     {
-      "role": "Shakuhachi",
+      "role": "performer",
       "artists": [
         {
           "names": {
@@ -960,10 +981,11 @@
           "id": 4467,
           "link": "https://vgmdb.net/artist/4467"
         }
-      ]
+      ],
+      "role_raw": "Shakuhachi"
     },
     {
-      "role": "Percussion",
+      "role": "performer",
       "artists": [
         {
           "names": {
@@ -973,10 +995,11 @@
           "id": 4469,
           "link": "https://vgmdb.net/artist/4469"
         }
-      ]
+      ],
+      "role_raw": "Percussion"
     },
     {
-      "role": "Electric Upright Bass",
+      "role": "performer",
       "artists": [
         {
           "names": {
@@ -986,10 +1009,11 @@
           "id": 3316,
           "link": "https://vgmdb.net/artist/3316"
         }
-      ]
+      ],
+      "role_raw": "Electric Upright Bass"
     },
     {
-      "role": "Keyboards",
+      "role": "performer",
       "artists": [
         {
           "names": {
@@ -999,10 +1023,11 @@
           "id": 146,
           "link": "https://vgmdb.net/artist/146"
         }
-      ]
+      ],
+      "role_raw": "Keyboards"
     },
     {
-      "role": "1st Violin",
+      "role": "performer",
       "artists": [
         {
           "names": {
@@ -1012,10 +1037,11 @@
           "id": 3839,
           "link": "https://vgmdb.net/artist/3839"
         }
-      ]
+      ],
+      "role_raw": "1st Violin"
     },
     {
-      "role": "2nd Violin",
+      "role": "performer",
       "artists": [
         {
           "names": {
@@ -1025,10 +1051,11 @@
           "id": 7948,
           "link": "https://vgmdb.net/artist/7948"
         }
-      ]
+      ],
+      "role_raw": "2nd Violin"
     },
     {
-      "role": "Viola",
+      "role": "performer",
       "artists": [
         {
           "names": {
@@ -1038,10 +1065,11 @@
           "id": 11682,
           "link": "https://vgmdb.net/artist/11682"
         }
-      ]
+      ],
+      "role_raw": "Viola"
     },
     {
-      "role": "Cello",
+      "role": "performer",
       "artists": [
         {
           "names": {
@@ -1051,10 +1079,11 @@
           "id": 7065,
           "link": "https://vgmdb.net/artist/7065"
         }
-      ]
+      ],
+      "role_raw": "Cello"
     },
     {
-      "role": "Assistant Engineer",
+      "role": "engineer",
       "artists": [
         {
           "names": {
@@ -1064,10 +1093,11 @@
           "id": 37042,
           "link": "https://vgmdb.net/artist/37042"
         }
-      ]
+      ],
+      "role_raw": "Assistant Engineer"
     },
     {
-      "role": "Recorded at",
+      "role": "engineer",
       "artists": [
         {
           "names": {
@@ -1076,10 +1106,11 @@
           "id": 35364,
           "link": "https://vgmdb.net/artist/35364"
         }
-      ]
+      ],
+      "role_raw": "Recorded at"
     },
     {
-      "role": "Recording Coordinator",
+      "role": "engineer",
       "artists": [
         {
           "names": {
@@ -1089,10 +1120,11 @@
           "id": 17472,
           "link": "https://vgmdb.net/artist/17472"
         }
-      ]
+      ],
+      "role_raw": "Recording Coordinator"
     },
     {
-      "role": "Words",
+      "role": "lyricist",
       "artists": [
         {
           "names": {
@@ -1102,10 +1134,11 @@
           "id": 202,
           "link": "https://vgmdb.net/artist/202"
         }
-      ]
+      ],
+      "role_raw": "Words"
     },
     {
-      "role": "Vocal",
+      "role": "vocalist",
       "artists": [
         {
           "names": {
@@ -1115,10 +1148,11 @@
           "id": 202,
           "link": "https://vgmdb.net/artist/202"
         }
-      ]
+      ],
+      "role_raw": "Vocal"
     },
     {
-      "role": "Special Thanks",
+      "role": "other",
       "artists": [
         {
           "names": {
@@ -1183,7 +1217,8 @@
           "id": null,
           "link": null
         }
-      ]
+      ],
+      "role_raw": "Special Thanks"
     }
   ],
   "notes": "Disc 1: ~Cause~\nDisc 2: ~Acceptance~\nDisc 3: ~Revolution~\n\n\nAll Music Composed, Arranged & Produced by: Yasunori Mitsuda\n\nSynthesizer Programmer: Ryo Yamazaki\nSound Programmer: Minoru Akao\nRecorded & Mixed by: Kenzi Nagashima\nMastered by: Ichiko Furukawa (Bernie Grundman MASTERING)\nHitomi Misaizu (Bernie Grundman MASTERING)\n\nArt Direction & Design: Keiichi Yamashita (LOTUS GRAPHICS)\n\nDirected by: Kishio Ozawa, Tsuyoshi Takemura\nSales Promotion: Saiko Fukui\n\nProduction Coordinator: Kosei Ito\nProduction Assistant: Emiko Funahashi\nProduction Manager: Keiji Hamada\nSupervisor: Susumu Arai, Hirofumi Yokota\nCo-Executive Producer: Kensuke Matsushita\nExecutive Producer: Nobuo Uematsu\n\nPresented by SQUARE ENIX CO. LTD.\n\n\nCHRONO CROSS ~Toki no Kizuato~\n\nComposed & Arranged by: Yasunori Mitsuda\n\nAcoustic Guitar & Bouzouki: Tomohiko Kira (ZABADAK)\nShinobue & Shakuhachi: Kinya Sogawa\nPercussion: Tamao Fujii\nElectric Upright Bass: Hitoshi Watanabe\nKeyboards: Yasunori Mitsuda\nStrings Quartet:\n 1st Violin: Hijiri Kuwano\n 2nd Violin: Motoko Fujiie\n Viola: Jun Yamamoto\n Cello: Haruki Matsuba\n\nRecorded & Mixed by: Kenzi Nagashima\nAssistant Engineer: Ken Hiranai (GREENBIRD)\nRecorded at STUDIO GREENBIRD\nRecording Coordinator: Kenichi Funayama\n\n\n\nRADICAL DREAMERS ~Nusumenai Houseki ~\nComposed & Arranged by: Yasunori Mitsuda\nWords by : Noriko Mitose (Kirche)\n\nAcoustic Guitar: Tomohiko Kira (ZABADAK)\nVocal: Noriko Mitose (Kirche)\n\nRecorded & Mixed by: Kenzi Nagashima\nAssistant Engineer: Ken Hiranai (GREENBIRD)\nRecorded at STUDIO GREENBIRD\nRecording Coordinator: Kenichi Funayama\n\n\nSpecial Thanks to:\nHiromichi Tanaka, Masato Kato, Keiji Kawamori,\nTakeharu Ishimoto, Satoshi Akamatsu, Hideaki Katayanagi (MAGNET),\nFumio Takano (TOUSHITSU), All Staffs of \"Project KID = CHRONO CROSS\"\n\nAdditional catalog number: TGCS-778~80"

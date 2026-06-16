@@ -80,7 +80,7 @@
   ],
   "credits": [
     {
-      "role": "Performer",
+      "role": "performer",
       "artists": [
         {
           "names": {
@@ -167,7 +167,8 @@
           "id": 9308,
           "link": "https://vgmdb.net/artist/9308"
         }
-      ]
+      ],
+      "role_raw": "Performer"
     }
   ],
   "notes": "Volume 6 in the drama series. Released at 秋葉原電気外祭り２.\n\nM01~M07 - Drama tracks\nM08 - Cast Comment\n\nCast:\n　八代修司： Kenji Nojima\n　御風里佳： Hikaru Isshiki\n　若宮明日香： Oto Agumi\n　泉水小夜： 祢乃照果\n　夕霧瑠璃子： Nazuna Gogyou\n　藤崎あさひ： Honoka Imuraya\n　月野舞： 沢野みりか\n　七海美菜： Kazane\n　御風りん： Minami Hokuto\n　瀬戸和也： 城樹翔\n　夕霧直輝： Takezou Koike"

@@ -144,7 +144,7 @@
   ],
   "credits": [
     {
-      "role": "Music",
+      "role": "other",
       "artists": [
         {
           "names": {
@@ -154,10 +154,11 @@
           "id": 9692,
           "link": "https://vgmdb.net/artist/9692"
         }
-      ]
+      ],
+      "role_raw": "Music"
     },
     {
-      "role": "Composer",
+      "role": "composer",
       "artists": [
         {
           "names": {
@@ -183,10 +184,11 @@
           "id": 5903,
           "link": "https://vgmdb.net/artist/5903"
         }
-      ]
+      ],
+      "role_raw": "Composer"
     },
     {
-      "role": "Arranger",
+      "role": "arranger",
       "artists": [
         {
           "names": {
@@ -212,10 +214,11 @@
           "id": 842,
           "link": "https://vgmdb.net/artist/842"
         }
-      ]
+      ],
+      "role_raw": "Arranger"
     },
     {
-      "role": "Lyricist",
+      "role": "lyricist",
       "artists": [
         {
           "names": {
@@ -233,10 +236,11 @@
           "id": 8473,
           "link": "https://vgmdb.net/artist/8473"
         }
-      ]
+      ],
+      "role_raw": "Lyricist"
     },
     {
-      "role": "Vocals",
+      "role": "vocalist",
       "artists": [
         {
           "names": {
@@ -246,10 +250,11 @@
           "id": 19344,
           "link": "https://vgmdb.net/artist/19344"
         }
-      ]
+      ],
+      "role_raw": "Vocals"
     },
     {
-      "role": "Performer",
+      "role": "performer",
       "artists": [
         {
           "names": {
@@ -258,10 +263,11 @@
           "id": null,
           "link": null
         }
-      ]
+      ],
+      "role_raw": "Performer"
     },
     {
-      "role": "Director",
+      "role": "director",
       "artists": [
         {
           "names": {
@@ -271,10 +277,11 @@
           "id": 41946,
           "link": "https://vgmdb.net/artist/41946"
         }
-      ]
+      ],
+      "role_raw": "Director"
     },
     {
-      "role": "Engineer",
+      "role": "engineer",
       "artists": [
         {
           "names": {
@@ -284,10 +291,11 @@
           "id": 11308,
           "link": "https://vgmdb.net/artist/11308"
         }
-      ]
+      ],
+      "role_raw": "Engineer"
     },
     {
-      "role": "Recording Studio",
+      "role": "engineer",
       "artists": [
         {
           "names": {
@@ -304,7 +312,8 @@
           "id": 33930,
           "link": "https://vgmdb.net/artist/33930"
         }
-      ]
+      ],
+      "role_raw": "Recording Studio"
     }
   ],
   "notes": "BGM Composed & Arranged by Ichiro Nitta\nBGM Performed by: B.B.BAND\n\nM-01 - Insert Song\nVocals: Yoko Oginome\nLyrics: Masumi Kawamura\nComposed by: Tetsuya Komuro\nArranged by: Nobuyuki Shimizu\n\nM-07 - Ending Theme\nVocals: Yoko Oginome\nLyrics: Keiko Aso\nComposed by: Masayoshi Takanaka\nArranged by: Masayoshi Takanaka\n\n\nSTAFF\nDirector: Hideaki Kaneko\nEngineer: Toshiyuki Yoshida\nRecording Studio: Victor Aoyama Studio, Onkio Studio\nRecording Date: 1986.10.7 ~ 11.6\nSIDE 1-2~6, SIDE 2-1~8=DIGITAL RECORDING   SIDE 1-1,7=ANALOG RECORDING"

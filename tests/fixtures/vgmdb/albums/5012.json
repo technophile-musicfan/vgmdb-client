@@ -61,7 +61,7 @@
   ],
   "credits": [
     {
-      "role": "Composer",
+      "role": "composer",
       "artists": [
         {
           "names": {
@@ -71,10 +71,11 @@
           "id": 334,
           "link": "https://vgmdb.net/artist/334"
         }
-      ]
+      ],
+      "role_raw": "Composer"
     },
     {
-      "role": "Arranger",
+      "role": "arranger",
       "artists": [
         {
           "names": {
@@ -84,7 +85,8 @@
           "id": 334,
           "link": "https://vgmdb.net/artist/334"
         }
-      ]
+      ],
+      "role_raw": "Arranger"
     }
   ],
   "notes": "Given away to those who pre-ordered the game in Japan."

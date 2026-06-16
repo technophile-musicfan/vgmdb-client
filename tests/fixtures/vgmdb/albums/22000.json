@@ -93,7 +93,7 @@
   ],
   "credits": [
     {
-      "role": "Composer",
+      "role": "composer",
       "artists": [
         {
           "names": {
@@ -118,10 +118,11 @@
           "id": 2891,
           "link": "https://vgmdb.net/artist/2891"
         }
-      ]
+      ],
+      "role_raw": "Composer"
     },
     {
-      "role": "Arranger",
+      "role": "arranger",
       "artists": [
         {
           "names": {
@@ -130,10 +131,11 @@
           "id": 15276,
           "link": "https://vgmdb.net/artist/15276"
         }
-      ]
+      ],
+      "role_raw": "Arranger"
     },
     {
-      "role": "Performer",
+      "role": "performer",
       "artists": [
         {
           "names": {
@@ -142,7 +144,8 @@
           "id": 15276,
           "link": "https://vgmdb.net/artist/15276"
         }
-      ]
+      ],
+      "role_raw": "Performer"
     }
   ],
   "notes": "Original compositions by: Kenichi Matsubara, Tomoya Tomita (01); Jeroen Tel (02, 07); Tim Follin, Geoff Follin (03); Yuichi Sakakura, Tomoya Tomita, Kouzou Nakamura (04); Hirokazu Tanaka (05); Naoki Kodaka, Nobuyuki Hara, Shinichi Seya (06); Nobuyuki Hara, Naoki Kodaka, Shinichi Seya (08); ??? (09); Kiyohiro Sada (10)"

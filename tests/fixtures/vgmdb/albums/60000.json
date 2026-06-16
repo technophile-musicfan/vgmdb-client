@@ -135,7 +135,7 @@
   ],
   "credits": [
     {
-      "role": "Music",
+      "role": "other",
       "artists": [
         {
           "names": {
@@ -144,10 +144,11 @@
           "id": 17306,
           "link": "https://vgmdb.net/artist/17306"
         }
-      ]
+      ],
+      "role_raw": "Music"
     },
     {
-      "role": "Vinyl Pre-mastering",
+      "role": "mastering",
       "artists": [
         {
           "names": {
@@ -156,7 +157,8 @@
           "id": 55484,
           "link": "https://vgmdb.net/artist/55484"
         }
-      ]
+      ],
+      "role_raw": "Vinyl Pre-mastering"
     }
   ],
   "notes": "\"Heart In Halves\" EP is a VINYL ONLY Limited Edition lyrical exploration and explosion of the ENTER THE GUNGEON Soundtrack.\nIncludes Steam code for Enter The Gungeon.\n\nSIDE I is covered end to end with chanting, fast rapping and belting about the legend and lore of Enter The Gungeon all atop various slices of the Soundtrack.\nSIDE II is all instrumental, including music from the Lead Lords Keep, Blackpowder Mines, Hollow, Forge, Title Track and more!\n\nVinyl pre-mastering: Joe Caithness"

@@ -47,6 +47,8 @@ def test_role_is_str_enum_with_expected_members() -> None:
         ("Conductor", Role.CONDUCTOR),
         ("Directed by", Role.DIRECTOR),
         ("Jacket Illustration", Role.ARTWORK),
+        ("Art Direction", Role.ARTWORK),
+        ("Recording Producer", Role.PRODUCER),
         ("Acoustic Guitar", Role.PERFORMER),
         ("1st Violin", Role.PERFORMER),
         ("Performed by", Role.PERFORMER),
@@ -54,6 +56,19 @@ def test_role_is_str_enum_with_expected_members() -> None:
 )
 def test_normalize_role_maps_known_labels(raw: str, expected: Role) -> None:
     assert normalize_role(raw) == expected
+
+
+@pytest.mark.parametrize(
+    "raw",
+    [
+        "Record Label",  # not a recording-engineer credit ("record" must not over-match)
+        "Concertmaster",  # contains "master" but is a performer role, not mastering
+        "Remix",  # contains "mix" but is not a mixing credit
+        "Special Thanks",
+    ],
+)
+def test_normalize_role_conservative_unknowns_map_to_other(raw: str) -> None:
+    assert normalize_role(raw) == Role.OTHER
 
 
 def test_normalize_role_is_case_insensitive() -> None:

@@ -32,8 +32,11 @@ class Role(str, Enum):
 
 
 # Ordered (keyword, role) rules; FIRST substring match wins on the casefolded label.
-# Order matters: more specific before generic (mastering/mixing before engineer;
-# lyric/words before performer; orchestrat before generic).
+# Order matters: more specific before generic. Keywords are deliberately specific
+# (e.g. "mastering"/"mastered", not bare "master" which also matches "concertmaster";
+# "recording", not bare "record" which also matches "record label"). Artwork rules
+# precede "direct" so "art direction" is not captured by the DIRECTOR rule; the
+# producer rule precedes recording so "recording producer" is a producer credit.
 _RULES: tuple[tuple[str, Role], ...] = (
     ("compos", Role.COMPOSER),
     ("orchestrat", Role.ARRANGER),
@@ -41,18 +44,21 @@ _RULES: tuple[tuple[str, Role], ...] = (
     ("lyric", Role.LYRICIST),
     ("words", Role.LYRICIST),
     ("written by", Role.LYRICIST),
-    ("master", Role.MASTERING),
-    ("mix", Role.MIXING),
-    ("record", Role.ENGINEER),
+    ("mastering", Role.MASTERING),
+    ("mastered", Role.MASTERING),
+    ("mixing", Role.MIXING),
+    ("mixed", Role.MIXING),
+    ("produc", Role.PRODUCER),
+    ("recording", Role.ENGINEER),
+    ("recorded", Role.ENGINEER),
     ("engineer", Role.ENGINEER),
     ("pro tools", Role.ENGINEER),
-    ("produc", Role.PRODUCER),
     ("conduct", Role.CONDUCTOR),
-    ("direct", Role.DIRECTOR),
     ("illustrat", Role.ARTWORK),
     ("jacket", Role.ARTWORK),
     ("art direction", Role.ARTWORK),
     ("artwork", Role.ARTWORK),
+    ("direct", Role.DIRECTOR),
     ("vocal", Role.VOCALIST),
     ("chorus", Role.VOCALIST),
     # instruments -> performer (the specific instrument stays in role_raw)

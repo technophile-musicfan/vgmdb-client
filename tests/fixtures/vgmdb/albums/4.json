@@ -837,7 +837,7 @@
       "role_raw": "Sales Promotion"
     },
     {
-      "role": "producer",
+      "role": "other",
       "artists": [
         {
           "names": {
@@ -851,7 +851,7 @@
       "role_raw": "Production Coordinator"
     },
     {
-      "role": "producer",
+      "role": "other",
       "artists": [
         {
           "names": {
@@ -865,7 +865,7 @@
       "role_raw": "Production Assistant"
     },
     {
-      "role": "producer",
+      "role": "other",
       "artists": [
         {
           "names": {
@@ -1110,7 +1110,7 @@
       "role_raw": "Recorded at"
     },
     {
-      "role": "engineer",
+      "role": "other",
       "artists": [
         {
           "names": {

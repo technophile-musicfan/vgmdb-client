@@ -1,0 +1,763 @@
+{
+  "id": 271,
+  "link": "https://vgmdb.net/album/271",
+  "titles": {
+    "English": "Perfect Dark Zero Original Soundtrack"
+  },
+  "catalog": "SE-2020-2",
+  "release_date": {
+    "year": 2005,
+    "month": 11,
+    "day": 8
+  },
+  "classification": "Original Soundtrack, Vocal",
+  "cover_small": "https://thumb-media.vgm.io/albums/17/271/271-fd58305f232d.jpg",
+  "cover_full": "https://medium-media.vgm.io/albums/17/271/271-fd58305f232d.jpg",
+  "discs": [
+    {
+      "number": 1,
+      "name": null,
+      "tracks": [
+        {
+          "titles": {
+            "English": "Perfect Dark Zero - Title"
+          },
+          "number": 1,
+          "length": "0:49"
+        },
+        {
+          "titles": {
+            "English": "Mission Select"
+          },
+          "number": 2,
+          "length": "1:17"
+        },
+        {
+          "titles": {
+            "English": "Combat Arena"
+          },
+          "number": 3,
+          "length": "1:33"
+        },
+        {
+          "titles": {
+            "English": "Mission Complete"
+          },
+          "number": 4,
+          "length": "1:28"
+        },
+        {
+          "titles": {
+            "English": "Pause Game"
+          },
+          "number": 5,
+          "length": "1:51"
+        },
+        {
+          "titles": {
+            "English": "Fail"
+          },
+          "number": 6,
+          "length": "2:37"
+        },
+        {
+          "titles": {
+            "English": "Datacore Demolition - Training"
+          },
+          "number": 7,
+          "length": "2:50"
+        },
+        {
+          "titles": {
+            "English": "Datacore Demolition - Camspy"
+          },
+          "number": 8,
+          "length": "2:38"
+        },
+        {
+          "titles": {
+            "English": "Datacore Demolition - Escape"
+          },
+          "number": 9,
+          "length": "3:30"
+        },
+        {
+          "titles": {
+            "English": "Glitter Girl (Evil Side)"
+          },
+          "number": 10,
+          "length": "3:46"
+        },
+        {
+          "titles": {
+            "English": "Limelight (Radio Edit)"
+          },
+          "number": 11,
+          "length": "4:55"
+        },
+        {
+          "titles": {
+            "English": "Subway Retrieval - Stealth"
+          },
+          "number": 12,
+          "length": "2:52"
+        },
+        {
+          "titles": {
+            "English": "Subway Retrieval - Action"
+          },
+          "number": 13,
+          "length": "2:40"
+        },
+        {
+          "titles": {
+            "English": "Subway Retrieval - Descent"
+          },
+          "number": 14,
+          "length": "1:54"
+        },
+        {
+          "titles": {
+            "English": "Rooftops Escape - Main Theme"
+          },
+          "number": 15,
+          "length": "4:13"
+        },
+        {
+          "titles": {
+            "English": "Mansion Infiltration - Stealth"
+          },
+          "number": 16,
+          "length": "2:18"
+        },
+        {
+          "titles": {
+            "English": "Mansion Infiltration - Action"
+          },
+          "number": 17,
+          "length": "2:23"
+        },
+        {
+          "titles": {
+            "English": "Deathmatch with Maihem!"
+          },
+          "number": 18,
+          "length": "1:37"
+        },
+        {
+          "titles": {
+            "English": "Laboratory Rescue - Stealth"
+          },
+          "number": 19,
+          "length": "3:10"
+        },
+        {
+          "titles": {
+            "English": "Laboratory Rescue - Action"
+          },
+          "number": 20,
+          "length": "2:49"
+        },
+        {
+          "titles": {
+            "English": "River Extraction - Lab Escape"
+          },
+          "number": 21,
+          "length": "3:29"
+        },
+        {
+          "titles": {
+            "English": "River Extraction - Riverchase"
+          },
+          "number": 22,
+          "length": "3:09"
+        },
+        {
+          "titles": {
+            "English": "Trinity Infiltration - Stealth"
+          },
+          "number": 23,
+          "length": "3:07"
+        },
+        {
+          "titles": {
+            "English": "Trinity Escape - Main Theme"
+          },
+          "number": 24,
+          "length": "3:41"
+        },
+        {
+          "titles": {
+            "English": "Temple Surveillance - Main Theme"
+          },
+          "number": 25,
+          "length": "2:52"
+        },
+        {
+          "titles": {
+            "English": "Arena Showdown - Main Theme"
+          },
+          "number": 26,
+          "length": "2:21"
+        },
+        {
+          "titles": {
+            "English": "Pearl Necklace"
+          },
+          "number": 27,
+          "length": "4:14"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "role": "composer",
+      "artists": [
+        {
+          "names": {
+            "English": "David Clynick"
+          },
+          "id": 3976,
+          "link": "https://vgmdb.net/artist/3976"
+        }
+      ],
+      "role_raw": "Original Music Composed by"
+    },
+    {
+      "role": "performer",
+      "artists": [
+        {
+          "names": {
+            "English": "David Clynick"
+          },
+          "id": 3976,
+          "link": "https://vgmdb.net/artist/3976"
+        },
+        {
+          "names": {
+            "English": "MorissonPoe"
+          },
+          "id": null,
+          "link": null
+        },
+        {
+          "names": {
+            "English": "Kepi and Kat"
+          },
+          "id": null,
+          "link": null
+        }
+      ],
+      "role_raw": "Performed by"
+    },
+    {
+      "role": "lyricist",
+      "artists": [
+        {
+          "names": {
+            "English": "Jean Morisson"
+          },
+          "id": null,
+          "link": null
+        }
+      ],
+      "role_raw": "Words"
+    },
+    {
+      "role": "composer",
+      "artists": [
+        {
+          "names": {
+            "English": "MorissonPoe"
+          },
+          "id": null,
+          "link": null
+        }
+      ],
+      "role_raw": "Music"
+    },
+    {
+      "role": "lyricist",
+      "artists": [
+        {
+          "names": {
+            "English": "Jeff Steinmetz"
+          },
+          "id": null,
+          "link": null
+        },
+        {
+          "names": {
+            "English": "Katrina Steinmetz"
+          },
+          "id": null,
+          "link": null
+        }
+      ],
+      "role_raw": "Written by"
+    },
+    {
+      "role": "producer",
+      "artists": [
+        {
+          "names": {
+            "English": "Nile Rodgers"
+          },
+          "id": 14833,
+          "link": "https://vgmdb.net/artist/14833"
+        }
+      ],
+      "role_raw": "Soundtrack Album Produced by"
+    },
+    {
+      "role": "producer",
+      "artists": [
+        {
+          "names": {
+            "English": "Alison Stroll"
+          },
+          "id": null,
+          "link": null
+        },
+        {
+          "names": {
+            "English": "Sandy Ting"
+          },
+          "id": null,
+          "link": null
+        }
+      ],
+      "role_raw": "Executive Album Producers"
+    },
+    {
+      "role": "mastering",
+      "artists": [
+        {
+          "names": {
+            "English": "Toby Mountain"
+          },
+          "id": 43306,
+          "link": "https://vgmdb.net/artist/43306"
+        },
+        {
+          "names": {
+            "English": "Richard Hilton"
+          },
+          "id": 43305,
+          "link": "https://vgmdb.net/artist/43305"
+        },
+        {
+          "names": {
+            "English": "Tim Young"
+          },
+          "id": 30191,
+          "link": "https://vgmdb.net/artist/30191"
+        }
+      ],
+      "role_raw": "Mastering Engineer"
+    },
+    {
+      "role": "mastering",
+      "artists": [
+        {
+          "names": {
+            "English": "Northeastern Digital"
+          },
+          "id": null,
+          "link": null
+        },
+        {
+          "names": {
+            "English": "Metropolis , London"
+          },
+          "id": null,
+          "link": null
+        }
+      ],
+      "role_raw": "Mastering Studio"
+    },
+    {
+      "role": "director",
+      "artists": [
+        {
+          "names": {
+            "English": "Robin Beanland"
+          },
+          "id": 505,
+          "link": "https://vgmdb.net/artist/505"
+        }
+      ],
+      "role_raw": "Audio Director"
+    },
+    {
+      "role": "producer",
+      "artists": [
+        {
+          "names": {
+            "English": "Andy Gray"
+          },
+          "id": null,
+          "link": null
+        },
+        {
+          "names": {
+            "English": "Dave Clynick"
+          },
+          "id": 3976,
+          "link": "https://vgmdb.net/artist/3976"
+        }
+      ],
+      "role_raw": "Produced by"
+    },
+    {
+      "role": "mixing",
+      "artists": [
+        {
+          "names": {
+            "English": "Andy Gray"
+          },
+          "id": null,
+          "link": null
+        },
+        {
+          "names": {
+            "English": "Dave Clynick"
+          },
+          "id": 3976,
+          "link": "https://vgmdb.net/artist/3976"
+        }
+      ],
+      "role_raw": "Mixed by"
+    },
+    {
+      "role": "mixing",
+      "artists": [
+        {
+          "names": {
+            "English": "Strongroom Studios , London"
+          },
+          "id": null,
+          "link": null
+        }
+      ],
+      "role_raw": "Mixed at"
+    },
+    {
+      "role": "engineer",
+      "artists": [
+        {
+          "names": {
+            "English": "Andy Gray"
+          },
+          "id": null,
+          "link": null
+        }
+      ],
+      "role_raw": "Engineered by"
+    },
+    {
+      "role": "engineer",
+      "artists": [
+        {
+          "names": {
+            "English": "Mr. Ian Dowling"
+          },
+          "id": null,
+          "link": null
+        }
+      ],
+      "role_raw": "Additional Pro Tools Editing"
+    },
+    {
+      "role": "other",
+      "artists": [
+        {
+          "names": {
+            "English": "Lee Schuneman"
+          },
+          "id": null,
+          "link": null
+        },
+        {
+          "names": {
+            "English": "Richard Cousins"
+          },
+          "id": null,
+          "link": null
+        },
+        {
+          "names": {
+            "English": "Chris Kimmell"
+          },
+          "id": null,
+          "link": null
+        }
+      ],
+      "role_raw": "Program Managers"
+    },
+    {
+      "role": "other",
+      "artists": [
+        {
+          "names": {
+            "English": "Lily Kohn"
+          },
+          "id": 72948,
+          "link": "https://vgmdb.net/artist/72948"
+        }
+      ],
+      "role_raw": "Music Licensing Manager"
+    },
+    {
+      "role": "other",
+      "artists": [
+        {
+          "names": {
+            "English": "Peter Becker"
+          },
+          "id": null,
+          "link": null
+        },
+        {
+          "names": {
+            "English": "Jama Cantrell"
+          },
+          "id": null,
+          "link": null
+        },
+        {
+          "names": {
+            "English": "Hubert Cheng"
+          },
+          "id": null,
+          "link": null
+        },
+        {
+          "names": {
+            "English": "Tianna Jones"
+          },
+          "id": null,
+          "link": null
+        },
+        {
+          "names": {
+            "English": "Sue Stickney"
+          },
+          "id": null,
+          "link": null
+        }
+      ],
+      "role_raw": "Legal Team"
+    },
+    {
+      "role": "other",
+      "artists": [
+        {
+          "names": {
+            "English": "Chris Tilston"
+          },
+          "id": null,
+          "link": null
+        },
+        {
+          "names": {
+            "English": "Kieran Connell"
+          },
+          "id": null,
+          "link": null
+        },
+        {
+          "names": {
+            "English": "Rich Cousins"
+          },
+          "id": null,
+          "link": null
+        },
+        {
+          "names": {
+            "English": "Wil Overton"
+          },
+          "id": null,
+          "link": null
+        },
+        {
+          "names": {
+            "English": "Lee Schuneman"
+          },
+          "id": null,
+          "link": null
+        },
+        {
+          "names": {
+            "English": "Chris Stamper"
+          },
+          "id": null,
+          "link": null
+        },
+        {
+          "names": {
+            "English": "Justin Pritchard"
+          },
+          "id": null,
+          "link": null
+        },
+        {
+          "names": {
+            "English": "our friends at Sumthing Else Musicworks Inc."
+          },
+          "id": null,
+          "link": null
+        },
+        {
+          "names": {
+            "English": "Jayne Krell"
+          },
+          "id": null,
+          "link": null
+        },
+        {
+          "names": {
+            "English": "Sal Farina"
+          },
+          "id": null,
+          "link": null
+        },
+        {
+          "names": {
+            "English": "Brian Quinn"
+          },
+          "id": null,
+          "link": null
+        },
+        {
+          "names": {
+            "English": "Tim Stamper"
+          },
+          "id": null,
+          "link": null
+        },
+        {
+          "names": {
+            "English": "The POZ Team"
+          },
+          "id": null,
+          "link": null
+        },
+        {
+          "names": {
+            "English": "Nile Rodgers"
+          },
+          "id": 14833,
+          "link": "https://vgmdb.net/artist/14833"
+        },
+        {
+          "names": {
+            "English": "Andy Uterano"
+          },
+          "id": null,
+          "link": null
+        }
+      ],
+      "role_raw": "Special Thanks"
+    },
+    {
+      "role": "other",
+      "artists": [
+        {
+          "names": {
+            "English": "John Dongelmans"
+          },
+          "id": null,
+          "link": null
+        },
+        {
+          "names": {
+            "English": "Jenn Ennis"
+          },
+          "id": null,
+          "link": null
+        },
+        {
+          "names": {
+            "English": "Nancy Figatner"
+          },
+          "id": null,
+          "link": null
+        },
+        {
+          "names": {
+            "English": "Jim Hawk"
+          },
+          "id": null,
+          "link": null
+        },
+        {
+          "names": {
+            "English": "Shane Kim"
+          },
+          "id": null,
+          "link": null
+        },
+        {
+          "names": {
+            "English": "Peter Kingsley"
+          },
+          "id": null,
+          "link": null
+        },
+        {
+          "names": {
+            "English": "Justin Kirby"
+          },
+          "id": null,
+          "link": null
+        },
+        {
+          "names": {
+            "English": "Ken Lobb"
+          },
+          "id": 18991,
+          "link": "https://vgmdb.net/artist/18991"
+        },
+        {
+          "names": {
+            "English": "Carol Marshall"
+          },
+          "id": null,
+          "link": null
+        },
+        {
+          "names": {
+            "English": "Phil Spencer"
+          },
+          "id": null,
+          "link": null
+        },
+        {
+          "names": {
+            "English": "Eric Trautmann"
+          },
+          "id": null,
+          "link": null
+        },
+        {
+          "names": {
+            "English": "Jin Veevaert"
+          },
+          "id": null,
+          "link": null
+        },
+        {
+          "names": {
+            "English": "Edward Ventura"
+          },
+          "id": null,
+          "link": null
+        }
+      ],
+      "role_raw": "Additional Thanks"
+    }
+  ],
+  "notes": "Also released on iTunes for $9.99.\n\n10. \"Glitter Girl (Evil Side)\"\nPerformed by MorissonPoe\nWords by Jean Morisson\nMusic by MorissonPoe\n\n11. \"Limelight (Radio Edit)\"\nPerformed by Kepi and Kat\nWritten by Jeff Steinmetz and Katrina Steinmetz\n\n27. \"Pearl Necklace\"\nPerformed by MorissonPoe\nWords by Jean Morisson\nMusic by MorissonPoe\n\nOriginal Music Composed and Performed by David Clynick\nSoundtrack Album Produced by Nile Rodgers\nExecutive Album Producers: Alison Stroll and Sandy Ting\nSoundtrack Album Mastered by Toby Mountain and Richard Hilton at Northeastern Digital\n\nAudio Director for Rare: Robin Beanland\nProduced and Mixed by Andy Gray and Dave Clynick at Strongroom Studios, London\nEngineered by Andy Gray\nAdditional Pro Tools Editing and Refreshments: Mr. Ian Dowling\nSoundtrack Mastered by Tim Young at Metropolis, London\nProgram managers for Rare: Lee Schuneman, Richard Cousins and Chris Kimmell\nMusic Licensing Manager for Microsoft Corporation: Lily Kohn\nMicrosoft Game Studios Legal Team: Peter Becker, Jama Cantrell, Hubert Cheng, Tianna Jones and Sue Stickney\nSpecial Thanks to Rare: Chris Tilston, Kieran Connell, Rich Cousins, Wil Overton, Lee Schuneman, Chris Stamper, Tim Stamper and The POZ Team\nSpecial Thanks to Justin Pritchard\n  and to our friends at Sumthing Else Musicworks Inc.: Jayne Krell, Sal Farina, Brian Quinn, Nile Rodgers and Andy Uterano\nAdditional Thanks to Microsoft Corporation: John Dongelmans, Jenn Ennis, Nancy Figatner, Jim Hawk, Shane Kim, Peter Kingsley, Justin Kirby, Ken Lobb, Carol Marshall, Phil Spencer, Eric Trautmann, Jin Veevaert and Edward Ventura"
+}

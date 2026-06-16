@@ -1,0 +1,111 @@
+{
+  "id": 18536,
+  "link": "https://vgmdb.net/album/18536",
+  "titles": {
+    "English": "EYES ON ME: featured in FINAL FANTASY VIII"
+  },
+  "catalog": "PRT-8429",
+  "release_date": {
+    "year": 1999,
+    "month": null,
+    "day": null
+  },
+  "classification": "Vocal, Remix",
+  "cover_small": null,
+  "cover_full": "https://medium-media.vgm.io/albums/63/18536/18536-1269454009.jpg",
+  "discs": [
+    {
+      "number": 1,
+      "name": null,
+      "tracks": [
+        {
+          "titles": {
+            "English": "Eyes On Me (12″ Almighty Mix)"
+          },
+          "number": 1,
+          "length": "7:04"
+        },
+        {
+          "titles": {
+            "English": "Eyes On Me (12″ Instrumental/PA)"
+          },
+          "number": 2,
+          "length": "7:04"
+        },
+        {
+          "titles": {
+            "English": "Eyes On Me (Original Version)"
+          },
+          "number": 3,
+          "length": "5:40"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "role": "composer",
+      "artists": [
+        {
+          "names": {
+            "English": "Nobuo Uematsu",
+            "Japanese": "植松伸夫"
+          },
+          "id": 77,
+          "link": "https://vgmdb.net/artist/77"
+        }
+      ],
+      "role_raw": "Composer"
+    },
+    {
+      "role": "arranger",
+      "artists": [
+        {
+          "names": {
+            "English": "Almighty Associates"
+          },
+          "id": null,
+          "link": null
+        },
+        {
+          "names": {
+            "English": "Shiro Hamaguchi",
+            "Japanese": "浜口史郎"
+          },
+          "id": 125,
+          "link": "https://vgmdb.net/artist/125"
+        }
+      ],
+      "role_raw": "Arranger"
+    },
+    {
+      "role": "performer",
+      "artists": [
+        {
+          "names": {
+            "English": "Faye Wong",
+            "Japanese": "王菲"
+          },
+          "id": 137,
+          "link": "https://vgmdb.net/artist/137"
+        }
+      ],
+      "role_raw": "Performer"
+    },
+    {
+      "role": "lyricist",
+      "artists": [
+        {
+          "names": {
+            "English": "Kako Someya",
+            "Japanese": "染谷和美"
+          },
+          "id": 11621,
+          "link": "https://vgmdb.net/artist/11621"
+        }
+      ],
+      "role_raw": "Lyricist"
+    }
+  ],
+  "notes": "Composition: Nobuo Uematsu (1~3)\nLyrics: Kako Someya\nArrangement: Almighty Associates (1~2), Shiro Hamaguchi (3)\nVocals: Faye Wong"
+}

@@ -1,0 +1,320 @@
+{
+  "id": 45000,
+  "link": "https://vgmdb.net/album/45000",
+  "titles": {
+    "English": "LEGEND OF BARIBARI PART II SUZUKA ORIGINAL SOUNDTRACK",
+    "Japanese": "バリバリ伝説 PARTII鈴鹿篇 オリジナル・サウンドトラック 音楽篇",
+    "Romaji": "Baribari Densetsu PART II Suzuka-hen Original Soundtrack Ongakuhen"
+  },
+  "catalog": "JBX-28003",
+  "release_date": {
+    "year": 1987,
+    "month": 1,
+    "day": 1
+  },
+  "classification": "Original Soundtrack, Vocal",
+  "cover_small": "https://thumb-media.vgm.io/albums/00/45000/45000-1395630743.jpg",
+  "cover_full": "https://medium-media.vgm.io/albums/00/45000/45000-1395630743.jpg",
+  "discs": [
+    {
+      "number": 1,
+      "name": null,
+      "tracks": [
+        {
+          "titles": {
+            "Romaji": "NONSTOP DANCER"
+          },
+          "number": 1,
+          "length": "4:28"
+        },
+        {
+          "titles": {
+            "Romaji": "TŌGE NO WINDING ROAD",
+            "Japanese": "峠のワインディングロード"
+          },
+          "number": 2,
+          "length": "2:30"
+        },
+        {
+          "titles": {
+            "Romaji": "LAST BATTLE",
+            "Japanese": "ラスト・バトル"
+          },
+          "number": 3,
+          "length": "0:59"
+        },
+        {
+          "titles": {
+            "Romaji": "OPENING THEME",
+            "Japanese": "オープニング・テーマ"
+          },
+          "number": 4,
+          "length": "2:40"
+        },
+        {
+          "titles": {
+            "Romaji": "UKI-UKI AI NO THEME",
+            "Japanese": "ウキウキ歩惟のテーマ"
+          },
+          "number": 5,
+          "length": "2:42"
+        },
+        {
+          "titles": {
+            "Romaji": "AKOGARE NO SUZUKA",
+            "Japanese": "憧れのスズカ"
+          },
+          "number": 6,
+          "length": "1:28"
+        },
+        {
+          "titles": {
+            "Romaji": "SLOPE NI TENKI-AME",
+            "Japanese": "スロープに天気雨"
+          },
+          "number": 7,
+          "length": "4:22"
+        },
+        {
+          "titles": {
+            "Romaji": "SUZUKA CIRCUIT",
+            "Japanese": "鈴鹿サーキット"
+          },
+          "number": 8,
+          "length": "1:30"
+        },
+        {
+          "titles": {
+            "Romaji": "SUZUKA TAIKYU 4H START",
+            "Japanese": "鈴鹿耐久4Hスタート"
+          },
+          "number": 9,
+          "length": "2:59"
+        },
+        {
+          "titles": {
+            "Romaji": "DECKE 16",
+            "Japanese": "ゼッケン16"
+          },
+          "number": 10,
+          "length": "2:32"
+        },
+        {
+          "titles": {
+            "Romaji": "MACHINE NO ATSUI TOKI",
+            "Japanese": "愛車の熱い瞬間"
+          },
+          "number": 11,
+          "length": "2:38"
+        },
+        {
+          "titles": {
+            "Romaji": "SŌZETSU NA YUSHO-ARASOI",
+            "Japanese": "淒絶な優勝争い"
+          },
+          "number": 12,
+          "length": "3:17"
+        },
+        {
+          "titles": {
+            "Romaji": "IRT YUSHO",
+            "Japanese": "IRT優勝"
+          },
+          "number": 13,
+          "length": "0:41"
+        },
+        {
+          "titles": {
+            "Romaji": "HIDEYOSHI NO SHI",
+            "Japanese": "秀吉の死"
+          },
+          "number": 14,
+          "length": "2:35"
+        },
+        {
+          "titles": {
+            "Romaji": "LEGEND OF BARIBARI",
+            "Japanese": "バリバリ伝説"
+          },
+          "number": 15,
+          "length": "2:41"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "role": "composer",
+      "artists": [
+        {
+          "names": {
+            "English": "Ichiro Nitta",
+            "Japanese": "新田一郎"
+          },
+          "id": 9692,
+          "link": "https://vgmdb.net/artist/9692"
+        }
+      ],
+      "role_raw": "Music"
+    },
+    {
+      "role": "composer",
+      "artists": [
+        {
+          "names": {
+            "English": "Ichiro Nitta",
+            "Japanese": "新田一郎"
+          },
+          "id": 9692,
+          "link": "https://vgmdb.net/artist/9692"
+        },
+        {
+          "names": {
+            "English": "Masayoshi Takanaka",
+            "Japanese": "高中正義"
+          },
+          "id": 10428,
+          "link": "https://vgmdb.net/artist/10428"
+        },
+        {
+          "names": {
+            "English": "Tetsuya Komuro",
+            "Japanese": "小室哲哉"
+          },
+          "id": 5903,
+          "link": "https://vgmdb.net/artist/5903"
+        }
+      ],
+      "role_raw": "Composer"
+    },
+    {
+      "role": "arranger",
+      "artists": [
+        {
+          "names": {
+            "English": "Ichiro Nitta",
+            "Japanese": "新田一郎"
+          },
+          "id": 9692,
+          "link": "https://vgmdb.net/artist/9692"
+        },
+        {
+          "names": {
+            "English": "Masayoshi Takanaka",
+            "Japanese": "高中正義"
+          },
+          "id": 10428,
+          "link": "https://vgmdb.net/artist/10428"
+        },
+        {
+          "names": {
+            "English": "Nobuyuki Shimizu",
+            "Japanese": "清水信之"
+          },
+          "id": 842,
+          "link": "https://vgmdb.net/artist/842"
+        }
+      ],
+      "role_raw": "Arranger"
+    },
+    {
+      "role": "lyricist",
+      "artists": [
+        {
+          "names": {
+            "English": "Masumi Kawamura",
+            "Japanese": "川村真澄"
+          },
+          "id": 6403,
+          "link": "https://vgmdb.net/artist/6403"
+        },
+        {
+          "names": {
+            "English": "Keiko Aso",
+            "Japanese": "麻生圭子"
+          },
+          "id": 8473,
+          "link": "https://vgmdb.net/artist/8473"
+        }
+      ],
+      "role_raw": "Lyricist"
+    },
+    {
+      "role": "vocalist",
+      "artists": [
+        {
+          "names": {
+            "English": "Yoko Oginome",
+            "Japanese": "荻野目洋子"
+          },
+          "id": 19344,
+          "link": "https://vgmdb.net/artist/19344"
+        }
+      ],
+      "role_raw": "Vocals"
+    },
+    {
+      "role": "performer",
+      "artists": [
+        {
+          "names": {
+            "English": "B.B. BAND"
+          },
+          "id": null,
+          "link": null
+        }
+      ],
+      "role_raw": "Performer"
+    },
+    {
+      "role": "director",
+      "artists": [
+        {
+          "names": {
+            "English": "Hideaki Kaneko",
+            "Japanese": "金子秀昭"
+          },
+          "id": 41946,
+          "link": "https://vgmdb.net/artist/41946"
+        }
+      ],
+      "role_raw": "Director"
+    },
+    {
+      "role": "engineer",
+      "artists": [
+        {
+          "names": {
+            "English": "Toshiyuki Yoshida",
+            "Japanese": "吉田俊之"
+          },
+          "id": 11308,
+          "link": "https://vgmdb.net/artist/11308"
+        }
+      ],
+      "role_raw": "Engineer"
+    },
+    {
+      "role": "engineer",
+      "artists": [
+        {
+          "names": {
+            "English": "VICTOR AOYAMA STUDIO",
+            "Japanese": "ビクター青山スタジオ"
+          },
+          "id": 33934,
+          "link": "https://vgmdb.net/artist/33934"
+        },
+        {
+          "names": {
+            "English": "ONKIO STUDIO"
+          },
+          "id": 33930,
+          "link": "https://vgmdb.net/artist/33930"
+        }
+      ],
+      "role_raw": "Recording Studio"
+    }
+  ],
+  "notes": "BGM Composed & Arranged by Ichiro Nitta\nBGM Performed by: B.B.BAND\n\nM-01 - Insert Song\nVocals: Yoko Oginome\nLyrics: Masumi Kawamura\nComposed by: Tetsuya Komuro\nArranged by: Nobuyuki Shimizu\n\nM-07 - Ending Theme\nVocals: Yoko Oginome\nLyrics: Keiko Aso\nComposed by: Masayoshi Takanaka\nArranged by: Masayoshi Takanaka\n\n\nSTAFF\nDirector: Hideaki Kaneko\nEngineer: Toshiyuki Yoshida\nRecording Studio: Victor Aoyama Studio, Onkio Studio\nRecording Date: 1986.10.7 ~ 11.6\nSIDE 1-2~6, SIDE 2-1~8=DIGITAL RECORDING   SIDE 1-1,7=ANALOG RECORDING"
+}

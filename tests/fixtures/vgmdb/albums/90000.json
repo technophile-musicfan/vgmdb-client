@@ -1,0 +1,366 @@
+{
+  "id": 90000,
+  "link": "https://vgmdb.net/album/90000",
+  "titles": {
+    "English": "Valhalla The Score [Limited Edition]"
+  },
+  "catalog": "PS 180615",
+  "release_date": {
+    "year": 2019,
+    "month": 8,
+    "day": 26
+  },
+  "classification": "Original Soundtrack, Prototype/Unused",
+  "cover_small": "https://thumb-media.vgm.io/albums/00/90000/90000-1567424728.jpg",
+  "cover_full": "https://medium-media.vgm.io/albums/00/90000/90000-1567424728.jpg",
+  "discs": [
+    {
+      "number": 1,
+      "name": null,
+      "tracks": [
+        {
+          "titles": {
+            "English": "Introduction"
+          },
+          "number": 1,
+          "length": "2:14"
+        },
+        {
+          "titles": {
+            "English": "Thor's Arrival"
+          },
+          "number": 2,
+          "length": "1:17"
+        },
+        {
+          "titles": {
+            "English": "Children's Theme"
+          },
+          "number": 3,
+          "length": "0:58"
+        },
+        {
+          "titles": {
+            "English": "Thor's Fishing Story"
+          },
+          "number": 4,
+          "length": "1:14"
+        },
+        {
+          "titles": {
+            "English": "Morning of Magic Hammer"
+          },
+          "number": 5,
+          "length": "1:21"
+        },
+        {
+          "titles": {
+            "English": "Farewell Theme"
+          },
+          "number": 6,
+          "length": "1:05"
+        },
+        {
+          "titles": {
+            "English": "The Rainbow Bridge"
+          },
+          "number": 7,
+          "length": "1:58"
+        },
+        {
+          "titles": {
+            "English": "At Thor's & Sif's Home"
+          },
+          "number": 8,
+          "length": "1:15"
+        },
+        {
+          "titles": {
+            "English": "Loke & Quark's Arrival"
+          },
+          "number": 9,
+          "length": "0:39"
+        },
+        {
+          "titles": {
+            "English": "Thor's Anger"
+          },
+          "number": 10,
+          "length": "1:07"
+        },
+        {
+          "titles": {
+            "English": "The Children in the Forest"
+          },
+          "number": 11,
+          "length": "2:22"
+        },
+        {
+          "titles": {
+            "English": "Building the Hut"
+          },
+          "number": 12,
+          "length": "4:50"
+        },
+        {
+          "titles": {
+            "English": "Whistling Theme"
+          },
+          "number": 13,
+          "length": "0:51"
+        },
+        {
+          "titles": {
+            "English": "The Giants' Theme"
+          },
+          "number": 14,
+          "length": "2:22"
+        },
+        {
+          "titles": {
+            "English": "The Eating Contest"
+          },
+          "number": 15,
+          "length": "2:29"
+        },
+        {
+          "titles": {
+            "English": "The Drinking Contest"
+          },
+          "number": 16,
+          "length": "0:32"
+        },
+        {
+          "titles": {
+            "English": "Thor and the Cat"
+          },
+          "number": 17,
+          "length": "1:20"
+        },
+        {
+          "titles": {
+            "English": "Elle's Dance"
+          },
+          "number": 18,
+          "length": "2:45"
+        },
+        {
+          "titles": {
+            "English": "Tjalfe & Thor"
+          },
+          "number": 19,
+          "length": "2:11"
+        },
+        {
+          "titles": {
+            "English": "Giants' Party"
+          },
+          "number": 20,
+          "length": "2:07"
+        },
+        {
+          "titles": {
+            "English": "Goodbye Quark"
+          },
+          "number": 21,
+          "length": "1:16"
+        },
+        {
+          "titles": {
+            "English": "Tjalfe Gets his Sword"
+          },
+          "number": 22,
+          "length": "1:44"
+        },
+        {
+          "titles": {
+            "English": "Valhalla Ending"
+          },
+          "number": 23,
+          "length": "5:17"
+        },
+        {
+          "titles": {
+            "English": "Valhalla Pilot (part 1)"
+          },
+          "number": 24,
+          "length": "2:21"
+        },
+        {
+          "titles": {
+            "English": "Valhalla Pilot (part 2)"
+          },
+          "number": 25,
+          "length": "1:04"
+        },
+        {
+          "titles": {
+            "English": "Valhalla Pilot (part 3)"
+          },
+          "number": 26,
+          "length": "2:09"
+        },
+        {
+          "titles": {
+            "English": "Whistling Theme (alternate version - demo)"
+          },
+          "number": 27,
+          "length": "0:50"
+        },
+        {
+          "titles": {
+            "English": "Thor's Theme (demo)"
+          },
+          "number": 28,
+          "length": "0:49"
+        },
+        {
+          "titles": {
+            "English": "Loke in Thor's House (demo)"
+          },
+          "number": 29,
+          "length": "0:42"
+        },
+        {
+          "titles": {
+            "English": "Giants' Theme (demo)"
+          },
+          "number": 30,
+          "length": "0:59"
+        },
+        {
+          "titles": {
+            "English": "Quark's Theme (demo)"
+          },
+          "number": 31,
+          "length": "0:56"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "role": "composer",
+      "artists": [
+        {
+          "names": {
+            "English": "Ron Goodwin"
+          },
+          "id": null,
+          "link": null
+        },
+        {
+          "names": {
+            "English": "Bent Hesselmann"
+          },
+          "id": null,
+          "link": null
+        },
+        {
+          "names": {
+            "English": "Børge Ring"
+          },
+          "id": null,
+          "link": null
+        },
+        {
+          "names": {
+            "English": "Jussi Adler Olsen"
+          },
+          "id": null,
+          "link": null
+        }
+      ],
+      "role_raw": "Composer"
+    },
+    {
+      "role": "arranger",
+      "artists": [
+        {
+          "names": {
+            "English": "Ron Goodwin"
+          },
+          "id": null,
+          "link": null
+        }
+      ],
+      "role_raw": "Arranger"
+    },
+    {
+      "role": "performer",
+      "artists": [
+        {
+          "names": {
+            "English": "Collegium Musicum"
+          },
+          "id": null,
+          "link": null
+        },
+        {
+          "names": {
+            "English": "Canzone Choir"
+          },
+          "id": null,
+          "link": null
+        },
+        {
+          "names": {
+            "English": "T. Clausen"
+          },
+          "id": null,
+          "link": null
+        },
+        {
+          "names": {
+            "English": "B. Stief"
+          },
+          "id": null,
+          "link": null
+        },
+        {
+          "names": {
+            "English": "K. Hovmark"
+          },
+          "id": null,
+          "link": null
+        },
+        {
+          "names": {
+            "English": "L. Gauvsted"
+          },
+          "id": null,
+          "link": null
+        },
+        {
+          "names": {
+            "English": "B. Roupe"
+          },
+          "id": null,
+          "link": null
+        },
+        {
+          "names": {
+            "English": "K. Knudsen"
+          },
+          "id": null,
+          "link": null
+        }
+      ],
+      "role_raw": "Performer"
+    },
+    {
+      "role": "conductor",
+      "artists": [
+        {
+          "names": {
+            "English": "Ron Goodwin"
+          },
+          "id": null,
+          "link": null
+        }
+      ],
+      "role_raw": "Conductor"
+    }
+  ],
+  "notes": "Music Composed by:\nRon Goodwin, Bent Hesselmann, Jussi Adler Olsen & Børge Ring\n\nPerformed by:\nCollegium Musicum & Canzone Choir\n\nConducted by Ron Goodwin\n\n'Giants' Party' performed by:\nT. Clausen, B. Stief, K. Hovmark, L. Gauvsted, B. Roupe & K. Knudsen\n\nRecorded in December 1985 at Easy Sound by N. E. Lund\n\nOriginal Mastering:\nW. Sherrer\n\n2019 Mastering:\nJan Eliasson - Audioplanet\n\nExecutive Producer:\nJesper Hansen\n\nValhalla Artwork and Logo by\nPeter Madsen\n\nAlbum Art Direction:\nJavier Burgos\n\nPlantSounds wishes to thank:\nHans Perk, Peter Madsen, Bent Hesselmann, Brian Iskov, Rod Howick, Jakob Stegelmann, Henrik Daldorph, Ron Shillingford & 'The Ron Goodwin Estate'\n\nBrian Iskov wishes to thank:\nPeter Madsen, Bent Hesselmann, Toke Lund Christensen, Aase Moresco, Jakob Stegelmann, Hans Perk & Phil Griffiths\n\n---\n\nM-01~12, 14~23, 27~31\nComposed by Ron Goodwin\n\nM-13\nComposed by Børge Ring\nArranged by Ron Goodwin\n\nM-24~26\nComposed by Bent Hesselmann & Jussi Adler Olsen\n\n---\n\nLimited Edition of 1500 copies"
+}

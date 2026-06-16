@@ -1,0 +1,4 @@
+# Captured vgmdb pages are byte-exact snapshots. Disable EOL/text normalization so the
+# committed bytes match exactly what the server returned and stay identical across OSes
+# (Windows checkouts must not rewrite LF -> CRLF). See README.md.
+*.html -text

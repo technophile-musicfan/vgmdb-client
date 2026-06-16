@@ -30,6 +30,7 @@ Documentation = "https://HOZHENWAI.github.io/vgmdb-client/"
 
 [dependency-groups]
 dev = [
+    "python-dotenv>=1.0",
     "pytest>=9.0.2",
     "pre-commit>=4.5.1",
     "tox-uv>=1.33.4",

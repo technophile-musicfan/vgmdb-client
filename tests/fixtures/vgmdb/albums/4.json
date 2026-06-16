@@ -1,0 +1,1225 @@
+{
+  "id": 4,
+  "link": "https://vgmdb.net/album/4",
+  "titles": {
+    "English": "CHRONO CROSS ORIGINAL SOUNDTRACK",
+    "Japanese": "クロノ・クロス オリジナル・サウンドトラック"
+  },
+  "catalog": "SSCX-10040",
+  "release_date": {
+    "year": 1999,
+    "month": 12,
+    "day": 18
+  },
+  "classification": "Original Soundtrack",
+  "cover_small": "https://thumb-media.vgm.io/albums/40/4/4-1238216231.jpg",
+  "cover_full": "https://medium-media.vgm.io/albums/40/4/4-1238216231.jpg",
+  "discs": [
+    {
+      "number": 1,
+      "name": "Disc 1 [TGCS-778]",
+      "tracks": [
+        {
+          "titles": {
+            "English": "Chrono Cross -Scars of Time-",
+            "Japanese": "CHRONO CROSS ～時の傷跡～",
+            "Romaji": "CHRONO CROSS ~Toki no Kizuato~"
+          },
+          "number": 1,
+          "length": "2:29"
+        },
+        {
+          "titles": {
+            "English": "The Brink of Death",
+            "Japanese": "死線",
+            "Romaji": "Shisen"
+          },
+          "number": 2,
+          "length": "2:38"
+        },
+        {
+          "titles": {
+            "English": "Arni (Home World)",
+            "Japanese": "アルニ村 ホーム",
+            "Romaji": "Arni Mura: Home"
+          },
+          "number": 3,
+          "length": "3:23"
+        },
+        {
+          "titles": {
+            "English": "Plains of Time (Home World)",
+            "Japanese": "時の草原 ホーム・ワールド",
+            "Romaji": "Toki no Sougen: Home World"
+          },
+          "number": 4,
+          "length": "3:26"
+        },
+        {
+          "titles": {
+            "English": "Dances with Lizards",
+            "Japanese": "トカゲと踊れ",
+            "Romaji": "Tokage to Odore"
+          },
+          "number": 5,
+          "length": "2:41"
+        },
+        {
+          "titles": {
+            "English": "Reminisce -Enduring Thoughts-",
+            "Japanese": "回想 ～消せない想い～",
+            "Romaji": "Kaisou ~Kesenai Omoi~"
+          },
+          "number": 6,
+          "length": "3:25"
+        },
+        {
+          "titles": {
+            "English": "Shore of Dreams (Another World)",
+            "Japanese": "夢の岸辺に アナザー・ワールド",
+            "Romaji": "Yume no Kishibe ni: Another World"
+          },
+          "number": 7,
+          "length": "2:22"
+        },
+        {
+          "titles": {
+            "English": "Arni (Another World)",
+            "Japanese": "アルニ村 アナザー",
+            "Romaji": "Arni Mura: Another"
+          },
+          "number": 8,
+          "length": "3:32"
+        },
+        {
+          "titles": {
+            "English": "Fleeting Thoughts",
+            "Japanese": "うたかたの想い",
+            "Romaji": "Utakata no Omoi"
+          },
+          "number": 9,
+          "length": "2:51"
+        },
+        {
+          "titles": {
+            "English": "Missing Piece",
+            "Japanese": "失われた欠片",
+            "Romaji": "Ushinawareta Kakera"
+          },
+          "number": 10,
+          "length": "3:12"
+        },
+        {
+          "titles": {
+            "English": "Fossil Valley",
+            "Japanese": "溺れ谷",
+            "Romaji": "Obore Tani"
+          },
+          "number": 11,
+          "length": "2:00"
+        },
+        {
+          "titles": {
+            "English": "Termina (Another World)",
+            "Japanese": "テルミナ アナザー",
+            "Romaji": "Termina: Another"
+          },
+          "number": 12,
+          "length": "2:43"
+        },
+        {
+          "titles": {
+            "English": "The Departed Ones",
+            "Japanese": "去りにし者ども",
+            "Romaji": "Sari ni Shi Monodomo"
+          },
+          "number": 13,
+          "length": "3:43"
+        },
+        {
+          "titles": {
+            "English": "Shadow Forest",
+            "Japanese": "影切りの森",
+            "Romaji": "Kage Kiri no Mori"
+          },
+          "number": 14,
+          "length": "3:25"
+        },
+        {
+          "titles": {
+            "English": "Viper Manor",
+            "Japanese": "蛇骨館",
+            "Romaji": "Jakotsukan"
+          },
+          "number": 15,
+          "length": "2:54"
+        },
+        {
+          "titles": {
+            "English": "Victory -Boon of Spring-",
+            "Japanese": "勝利 ～春の贈り物～",
+            "Romaji": "Shouri ~Haru no Okurimono~"
+          },
+          "number": 16,
+          "length": "0:56"
+        },
+        {
+          "titles": {
+            "English": "Lost in Time",
+            "Japanese": "時の迷い子",
+            "Romaji": "Toki no Maigo"
+          },
+          "number": 17,
+          "length": "3:24"
+        },
+        {
+          "titles": {
+            "English": "Guldove (Another World)",
+            "Japanese": "ガルドーブ アナザー",
+            "Romaji": "Guldove: Another"
+          },
+          "number": 18,
+          "length": "3:26"
+        },
+        {
+          "titles": {
+            "English": "Hydra Marshes",
+            "Japanese": "ヒドラの沼",
+            "Romaji": "Hydra no Numa"
+          },
+          "number": 19,
+          "length": "3:10"
+        },
+        {
+          "titles": {
+            "English": "Fragments of a Dream",
+            "Japanese": "夢のかけら",
+            "Romaji": "Yume no Kakera"
+          },
+          "number": 20,
+          "length": "1:35"
+        },
+        {
+          "titles": {
+            "English": "Sailing (Another World)",
+            "Japanese": "航海 アナザー・ワールド",
+            "Romaji": "Koukai: Another World"
+          },
+          "number": 21,
+          "length": "2:32"
+        },
+        {
+          "titles": {
+            "English": "Ghost Ship",
+            "Japanese": "幽霊船",
+            "Romaji": "Yuureisen"
+          },
+          "number": 22,
+          "length": "2:00"
+        },
+        {
+          "titles": {
+            "English": "Mount Pyre",
+            "Japanese": "死炎山",
+            "Romaji": "Shienzan"
+          },
+          "number": 23,
+          "length": "3:39"
+        },
+        {
+          "titles": {
+            "English": "Fort Dragonia",
+            "Japanese": "古龍の砦",
+            "Romaji": "Koryuu no Toride"
+          },
+          "number": 24,
+          "length": "3:54"
+        },
+        {
+          "titles": {
+            "English": "Sorrow",
+            "Japanese": "悲愴",
+            "Romaji": "Hisou"
+          },
+          "number": 25,
+          "length": "0:20"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "name": "Disc 2 [TGCS-779]",
+      "tracks": [
+        {
+          "titles": {
+            "English": "Prelude to a Dream",
+            "Japanese": "夢のはじまり",
+            "Romaji": "Yume no Hajimari"
+          },
+          "number": 1,
+          "length": "0:42"
+        },
+        {
+          "titles": {
+            "English": "The Bend of Time",
+            "Japanese": "次元の狭間",
+            "Romaji": "Jigen no Hazama"
+          },
+          "number": 2,
+          "length": "2:47"
+        },
+        {
+          "titles": {
+            "English": "Termina (Home World)",
+            "Japanese": "テルミナ ホーム",
+            "Romaji": "Termina: Home"
+          },
+          "number": 3,
+          "length": "3:38"
+        },
+        {
+          "titles": {
+            "English": "Dragoons",
+            "Japanese": "龍の騎士",
+            "Romaji": "Ryuu no Kishi"
+          },
+          "number": 4,
+          "length": "3:01"
+        },
+        {
+          "titles": {
+            "English": "Sailing (Home World)",
+            "Japanese": "航海 ホーム・ワールド",
+            "Romaji": "Koukai: Home World"
+          },
+          "number": 5,
+          "length": "3:22"
+        },
+        {
+          "titles": {
+            "English": "Guldove (Home World)",
+            "Japanese": "ガルドーブ ホーム",
+            "Romaji": "Guldove: Home"
+          },
+          "number": 6,
+          "length": "3:58"
+        },
+        {
+          "titles": {
+            "English": "Marbule (Home World)",
+            "Japanese": "マブーレ ホーム",
+            "Romaji": "Marbule: Home"
+          },
+          "number": 7,
+          "length": "2:55"
+        },
+        {
+          "titles": {
+            "English": "Zelbess",
+            "Japanese": "ゼルベス"
+          },
+          "number": 8,
+          "length": "2:42"
+        },
+        {
+          "titles": {
+            "English": "Miraculous & Mystifying",
+            "Japanese": "天晴驚愕大奇術団",
+            "Romaji": "Appare Kyougaku Daikijutsudan"
+          },
+          "number": 9,
+          "length": "1:31"
+        },
+        {
+          "titles": {
+            "English": "Slumber",
+            "Japanese": "まどろみ",
+            "Romaji": "Madoromi"
+          },
+          "number": 10,
+          "length": "0:13"
+        },
+        {
+          "titles": {
+            "English": "Chronomantic",
+            "Japanese": "クロノマンティーク",
+            "Romaji": "Chronomantique"
+          },
+          "number": 11,
+          "length": "3:18"
+        },
+        {
+          "titles": {
+            "English": "Peril",
+            "Japanese": "窮地",
+            "Romaji": "Kyuuchi"
+          },
+          "number": 12,
+          "length": "2:47"
+        },
+        {
+          "titles": {
+            "English": "Paradise",
+            "Japanese": "楽天",
+            "Romaji": "Rakuten"
+          },
+          "number": 13,
+          "length": "2:19"
+        },
+        {
+          "titles": {
+            "English": "Isle of the Damned",
+            "Japanese": "亡者の島",
+            "Romaji": "Mouja no Shima"
+          },
+          "number": 14,
+          "length": "3:11"
+        },
+        {
+          "titles": {
+            "English": "The Dead Sea -Tower of Geddon-",
+            "Japanese": "死海・滅びの塔",
+            "Romaji": "Shikai / Horobi no Tou"
+          },
+          "number": 15,
+          "length": "3:10"
+        },
+        {
+          "titles": {
+            "English": "Bound by Fate",
+            "Japanese": "運命に囚われし者たち",
+            "Romaji": "Unmei ni Torawareshi Monotachi"
+          },
+          "number": 16,
+          "length": "3:26"
+        },
+        {
+          "titles": {
+            "English": "Light Cast on the Lost",
+            "Japanese": "あらかじめ失われし、ともしび",
+            "Romaji": "Arakajime Ushinawareshi, Tomoshibi"
+          },
+          "number": 17,
+          "length": "0:32"
+        },
+        {
+          "titles": {
+            "English": "Earth Dragon Isle",
+            "Japanese": "土龍の島",
+            "Romaji": "Doryuu no Shima"
+          },
+          "number": 18,
+          "length": "3:16"
+        },
+        {
+          "titles": {
+            "English": "Gaea's Navel",
+            "Japanese": "世界のへそ",
+            "Romaji": "Sekai no Heso"
+          },
+          "number": 19,
+          "length": "2:59"
+        },
+        {
+          "titles": {
+            "English": "Whirlwind",
+            "Japanese": "疾風",
+            "Romaji": "Shippuu"
+          },
+          "number": 20,
+          "length": "2:00"
+        },
+        {
+          "titles": {
+            "English": "Victory -Call of Summer-",
+            "Japanese": "勝利 ～夏の呼び声～",
+            "Romaji": "Shouri ~Natsu no Yobigoe~"
+          },
+          "number": 21,
+          "length": "0:53"
+        },
+        {
+          "titles": {
+            "English": "Marbule (Another World)",
+            "Japanese": "マブーレ アナザー",
+            "Romaji": "Marbule: Another"
+          },
+          "number": 22,
+          "length": "3:00"
+        },
+        {
+          "titles": {
+            "English": "Fairy Magic",
+            "Japanese": "妖精のくれた魔法",
+            "Romaji": "Yousei no Kureta Mahou"
+          },
+          "number": 23,
+          "length": "0:13"
+        },
+        {
+          "titles": {
+            "English": "Étude 1",
+            "Japanese": "エチュード1",
+            "Romaji": "Etude 1"
+          },
+          "number": 24,
+          "length": "0:12"
+        },
+        {
+          "titles": {
+            "English": "Étude 2",
+            "Japanese": "エチュード2",
+            "Romaji": "Etude 2"
+          },
+          "number": 25,
+          "length": "0:14"
+        },
+        {
+          "titles": {
+            "English": "Magical Dreamers -Wind, Stars, and Waves-",
+            "Japanese": "MAGICAL DREAMERS ～風と星と波と～",
+            "Romaji": "MAGICAL DREAMERS ~Kaze to Hoshi to Nami to~"
+          },
+          "number": 26,
+          "length": "3:31"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "name": "Disc 3 [TGCS-780]",
+      "tracks": [
+        {
+          "titles": {
+            "English": "The Sea of Eden",
+            "Japanese": "神の庭",
+            "Romaji": "Kami no Niwa"
+          },
+          "number": 1,
+          "length": "2:45"
+        },
+        {
+          "titles": {
+            "English": "Chronopolis",
+            "Japanese": "クロノポリス"
+          },
+          "number": 2,
+          "length": "4:12"
+        },
+        {
+          "titles": {
+            "English": "Fates -Divine Destiny-",
+            "Japanese": "FATES ～運命の神～",
+            "Romaji": "FATES ~Unmei no Kami~"
+          },
+          "number": 3,
+          "length": "3:10"
+        },
+        {
+          "titles": {
+            "English": "The El Nido Triangle",
+            "Japanese": "海月海",
+            "Romaji": "Kuragekai"
+          },
+          "number": 4,
+          "length": "2:55"
+        },
+        {
+          "titles": {
+            "English": "Burning Orphanage",
+            "Japanese": "炎の孤児院",
+            "Romaji": "Honoo no Kojiin"
+          },
+          "number": 5,
+          "length": "2:44"
+        },
+        {
+          "titles": {
+            "English": "The Girl Who Stole the Stars",
+            "Japanese": "星を盗んだ少女",
+            "Romaji": "Hoshi wo Nusunda Shoujo"
+          },
+          "number": 6,
+          "length": "3:48"
+        },
+        {
+          "titles": {
+            "English": "Dreams of the Ages",
+            "Japanese": "時のみる夢",
+            "Romaji": "Toki no Miru Yume"
+          },
+          "number": 7,
+          "length": "4:01"
+        },
+        {
+          "titles": {
+            "English": "Dragon Prayers",
+            "Japanese": "龍の祈り",
+            "Romaji": "Ryuu no Inori"
+          },
+          "number": 8,
+          "length": "5:37"
+        },
+        {
+          "titles": {
+            "English": "Terra Tower",
+            "Japanese": "星の塔",
+            "Romaji": "Hoshi no Tou"
+          },
+          "number": 9,
+          "length": "2:26"
+        },
+        {
+          "titles": {
+            "English": "The Frozen Flame",
+            "Japanese": "凍てついた炎",
+            "Romaji": "Itetsuita Honoo"
+          },
+          "number": 10,
+          "length": "2:54"
+        },
+        {
+          "titles": {
+            "English": "Dragon God",
+            "Japanese": "龍神",
+            "Romaji": "Ryuujin"
+          },
+          "number": 11,
+          "length": "3:21"
+        },
+        {
+          "titles": {
+            "English": "The Darkness of Time",
+            "Japanese": "時の闇にて",
+            "Romaji": "Toki no Yami nite"
+          },
+          "number": 12,
+          "length": "0:42"
+        },
+        {
+          "titles": {
+            "English": "Life -A Distant Promise-",
+            "Japanese": "生命 ～遠い約束～",
+            "Romaji": "Seimei ~Tooi Yakusoku~"
+          },
+          "number": 13,
+          "length": "6:32"
+        },
+        {
+          "titles": {
+            "English": "Reminisce -Enduring Thoughts-",
+            "Japanese": "回想 ～消せない想い～",
+            "Romaji": "Kaisou ~Kesenai Omoi~"
+          },
+          "number": 14,
+          "length": "1:39"
+        },
+        {
+          "titles": {
+            "English": "Radical Dreamers -Le Trésor Interdit-",
+            "Japanese": "RADICAL DREAMERS ～盗めない宝石～",
+            "Romaji": "RADICAL DREAMERS ~Nusumenai Houseki~"
+          },
+          "number": 15,
+          "length": "4:35"
+        },
+        {
+          "titles": {
+            "English": "Fragments of a Dream",
+            "Japanese": "夢のかけら",
+            "Romaji": "Yume no Kakera"
+          },
+          "number": 16,
+          "length": "2:00"
+        }
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "role": "producer",
+      "artists": [
+        {
+          "names": {
+            "English": "Yasunori Mitsuda",
+            "Japanese": "光田康典"
+          },
+          "id": 146,
+          "link": "https://vgmdb.net/artist/146"
+        }
+      ],
+      "role_raw": "Music Produced by"
+    },
+    {
+      "role": "composer",
+      "artists": [
+        {
+          "names": {
+            "English": "Yasunori Mitsuda",
+            "Japanese": "光田康典"
+          },
+          "id": 146,
+          "link": "https://vgmdb.net/artist/146"
+        }
+      ],
+      "role_raw": "Music Composed by"
+    },
+    {
+      "role": "arranger",
+      "artists": [
+        {
+          "names": {
+            "English": "Yasunori Mitsuda",
+            "Japanese": "光田康典"
+          },
+          "id": 146,
+          "link": "https://vgmdb.net/artist/146"
+        }
+      ],
+      "role_raw": "Music Arranged by"
+    },
+    {
+      "role": "performer",
+      "artists": [
+        {
+          "names": {
+            "English": "Ryo Yamazaki",
+            "Japanese": "山崎良"
+          },
+          "id": 533,
+          "link": "https://vgmdb.net/artist/533"
+        }
+      ],
+      "role_raw": "Synthesizer Programmer"
+    },
+    {
+      "role": "other",
+      "artists": [
+        {
+          "names": {
+            "English": "Minoru Akao",
+            "Japanese": "赤尾実"
+          },
+          "id": 11307,
+          "link": "https://vgmdb.net/artist/11307"
+        }
+      ],
+      "role_raw": "Sound Programmer"
+    },
+    {
+      "role": "engineer",
+      "artists": [
+        {
+          "names": {
+            "English": "Kenzi Nagashima",
+            "Japanese": "長島賢史"
+          },
+          "id": 11309,
+          "link": "https://vgmdb.net/artist/11309"
+        },
+        {
+          "names": {
+            "English": "Tomohiko Kira",
+            "Japanese": "吉良知彦"
+          },
+          "id": 3701,
+          "link": "https://vgmdb.net/artist/3701"
+        }
+      ],
+      "role_raw": "Recording Engineer"
+    },
+    {
+      "role": "mixing",
+      "artists": [
+        {
+          "names": {
+            "English": "Kenzi Nagashima",
+            "Japanese": "長島賢史"
+          },
+          "id": 11309,
+          "link": "https://vgmdb.net/artist/11309"
+        },
+        {
+          "names": {
+            "English": "Tomohiko Kira",
+            "Japanese": "吉良知彦"
+          },
+          "id": 3701,
+          "link": "https://vgmdb.net/artist/3701"
+        }
+      ],
+      "role_raw": "Mixing Engineer"
+    },
+    {
+      "role": "mastering",
+      "artists": [
+        {
+          "names": {
+            "English": "Ichiko Furukawa",
+            "Japanese": "古川伊知子"
+          },
+          "id": 12996,
+          "link": "https://vgmdb.net/artist/12996"
+        },
+        {
+          "names": {
+            "English": "Hitomi Misaizu",
+            "Japanese": "美斉津仁美"
+          },
+          "id": 12995,
+          "link": "https://vgmdb.net/artist/12995"
+        }
+      ],
+      "role_raw": "Mastered by"
+    },
+    {
+      "role": "artwork",
+      "artists": [
+        {
+          "names": {
+            "English": "Keiichi Yamashita",
+            "Japanese": "山下慶一"
+          },
+          "id": 37035,
+          "link": "https://vgmdb.net/artist/37035"
+        }
+      ],
+      "role_raw": "Art Direction"
+    },
+    {
+      "role": "other",
+      "artists": [
+        {
+          "names": {
+            "English": "Keiichi Yamashita",
+            "Japanese": "山下慶一"
+          },
+          "id": 37035,
+          "link": "https://vgmdb.net/artist/37035"
+        }
+      ],
+      "role_raw": "Design"
+    },
+    {
+      "role": "director",
+      "artists": [
+        {
+          "names": {
+            "English": "Kishio Ozawa",
+            "Japanese": "小澤貴司夫"
+          },
+          "id": 37036,
+          "link": "https://vgmdb.net/artist/37036"
+        },
+        {
+          "names": {
+            "English": "Tsuyoshi Takemura",
+            "Japanese": "竹村剛史"
+          },
+          "id": 37037,
+          "link": "https://vgmdb.net/artist/37037"
+        }
+      ],
+      "role_raw": "Directed by"
+    },
+    {
+      "role": "other",
+      "artists": [
+        {
+          "names": {
+            "English": "Saiko Fukui",
+            "Japanese": "福井彩子"
+          },
+          "id": 37030,
+          "link": "https://vgmdb.net/artist/37030"
+        }
+      ],
+      "role_raw": "Sales Promotion"
+    },
+    {
+      "role": "other",
+      "artists": [
+        {
+          "names": {
+            "English": "Kosei Ito",
+            "Japanese": "伊藤幸正"
+          },
+          "id": 37038,
+          "link": "https://vgmdb.net/artist/37038"
+        }
+      ],
+      "role_raw": "Production Coordinator"
+    },
+    {
+      "role": "other",
+      "artists": [
+        {
+          "names": {
+            "English": "Emiko Funahashi",
+            "Japanese": "船橋恵美子"
+          },
+          "id": 37039,
+          "link": "https://vgmdb.net/artist/37039"
+        }
+      ],
+      "role_raw": "Production Assistant"
+    },
+    {
+      "role": "other",
+      "artists": [
+        {
+          "names": {
+            "English": "Keiji Hamada",
+            "Japanese": "濱田啓路"
+          },
+          "id": 37040,
+          "link": "https://vgmdb.net/artist/37040"
+        }
+      ],
+      "role_raw": "Production Manager"
+    },
+    {
+      "role": "other",
+      "artists": [
+        {
+          "names": {
+            "English": "Susumu Arai",
+            "Japanese": "荒井進"
+          },
+          "id": 37041,
+          "link": "https://vgmdb.net/artist/37041"
+        },
+        {
+          "names": {
+            "English": "Hirofumi Yokota",
+            "Japanese": "横田洋文"
+          },
+          "id": 37033,
+          "link": "https://vgmdb.net/artist/37033"
+        }
+      ],
+      "role_raw": "Supervisor"
+    },
+    {
+      "role": "producer",
+      "artists": [
+        {
+          "names": {
+            "English": "Kensuke Matsushita",
+            "Japanese": "松下謙介"
+          },
+          "id": 35973,
+          "link": "https://vgmdb.net/artist/35973"
+        }
+      ],
+      "role_raw": "Co-executive Producer"
+    },
+    {
+      "role": "producer",
+      "artists": [
+        {
+          "names": {
+            "English": "Nobuo Uematsu",
+            "Japanese": "植松伸夫"
+          },
+          "id": 77,
+          "link": "https://vgmdb.net/artist/77"
+        }
+      ],
+      "role_raw": "Executive Producer"
+    },
+    {
+      "role": "performer",
+      "artists": [
+        {
+          "names": {
+            "English": "Tomohiko Kira",
+            "Japanese": "吉良知彦"
+          },
+          "id": 3701,
+          "link": "https://vgmdb.net/artist/3701"
+        }
+      ],
+      "role_raw": "Acoustic Guitar"
+    },
+    {
+      "role": "performer",
+      "artists": [
+        {
+          "names": {
+            "English": "Tomohiko Kira",
+            "Japanese": "吉良知彦"
+          },
+          "id": 3701,
+          "link": "https://vgmdb.net/artist/3701"
+        }
+      ],
+      "role_raw": "Bouzouki"
+    },
+    {
+      "role": "performer",
+      "artists": [
+        {
+          "names": {
+            "English": "Kinya Sogawa",
+            "Japanese": "素川欣也"
+          },
+          "id": 4467,
+          "link": "https://vgmdb.net/artist/4467"
+        }
+      ],
+      "role_raw": "Shinobue"
+    },
+    {
+      "role": "performer",
+      "artists": [
+        {
+          "names": {
+            "English": "Kinya Sogawa",
+            "Japanese": "素川欣也"
+          },
+          "id": 4467,
+          "link": "https://vgmdb.net/artist/4467"
+        }
+      ],
+      "role_raw": "Shakuhachi"
+    },
+    {
+      "role": "performer",
+      "artists": [
+        {
+          "names": {
+            "English": "Tamao Fujii",
+            "Japanese": "藤井珠緒"
+          },
+          "id": 4469,
+          "link": "https://vgmdb.net/artist/4469"
+        }
+      ],
+      "role_raw": "Percussion"
+    },
+    {
+      "role": "performer",
+      "artists": [
+        {
+          "names": {
+            "English": "Hitoshi Watanabe",
+            "Japanese": "渡辺等"
+          },
+          "id": 3316,
+          "link": "https://vgmdb.net/artist/3316"
+        }
+      ],
+      "role_raw": "Electric Upright Bass"
+    },
+    {
+      "role": "performer",
+      "artists": [
+        {
+          "names": {
+            "English": "Yasunori Mitsuda",
+            "Japanese": "光田康典"
+          },
+          "id": 146,
+          "link": "https://vgmdb.net/artist/146"
+        }
+      ],
+      "role_raw": "Keyboards"
+    },
+    {
+      "role": "performer",
+      "artists": [
+        {
+          "names": {
+            "English": "Hijiri Kuwano",
+            "Japanese": "桑野聖"
+          },
+          "id": 3839,
+          "link": "https://vgmdb.net/artist/3839"
+        }
+      ],
+      "role_raw": "1st Violin"
+    },
+    {
+      "role": "performer",
+      "artists": [
+        {
+          "names": {
+            "English": "Motoko Fujiie",
+            "Japanese": "藤家泉子"
+          },
+          "id": 7948,
+          "link": "https://vgmdb.net/artist/7948"
+        }
+      ],
+      "role_raw": "2nd Violin"
+    },
+    {
+      "role": "performer",
+      "artists": [
+        {
+          "names": {
+            "English": "Jun Yamamoto",
+            "Japanese": "山本純"
+          },
+          "id": 11682,
+          "link": "https://vgmdb.net/artist/11682"
+        }
+      ],
+      "role_raw": "Viola"
+    },
+    {
+      "role": "performer",
+      "artists": [
+        {
+          "names": {
+            "English": "Haruki Matsuba",
+            "Japanese": "松葉春樹"
+          },
+          "id": 7065,
+          "link": "https://vgmdb.net/artist/7065"
+        }
+      ],
+      "role_raw": "Cello"
+    },
+    {
+      "role": "engineer",
+      "artists": [
+        {
+          "names": {
+            "English": "Ken Hiranai",
+            "Japanese": "平内健"
+          },
+          "id": 37042,
+          "link": "https://vgmdb.net/artist/37042"
+        }
+      ],
+      "role_raw": "Assistant Engineer"
+    },
+    {
+      "role": "engineer",
+      "artists": [
+        {
+          "names": {
+            "English": "STUDIO GREENBIRD"
+          },
+          "id": 35364,
+          "link": "https://vgmdb.net/artist/35364"
+        }
+      ],
+      "role_raw": "Recorded at"
+    },
+    {
+      "role": "other",
+      "artists": [
+        {
+          "names": {
+            "English": "Kenichi Funayama",
+            "Japanese": "船山健一"
+          },
+          "id": 17472,
+          "link": "https://vgmdb.net/artist/17472"
+        }
+      ],
+      "role_raw": "Recording Coordinator"
+    },
+    {
+      "role": "lyricist",
+      "artists": [
+        {
+          "names": {
+            "English": "Noriko Mitose",
+            "Japanese": "みとせのりこ"
+          },
+          "id": 202,
+          "link": "https://vgmdb.net/artist/202"
+        }
+      ],
+      "role_raw": "Words"
+    },
+    {
+      "role": "vocalist",
+      "artists": [
+        {
+          "names": {
+            "English": "Noriko Mitose",
+            "Japanese": "みとせのりこ"
+          },
+          "id": 202,
+          "link": "https://vgmdb.net/artist/202"
+        }
+      ],
+      "role_raw": "Vocal"
+    },
+    {
+      "role": "other",
+      "artists": [
+        {
+          "names": {
+            "English": "Hiromichi Tanaka",
+            "Japanese": "田中弘道"
+          },
+          "id": 37043,
+          "link": "https://vgmdb.net/artist/37043"
+        },
+        {
+          "names": {
+            "English": "Masato Kato",
+            "Japanese": "加藤正人"
+          },
+          "id": 7203,
+          "link": "https://vgmdb.net/artist/7203"
+        },
+        {
+          "names": {
+            "English": "Keiji Kawamori",
+            "Japanese": "河盛慶次"
+          },
+          "id": 1914,
+          "link": "https://vgmdb.net/artist/1914"
+        },
+        {
+          "names": {
+            "English": "Takeharu Ishimoto",
+            "Japanese": "石元丈晴"
+          },
+          "id": 776,
+          "link": "https://vgmdb.net/artist/776"
+        },
+        {
+          "names": {
+            "English": "Satoshi Akamatsu",
+            "Japanese": "赤松智"
+          },
+          "id": 4372,
+          "link": "https://vgmdb.net/artist/4372"
+        },
+        {
+          "names": {
+            "English": "Hideaki Katayanagi",
+            "Japanese": "片柳英明"
+          },
+          "id": 63555,
+          "link": "https://vgmdb.net/artist/63555"
+        },
+        {
+          "names": {
+            "English": "Fumio Takano",
+            "Japanese": "高野文男"
+          },
+          "id": 36830,
+          "link": "https://vgmdb.net/artist/36830"
+        },
+        {
+          "names": {
+            "English": "All Staffs of \"Project KID = CHRONO CROSS\""
+          },
+          "id": null,
+          "link": null
+        }
+      ],
+      "role_raw": "Special Thanks"
+    }
+  ],
+  "notes": "Disc 1: ~Cause~\nDisc 2: ~Acceptance~\nDisc 3: ~Revolution~\n\n\nAll Music Composed, Arranged & Produced by: Yasunori Mitsuda\n\nSynthesizer Programmer: Ryo Yamazaki\nSound Programmer: Minoru Akao\nRecorded & Mixed by: Kenzi Nagashima\nMastered by: Ichiko Furukawa (Bernie Grundman MASTERING)\nHitomi Misaizu (Bernie Grundman MASTERING)\n\nArt Direction & Design: Keiichi Yamashita (LOTUS GRAPHICS)\n\nDirected by: Kishio Ozawa, Tsuyoshi Takemura\nSales Promotion: Saiko Fukui\n\nProduction Coordinator: Kosei Ito\nProduction Assistant: Emiko Funahashi\nProduction Manager: Keiji Hamada\nSupervisor: Susumu Arai, Hirofumi Yokota\nCo-Executive Producer: Kensuke Matsushita\nExecutive Producer: Nobuo Uematsu\n\nPresented by SQUARE ENIX CO. LTD.\n\n\nCHRONO CROSS ~Toki no Kizuato~\n\nComposed & Arranged by: Yasunori Mitsuda\n\nAcoustic Guitar & Bouzouki: Tomohiko Kira (ZABADAK)\nShinobue & Shakuhachi: Kinya Sogawa\nPercussion: Tamao Fujii\nElectric Upright Bass: Hitoshi Watanabe\nKeyboards: Yasunori Mitsuda\nStrings Quartet:\n 1st Violin: Hijiri Kuwano\n 2nd Violin: Motoko Fujiie\n Viola: Jun Yamamoto\n Cello: Haruki Matsuba\n\nRecorded & Mixed by: Kenzi Nagashima\nAssistant Engineer: Ken Hiranai (GREENBIRD)\nRecorded at STUDIO GREENBIRD\nRecording Coordinator: Kenichi Funayama\n\n\n\nRADICAL DREAMERS ~Nusumenai Houseki ~\nComposed & Arranged by: Yasunori Mitsuda\nWords by : Noriko Mitose (Kirche)\n\nAcoustic Guitar: Tomohiko Kira (ZABADAK)\nVocal: Noriko Mitose (Kirche)\n\nRecorded & Mixed by: Kenzi Nagashima\nAssistant Engineer: Ken Hiranai (GREENBIRD)\nRecorded at STUDIO GREENBIRD\nRecording Coordinator: Kenichi Funayama\n\n\nSpecial Thanks to:\nHiromichi Tanaka, Masato Kato, Keiji Kawamori,\nTakeharu Ishimoto, Satoshi Akamatsu, Hideaki Katayanagi (MAGNET),\nFumio Takano (TOUSHITSU), All Staffs of \"Project KID = CHRONO CROSS\"\n\nAdditional catalog number: TGCS-778~80"
+}

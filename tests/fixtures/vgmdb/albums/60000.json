@@ -1,0 +1,165 @@
+{
+  "id": 60000,
+  "link": "https://vgmdb.net/album/60000",
+  "titles": {
+    "English": "Enter The Gungeon: Heart in Halves EP"
+  },
+  "catalog": "LMLP001",
+  "release_date": {
+    "year": 2016,
+    "month": 6,
+    "day": null
+  },
+  "classification": "Original Soundtrack, Vocal",
+  "cover_small": "https://thumb-media.vgm.io/albums/00/60000/60000-1467355690.jpg",
+  "cover_full": "https://medium-media.vgm.io/albums/00/60000/60000-1467355690.jpg",
+  "discs": [
+    {
+      "number": 1,
+      "name": null,
+      "tracks": [
+        {
+          "titles": {
+            "English": "Enter The Gungeon"
+          },
+          "number": 1,
+          "length": null
+        },
+        {
+          "titles": {
+            "English": "Lean On A Villain"
+          },
+          "number": 2,
+          "length": null
+        },
+        {
+          "titles": {
+            "English": "Go Rogue Go"
+          },
+          "number": 3,
+          "length": null
+        },
+        {
+          "titles": {
+            "English": "Deep In Reap"
+          },
+          "number": 4,
+          "length": null
+        },
+        {
+          "titles": {
+            "English": "Forever Of Door"
+          },
+          "number": 5,
+          "length": null
+        },
+        {
+          "titles": {
+            "English": "Fire Within Fight"
+          },
+          "number": 6,
+          "length": null
+        },
+        {
+          "titles": {
+            "English": "Heart In Halves"
+          },
+          "number": 7,
+          "length": null
+        },
+        {
+          "titles": {
+            "English": "Below Below"
+          },
+          "number": 8,
+          "length": null
+        },
+        {
+          "titles": {
+            "English": "Enter The Gungeon (Instrumental)"
+          },
+          "number": 9,
+          "length": null
+        },
+        {
+          "titles": {
+            "English": "Lean On A Villain (Instrumental)"
+          },
+          "number": 10,
+          "length": null
+        },
+        {
+          "titles": {
+            "English": "Go Rogue Go (Instrumental)"
+          },
+          "number": 11,
+          "length": null
+        },
+        {
+          "titles": {
+            "English": "Deep In Reap (Instrumental)"
+          },
+          "number": 12,
+          "length": null
+        },
+        {
+          "titles": {
+            "English": "Forever Of Door (Instrumental)"
+          },
+          "number": 13,
+          "length": null
+        },
+        {
+          "titles": {
+            "English": "Fire Within Fight (Instrumental)"
+          },
+          "number": 14,
+          "length": null
+        },
+        {
+          "titles": {
+            "English": "Heart In Halves (Instrumental)"
+          },
+          "number": 15,
+          "length": null
+        },
+        {
+          "titles": {
+            "English": "Below Below (Instrumental)"
+          },
+          "number": 16,
+          "length": null
+        }
+      ]
+    }
+  ],
+  "credits": [
+    {
+      "role": "composer",
+      "artists": [
+        {
+          "names": {
+            "English": "doseone"
+          },
+          "id": 17306,
+          "link": "https://vgmdb.net/artist/17306"
+        }
+      ],
+      "role_raw": "Music"
+    },
+    {
+      "role": "mastering",
+      "artists": [
+        {
+          "names": {
+            "English": "Joe Caithness"
+          },
+          "id": 55484,
+          "link": "https://vgmdb.net/artist/55484"
+        }
+      ],
+      "role_raw": "Vinyl Pre-mastering"
+    }
+  ],
+  "notes": "\"Heart In Halves\" EP is a VINYL ONLY Limited Edition lyrical exploration and explosion of the ENTER THE GUNGEON Soundtrack.\nIncludes Steam code for Enter The Gungeon.\n\nSIDE I is covered end to end with chanting, fast rapping and belting about the legend and lore of Enter The Gungeon all atop various slices of the Soundtrack.\nSIDE II is all instrumental, including music from the Lead Lords Keep, Blackpowder Mines, Hollow, Forge, Title Track and more!\n\nVinyl pre-mastering: Joe Caithness"
+}

@@ -13,7 +13,13 @@ _BASE = "https://vgmdb.net"
 _LANG_LABELS = {"en": "English", "ja": "Japanese", "ja-Latn": "Romaji"}
 _CJK = re.compile(r"[぀-ヿ㐀-䶿一-鿿＀-￯]")
 _DATE_FRAGMENT = re.compile(r"#(\d{4})(\d{2})?(\d{2})?$")
+_DATE_QUERY = re.compile(r"year=(\d{1,4})(?:&month=(\d{1,2}))?(?:&day=(\d{1,2}))?")
 _LEADING_SLASH = re.compile(r"^/\s*")
+
+
+def has_cjk(value: str) -> bool:
+    """True if the string contains real Japanese/CJK script."""
+    return bool(_CJK.search(value))
 
 
 def parse_tree(html: str) -> HtmlElement:
@@ -78,7 +84,7 @@ def partial_date(href_or_text: str | None) -> PartialDate | None:
     """Parse a vgmdb date: prefer the ``#YYYYMMDD`` calendar fragment, else ``PartialDate.parse``."""
     if not href_or_text:
         return None
-    match = _DATE_FRAGMENT.search(href_or_text)
+    match = _DATE_FRAGMENT.search(href_or_text) or _DATE_QUERY.search(href_or_text)
     if match:
         year = int(match.group(1))
         month = int(match.group(2)) if match.group(2) else None

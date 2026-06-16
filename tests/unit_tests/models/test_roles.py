@@ -52,10 +52,28 @@ def test_role_is_str_enum_with_expected_members() -> None:
         ("Acoustic Guitar", Role.PERFORMER),
         ("1st Violin", Role.PERFORMER),
         ("Performed by", Role.PERFORMER),
+        ("Music", Role.COMPOSER),  # bare "Music" credit is a composer
+        ("Assistant Engineer", Role.ENGINEER),  # "assistant" alone must not become OTHER
     ],
 )
 def test_normalize_role_maps_known_labels(raw: str, expected: Role) -> None:
     assert normalize_role(raw) == expected
+
+
+@pytest.mark.parametrize(
+    "raw",
+    [
+        "Production Coordinator",
+        "Production Manager",
+        "Production Assistant",
+        "Recording Coordinator",
+        "Music Licensing Manager",
+    ],
+)
+def test_normalize_role_administrative_roles_map_to_other(raw: str) -> None:
+    # Coordination/management roles are OTHER even when they contain a producer/
+    # recording substring (the verbatim label is preserved on Credit.role_raw).
+    assert normalize_role(raw) == Role.OTHER
 
 
 @pytest.mark.parametrize(

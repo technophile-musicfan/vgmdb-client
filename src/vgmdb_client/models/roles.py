@@ -31,6 +31,12 @@ class Role(str, Enum):
     OTHER = "other"
 
 
+# Exact-match labels handled before the substring rules. "Music" alone is a composer
+# credit, but a substring "music" rule would wrongly catch "Music Licensing Manager" etc.
+_EXACT: dict[str, Role] = {
+    "music": Role.COMPOSER,
+}
+
 # Ordered (keyword, role) rules; FIRST substring match wins on the casefolded label.
 # Order matters: more specific before generic. Keywords are deliberately specific
 # (e.g. "mastering"/"mastered", not bare "master" which also matches "concertmaster";
@@ -38,6 +44,12 @@ class Role(str, Enum):
 # precede "direct" so "art direction" is not captured by the DIRECTOR rule; the
 # producer rule precedes recording so "recording producer" is a producer credit.
 _RULES: tuple[tuple[str, Role], ...] = (
+    # Administrative / coordination roles -> OTHER, checked first so a "produc"/"recording"
+    # substring (e.g. "Production Manager", "Recording Coordinator") does not misclassify them.
+    ("coordinator", Role.OTHER),
+    ("manager", Role.OTHER),
+    ("supervisor", Role.OTHER),
+    ("production assistant", Role.OTHER),
     ("compos", Role.COMPOSER),
     ("orchestrat", Role.ARRANGER),
     ("arrang", Role.ARRANGER),
@@ -82,7 +94,9 @@ _RULES: tuple[tuple[str, Role], ...] = (
 
 def normalize_role(raw: str) -> Role:
     """Map a freeform vgmdb role label to a :class:`Role` (conservative; unknown -> OTHER)."""
-    label = raw.casefold()
+    label = raw.casefold().strip()
+    if label in _EXACT:
+        return _EXACT[label]
     for keyword, role in _RULES:
         if keyword in label:
             return role

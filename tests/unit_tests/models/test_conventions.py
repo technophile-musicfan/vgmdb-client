@@ -60,6 +60,13 @@ def test_public_surface_exported() -> None:
         assert getattr(models, name) is not None
 
 
+def test_role_and_normalize_role_are_exported() -> None:
+    from vgmdb_client.models import Role, normalize_role
+
+    assert Role.COMPOSER == "composer"
+    assert normalize_role("Composer") is Role.COMPOSER
+
+
 def test_exported_symbols_are_the_model_classes() -> None:
     assert Credit is models.Credit
     assert Disc is models.Disc

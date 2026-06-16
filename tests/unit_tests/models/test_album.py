@@ -1,7 +1,11 @@
 """Tests for album entity models (Track, Disc, Credit, Album)."""
 
+import pytest
+from pydantic import ValidationError
+
 from vgmdb_client.models.album import Album, Credit, Disc, Track
 from vgmdb_client.models.common import ArtistRef, LocalizedText, PartialDate
+from vgmdb_client.models.roles import Role
 
 
 def _titles(**langs: str) -> LocalizedText:
@@ -31,15 +35,27 @@ def test_disc_holds_tracks_with_defaults() -> None:
     assert bare.tracks == []
 
 
-def test_credit_role_and_artists() -> None:
+def test_credit_carries_normalized_role_and_raw_label() -> None:
     credit = Credit(
-        role="Arranger",
+        role=Role.ARRANGER,
+        role_raw="Arrangement",
         artists=[ArtistRef(names=_titles(English="Keiichi Okabe"), id=770)],
     )
-    assert credit.role == "Arranger"
+    assert credit.role is Role.ARRANGER
+    assert credit.role_raw == "Arrangement"
     assert credit.artists[0].id == 770
 
-    assert Credit(role="Composer").artists == []
+    assert Credit(role=Role.COMPOSER, role_raw="Composer").artists == []
+
+
+def test_credit_requires_role_raw() -> None:
+    with pytest.raises(ValidationError):
+        Credit(role=Role.COMPOSER)  # type: ignore[call-arg]
+
+
+def test_credit_rejects_unknown_role_value() -> None:
+    with pytest.raises(ValidationError):
+        Credit(role="not-a-real-role", role_raw="Whatever")  # type: ignore[arg-type]
 
 
 def test_album_full_construction() -> None:
@@ -53,14 +69,21 @@ def test_album_full_construction() -> None:
         cover_small="https://medium-media.vgm.io/albums/x/123/s.jpg",
         cover_full="https://media.vgm.io/albums/x/123/f.jpg",
         discs=[Disc(number=1, tracks=[Track(titles=_titles(English="Snow in Summer"))])],
-        credits=[Credit(role="Composer", artists=[ArtistRef(names=_titles(English="Keiichi Okabe"))])],
+        credits=[
+            Credit(
+                role=Role.COMPOSER,
+                role_raw="Composer",
+                artists=[ArtistRef(names=_titles(English="Keiichi Okabe"))],
+            )
+        ],
         notes="freeform notes",
     )
     assert album.id == 123
     assert album.release_date is not None
     assert str(album.release_date) == "2010-04-21"
     assert album.discs[0].tracks[0].titles.prefer("English") == "Snow in Summer"
-    assert album.credits[0].role == "Composer"
+    assert album.credits[0].role is Role.COMPOSER
+    assert album.credits[0].role_raw == "Composer"
 
 
 def test_album_partial_construction_defaults() -> None:

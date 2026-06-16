@@ -5,6 +5,7 @@ from __future__ import annotations
 from pydantic import Field
 
 from vgmdb_client.models.common import ArtistRef, LocalizedText, PartialDate, VgmdbModel
+from vgmdb_client.models.roles import Role
 
 
 class Track(VgmdbModel):
@@ -24,9 +25,10 @@ class Disc(VgmdbModel):
 
 
 class Credit(VgmdbModel):
-    """An album credit: an open-ended role and the artists fulfilling it."""
+    """An album credit: a normalized role, the verbatim source label, and its artists."""
 
-    role: str
+    role: Role
+    role_raw: str
     artists: list[ArtistRef] = Field(default_factory=list)
 
 

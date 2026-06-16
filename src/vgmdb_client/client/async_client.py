@@ -1,0 +1,54 @@
+"""Asynchronous vgmdb client."""
+
+from __future__ import annotations
+
+from types import TracebackType
+
+from vgmdb_client.client import _core
+from vgmdb_client.models import Album, SearchResults
+from vgmdb_client.parsers import parse_album, parse_search
+from vgmdb_client.transport import AsyncTransport, TransportConfig
+
+_ONE_SOURCE = "Provide exactly one of `config` or `transport`."
+
+
+class AsyncClient:
+    """Asynchronous vgmdb client. Shares path logic and parsers with :class:`Client`.
+
+    Construct with a :class:`TransportConfig` (an :class:`AsyncTransport` is created internally) or
+    inject a ready async transport. Exactly one of ``config``/``transport`` is required. Usable as an
+    async context manager that closes the transport on exit.
+    """
+
+    def __init__(self, config: TransportConfig | None = None, *, transport: AsyncTransport | None = None) -> None:
+        if config is not None and transport is not None:
+            raise ValueError(_ONE_SOURCE)
+        if transport is not None:
+            self._transport = transport
+        elif config is not None:
+            self._transport = AsyncTransport(config)
+        else:
+            raise ValueError(_ONE_SOURCE)
+
+    async def get_album(self, album_id: int) -> Album:
+        """Fetch and parse an album page."""
+        return parse_album(await self._transport.get(_core.album_path(album_id)))
+
+    async def search(self, query: str) -> SearchResults:
+        """Fetch and parse a search-results page."""
+        return parse_search(await self._transport.get(_core.search_path(query)))
+
+    async def aclose(self) -> None:
+        """Close the underlying transport."""
+        await self._transport.aclose()
+
+    async def __aenter__(self) -> AsyncClient:
+        return self
+
+    async def __aexit__(
+        self,
+        exc_type: type[BaseException] | None,
+        exc: BaseException | None,
+        tb: TracebackType | None,
+    ) -> None:
+        await self.aclose()

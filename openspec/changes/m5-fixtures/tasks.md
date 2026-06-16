@@ -11,13 +11,13 @@
 
 ## 3. Capture the seed HTML
 
-- [ ] 3.1 Run the capture script with a valid `.env` to fetch all manifest targets (~10+ album pages + 2 search pages); commit the raw HTML and update captured dates in the manifest
+- [x] 3.1 Run the capture script with a valid `.env` to fetch all manifest targets (~10+ album pages + 2 search pages); commit the raw HTML and update captured dates in the manifest
 
 ## 4. Author golden outputs (by hand, from HTML)
 
-- [ ] 4.1 Transcribe golden `Album` JSON (`model_dump(mode="json")`) for each album fixture by reading the captured HTML directly (no parser); chunk across the album set
-- [ ] 4.2 Transcribe golden `SearchResults` JSON for each search fixture the same way
-- [ ] 4.3 Human review pass: verify each golden against the rendered page for transcription errors (track titles, catalog, dates, credits)
+- [x] 4.1 Transcribe golden `Album` JSON (`model_dump(mode="json")`) for each album fixture by reading the captured HTML directly (no parser); chunk across the album set
+- [x] 4.2 Transcribe golden `SearchResults` JSON for each search fixture the same way
+- [x] 4.3 Human review pass: verify each golden against the rendered page for transcription errors (track titles, catalog, dates, credits)
 
 ## 5. Loader & well-formedness tests
 
@@ -30,4 +30,4 @@
 
 ## 6. Conventions & wiring
 
-- [ ] 6.1 Run ruff, mypy, and the full test suite; fix until green *(ruff + mypy green now; full pytest goes green once 3.1 + 4.x land)*
+- [x] 6.1 Run ruff, mypy, and the full test suite; fix until green *(ruff + mypy green now; full pytest goes green once 3.1 + 4.x land)*

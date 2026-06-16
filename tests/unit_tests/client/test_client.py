@@ -155,3 +155,26 @@ def test_public_api_surface() -> None:
     assert expected <= set(vgmdb_client.__all__)
     for name in expected:
         assert getattr(vgmdb_client, name) is not None
+
+
+def test_public_api_covers_models_and_errors() -> None:
+    """Guard against the top-level facade drifting from its source modules."""
+    import vgmdb_client
+    from vgmdb_client import models
+
+    surface = set(vgmdb_client.__all__)
+    # every public model name must be re-exported at the top level
+    assert set(models.__all__) <= surface
+    # clients, config, and the full error hierarchy too
+    assert {
+        "Client",
+        "AsyncClient",
+        "TransportConfig",
+        "VgmdbClientError",
+        "ParseError",
+        "TransportError",
+        "CloudflareChallengeError",
+        "NotFoundError",
+        "RateLimitedError",
+        "TransientTransportError",
+    } <= surface

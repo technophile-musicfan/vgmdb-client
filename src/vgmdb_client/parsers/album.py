@@ -93,18 +93,36 @@ _RawDisc = tuple[int | None, str | None, list[_RawTrack]]
 
 def _discs(tree: HtmlElement) -> list[Disc]:
     """Parse discs/tracks, merging per-language tracklist tabs into multi-language titles."""
+    per_lang, primary_label = _language_tracklists(tree)
+    structure = per_lang[primary_label] if primary_label else []
+    discs: list[Disc] = []
+    for di, (number, name, raw_tracks) in enumerate(structure):
+        tracks: list[Track] = []
+        for ti, (tnum, tlen, _title) in enumerate(raw_tracks):
+            values: dict[str, str] = {}
+            for label, lang_discs in per_lang.items():
+                if di < len(lang_discs) and ti < len(lang_discs[di][2]):
+                    values[label] = lang_discs[di][2][ti][2]
+            tracks.append(Track(titles=_dom.localized_from_labels(values), number=tnum, length=tlen or None))
+        discs.append(Disc(number=number, name=name, tracks=tracks))
+    return discs
+
+
+def _language_tracklists(tree: HtmlElement) -> tuple[dict[str, list[_RawDisc]], str | None]:
+    """Parse each language tracklist tab, preferring the canonical (non-parenthetical) tab.
+
+    Returns ``(per_language_discs, primary_label)``. When two tabs share a label (e.g. "English"
+    and "English (unofficial)"), the canonical one wins and the other is ignored.
+    """
     tl_spans = tree.xpath('//*[@id="tracklist"]//span[@class="tl"]')
     if not tl_spans:
-        return []
+        return {}, None
 
     lang_raw = {
         a.get("rel"): _dom.text(a)
         for a in tree.xpath('//ul[contains(@class, "tabnav")]//a[@rel]')
         if (a.get("rel") or "").startswith("tl")
     }
-    # Map each tab to a language label, stripping a source annotation like "(back cover)".
-    # When two tabs share a label (e.g. "English" and "English (unofficial)"), prefer the
-    # canonical one with no parenthetical and ignore the other.
     per_lang: dict[str, list[_RawDisc]] = {}
     canonical: set[str] = set()
     primary_label: str | None = None
@@ -119,21 +137,7 @@ def _discs(tree: HtmlElement) -> list[Disc]:
         per_lang[label] = _parse_tl(span)
         if is_canonical:
             canonical.add(label)
-    if primary_label is None:
-        primary_label = next(iter(per_lang), None)
-
-    structure = per_lang[primary_label] if primary_label else []
-    discs: list[Disc] = []
-    for di, (number, name, raw_tracks) in enumerate(structure):
-        tracks: list[Track] = []
-        for ti, (tnum, tlen, _title) in enumerate(raw_tracks):
-            values: dict[str, str] = {}
-            for label, lang_discs in per_lang.items():
-                if di < len(lang_discs) and ti < len(lang_discs[di][2]):
-                    values[label] = lang_discs[di][2][ti][2]
-            tracks.append(Track(titles=_dom.localized_from_labels(values), number=tnum, length=tlen or None))
-        discs.append(Disc(number=number, name=name, tracks=tracks))
-    return discs
+    return per_lang, primary_label or next(iter(per_lang), None)
 
 
 def _parse_tl(span: HtmlElement) -> list[_RawDisc]:

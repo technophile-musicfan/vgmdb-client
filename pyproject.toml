@@ -62,6 +62,17 @@ warn_return_any = true
 warn_unused_ignores = true
 show_error_codes = true
 
+# The parsers wrap lxml, which ships no type information. Relax the "Any from an
+# untyped import" check for these modules only; the rest of the package stays strict.
+[[tool.mypy.overrides]]
+module = "vgmdb_client.parsers.*"
+disallow_any_unimported = false
+warn_return_any = false
+
+[[tool.mypy.overrides]]
+module = ["lxml", "lxml.*"]
+ignore_missing_imports = true
+
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 

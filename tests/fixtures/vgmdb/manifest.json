@@ -146,8 +146,8 @@
       "id": 262,
       "kind": "product",
       "source_url": "https://vgmdb.net/product/262",
-      "status": "candidate",
-      "note": "CANDIDATE: product linked from existing album fixtures. Confirm/swap at capture time; prefer a Game with organizations and/or a franchise. Set status=captured + captured_date when done."
+      "status": "captured",
+      "captured_date": "2026-06-17"
     }
   ],
   "organizations": [

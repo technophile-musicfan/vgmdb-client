@@ -22,11 +22,11 @@
 
 - [x] 3.1 `models/product.py`: `Product` model (id, link, names, type, notes, franchises,
   organizations). Export + drift-guard. Model unit tests.
-- [ ] 3.2 Fixture: USER captures a product page + author golden under
+- [x] 3.2 Fixture: USER captures a product page + author golden under
   `tests/fixtures/vgmdb/products/`; manifest entry + `load_product_fixture`.
-- [ ] 3.3 `parsers/product.py`: `parse_product`; selectors from captured HTML; raise
+- [x] 3.3 `parsers/product.py`: `parse_product`; selectors from captured HTML; raise
   `NotAProductPageError`. Parser-vs-golden + reject tests.
-- [ ] 3.4 `Client.get_product` + `AsyncClient.get_product` via `product_path`. Stub-transport tests
+- [x] 3.4 `Client.get_product` + `AsyncClient.get_product` via `product_path`. Stub-transport tests
   (sync + async). Gate green.
 
 ## 4. Organization (vertical slice)

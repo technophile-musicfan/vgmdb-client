@@ -106,6 +106,7 @@ def test_openai_backend_pydantic_invalid_raises() -> None:
 def test_openai_backend_non_json_content_raises() -> None:
     _, album = load_album_fixture(271)
     respx.post(LLM_URL).mock(return_value=_chat_response("not json at all"))
+    # default max_retries=1 -> the invalid reply is retried once, then EnrichmentError.
     with pytest.raises(EnrichmentError):
         OpenAICompatibleBackend(url=LLM_URL, model="m").enrich(album, "")
 
@@ -121,7 +122,7 @@ def test_openai_backend_http_error_raises() -> None:
 @respx.mock
 def test_openai_backend_schema_invalid_raises() -> None:
     _, album = load_album_fixture(271)
-    # missing role_raw -> KeyError during build -> EnrichmentError
+    # missing role_raw -> _LlmResponse validation fails -> retried, then EnrichmentError
     respx.post(LLM_URL).mock(return_value=_chat_response({"track_credits": {"10": [{"artists": []}]}}))
     with pytest.raises(EnrichmentError):
         OpenAICompatibleBackend(url=LLM_URL, model="m").enrich(album, "")
@@ -234,3 +235,21 @@ def test_no_retry_when_max_retries_zero() -> None:
     with pytest.raises(EnrichmentError):
         backend.enrich(album, "")
     assert route.call_count == 1
+
+
+def test_malformed_user_template_raises_enrichment_error() -> None:
+    _, album = load_album_fixture(271)
+    # a stray {ref} placeholder is not provided by the backend -> EnrichmentError, not a raw KeyError
+    backend = OpenAICompatibleBackend(url=LLM_URL, model="m", user_template="notes {notes} see {ref}")
+    with pytest.raises(EnrichmentError):
+        backend.enrich(album, "")
+
+
+@respx.mock
+def test_array_style_content_is_parsed() -> None:
+    _, album = load_album_fixture(271)
+    # some endpoints return content as a list of typed parts rather than a bare string
+    parts = [{"type": "text", "text": json.dumps(_VALID)}]
+    respx.post(LLM_URL).mock(return_value=httpx.Response(200, json={"choices": [{"message": {"content": parts}}]}))
+    enrichment = OpenAICompatibleBackend(url=LLM_URL, model="m").enrich(album, "")
+    assert enrichment.track_credits[10][0].role is Role.PERFORMER

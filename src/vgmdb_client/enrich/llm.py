@@ -16,6 +16,7 @@ _DEFAULT_MODEL = "gpt-4o-mini"
 _DEFAULT_TIMEOUT = 30.0
 _REQUEST_FAILED = "Enrichment request to the LLM endpoint failed."
 _MALFORMED = "Malformed enrichment payload from the LLM endpoint."
+_BAD_TEMPLATE = "Invalid user_template: expected only {tracklist} and {notes} placeholders."
 
 OutputMode = Literal["json_object", "json_schema", "tool"]
 _DEFAULT_OUTPUT_MODE: OutputMode = "json_object"
@@ -105,7 +106,10 @@ class OpenAICompatibleBackend:
             for track in disc.tracks
             if track.number is not None
         )
-        user = self._user_template.format(tracklist=tracklist, notes=raw_text)
+        try:
+            user = self._user_template.format(tracklist=tracklist, notes=raw_text)
+        except (KeyError, IndexError, ValueError) as exc:
+            raise EnrichmentError(_BAD_TEMPLATE) from exc
         return [{"role": "system", "content": self._system_prompt}, {"role": "user", "content": user}]
 
     def _mode_payload(self) -> dict[str, Any]:
@@ -134,9 +138,22 @@ class OpenAICompatibleBackend:
             message = response.json()["choices"][0]["message"]
             if self._output_mode == "tool":
                 return str(message["tool_calls"][0]["function"]["arguments"])
-            return str(message.get("content") or "")
+            return _content_text(message.get("content"))
         except (httpx.HTTPError, KeyError, IndexError, TypeError) as exc:
             raise EnrichmentError(_REQUEST_FAILED) from exc
+
+
+def _content_text(content: Any) -> str:
+    """Reduce a chat message's ``content`` to text: a plain string, or joined text parts.
+
+    Some OpenAI-compatible endpoints return ``content`` as a list of typed parts
+    (``[{"type": "text", "text": "..."}]``) rather than a bare string.
+    """
+    if isinstance(content, str):
+        return content
+    if isinstance(content, list):
+        return "".join(part["text"] for part in content if isinstance(part, dict) and "text" in part)
+    return ""
 
 
 def _corrective_message(error: Exception) -> dict[str, str]:

@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import logging
 import time
 from types import TracebackType
 
@@ -17,6 +18,8 @@ from vgmdb_client.transport.core import (
     throttle_wait,
 )
 from vgmdb_client.transport.errors import TransientTransportError
+
+logger = logging.getLogger(__name__)
 
 
 class SyncTransport:
@@ -36,14 +39,19 @@ class SyncTransport:
 
     def get(self, path: str) -> str:
         """Fetch ``path`` and return the HTML body, or raise a typed transport error."""
-        self._throttle()
         retrying = build_retrying(self._config)
+        attempt = 0
 
         def _attempt() -> str:
+            nonlocal attempt
+            attempt += 1
+            self._throttle()  # space every HTTP attempt, including retries
             try:
                 response = self._client.get(path)
             except httpx.TransportError as exc:
+                logger.debug("GET %s failed on attempt %d: %r", path, attempt, exc)
                 raise TransientTransportError from exc
+            logger.debug("GET %s -> %s (attempt %d)", path, response.status_code, attempt)
             classify_response(response.status_code, response.headers, response.text)
             return response.text
 

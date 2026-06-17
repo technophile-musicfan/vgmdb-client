@@ -1,5 +1,7 @@
 """Tests for SyncTransport."""
 
+import logging
+
 import httpx
 import pytest
 import respx
@@ -57,9 +59,7 @@ def test_404_raises_not_found_and_is_not_retried() -> None:
 
 @respx.mock
 def test_cloudflare_challenge_raises_and_is_not_retried() -> None:
-    route = respx.get(URL).mock(
-        return_value=httpx.Response(403, headers={"cf-mitigated": "challenge"})
-    )
+    route = respx.get(URL).mock(return_value=httpx.Response(403, headers={"cf-mitigated": "challenge"}))
     with SyncTransport(_config(max_retries=3)) as transport, pytest.raises(CloudflareChallengeError):
         transport.get("album/123")
     assert route.call_count == 1
@@ -76,9 +76,7 @@ def test_429_raises_rate_limited_not_retried() -> None:
 
 @respx.mock
 def test_transient_500_retried_then_succeeds() -> None:
-    route = respx.get(URL).mock(
-        side_effect=[httpx.Response(500), httpx.Response(200, text="ok")]
-    )
+    route = respx.get(URL).mock(side_effect=[httpx.Response(500), httpx.Response(200, text="ok")])
     with SyncTransport(_config(max_retries=3)) as transport:
         assert transport.get("album/123") == "ok"
     assert route.call_count == 2
@@ -86,9 +84,7 @@ def test_transient_500_retried_then_succeeds() -> None:
 
 @respx.mock
 def test_timeout_is_retried_then_succeeds() -> None:
-    route = respx.get(URL).mock(
-        side_effect=[httpx.TimeoutException("timed out"), httpx.Response(200, text="ok")]
-    )
+    route = respx.get(URL).mock(side_effect=[httpx.TimeoutException("timed out"), httpx.Response(200, text="ok")])
     with SyncTransport(_config(max_retries=3)) as transport:
         assert transport.get("album/123") == "ok"
     assert route.call_count == 2
@@ -135,10 +131,35 @@ def test_min_interval_enforced_between_requests(monkeypatch: pytest.MonkeyPatch)
 
 
 @respx.mock
+def test_retry_attempts_are_throttled(monkeypatch: pytest.MonkeyPatch) -> None:
+    # The throttle runs per HTTP attempt, so a retried attempt within one get() is spaced too.
+    sleeps: list[float] = []
+    monkeypatch.setattr(sync_client_module.time, "sleep", lambda seconds: sleeps.append(seconds))
+    route = respx.get(URL).mock(side_effect=[httpx.Response(500), httpx.Response(200, text="ok")])
+    with SyncTransport(_config(min_interval=5.0)) as transport:
+        assert transport.get("album/123") == "ok"
+    assert route.call_count == 2
+    # Ignore tenacity's tiny inter-retry backoff; isolate the min_interval throttle.
+    throttle_sleeps = [s for s in sleeps if s > 1.0]
+    assert len(throttle_sleeps) == 1  # first attempt unthrottled; the retried attempt is throttled
+    assert 4.0 < throttle_sleeps[0] <= 5.0
+
+
+@respx.mock
+def test_debug_logging_per_attempt(caplog: pytest.LogCaptureFixture) -> None:
+    respx.get(URL).mock(return_value=httpx.Response(200, text="ok"))
+    with (
+        caplog.at_level(logging.DEBUG, logger="vgmdb_client.transport.sync_client"),
+        SyncTransport(_config()) as transport,
+    ):
+        transport.get("album/123")
+    messages = [record.getMessage() for record in caplog.records]
+    assert any("GET" in m and "200" in m and "attempt 1" in m for m in messages)
+
+
+@respx.mock
 def test_redirects_are_followed() -> None:
-    respx.get(URL).mock(
-        return_value=httpx.Response(302, headers={"location": f"{BASE}/album/123/"})
-    )
+    respx.get(URL).mock(return_value=httpx.Response(302, headers={"location": f"{BASE}/album/123/"}))
     respx.get(f"{URL}/").mock(return_value=httpx.Response(200, text="<html>final</html>"))
     with SyncTransport(_config()) as transport:
         assert transport.get("album/123") == "<html>final</html>"

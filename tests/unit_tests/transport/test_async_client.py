@@ -5,6 +5,7 @@ required; respx still intercepts httpx.AsyncClient traffic.
 """
 
 import asyncio
+import logging
 from collections.abc import Awaitable
 from typing import TypeVar
 
@@ -85,9 +86,7 @@ def test_async_404_raises_not_found_not_retried() -> None:
 
 @respx.mock
 def test_async_cloudflare_challenge_not_retried() -> None:
-    route = respx.get(URL).mock(
-        return_value=httpx.Response(403, headers={"cf-mitigated": "challenge"})
-    )
+    route = respx.get(URL).mock(return_value=httpx.Response(403, headers={"cf-mitigated": "challenge"}))
 
     async def scenario() -> None:
         async with AsyncTransport(_config(max_retries=3)) as transport:
@@ -126,9 +125,7 @@ def test_async_transient_500_retried_then_succeeds() -> None:
 
 @respx.mock
 def test_async_timeout_retried_then_succeeds() -> None:
-    route = respx.get(URL).mock(
-        side_effect=[httpx.TimeoutException("timed out"), httpx.Response(200, text="ok")]
-    )
+    route = respx.get(URL).mock(side_effect=[httpx.TimeoutException("timed out"), httpx.Response(200, text="ok")])
 
     async def scenario() -> str:
         async with AsyncTransport(_config(max_retries=3)) as transport:
@@ -214,9 +211,7 @@ def test_async_context_manager_closes_client() -> None:
 
 @respx.mock
 def test_async_redirects_are_followed() -> None:
-    respx.get(URL).mock(
-        return_value=httpx.Response(302, headers={"location": f"{BASE}/album/123/"})
-    )
+    respx.get(URL).mock(return_value=httpx.Response(302, headers={"location": f"{BASE}/album/123/"}))
     respx.get(f"{URL}/").mock(return_value=httpx.Response(200, text="<html>final</html>"))
 
     async def scenario() -> str:
@@ -251,3 +246,44 @@ def test_sync_and_async_parity_error() -> None:
 
     with pytest.raises(NotFoundError):
         _run(scenario())
+
+
+def test_concurrent_get_honors_min_interval(monkeypatch: pytest.MonkeyPatch) -> None:
+    # Concurrent get() coroutines serialize on the throttle gate, so min_interval is honored
+    # rather than raced away on self._last.
+    sleeps: list[float] = []
+    real_sleep = asyncio.sleep
+
+    async def fake_sleep(seconds: float) -> None:
+        sleeps.append(seconds)
+        await real_sleep(0)  # yield so coroutines can interleave at this point
+
+    monkeypatch.setattr(async_client_module.asyncio, "sleep", fake_sleep)
+
+    @respx.mock
+    async def scenario() -> None:
+        respx.get(URL).mock(return_value=httpx.Response(200, text="ok"))
+        async with AsyncTransport(_config(min_interval=5.0)) as transport:
+            await asyncio.gather(
+                transport.get("album/123"),
+                transport.get("album/123"),
+                transport.get("album/123"),
+            )
+
+    _run(scenario())
+    # First request is unthrottled; the other two are spaced behind it.
+    assert len(sleeps) == 2
+    assert all(4.0 < s <= 5.0 for s in sleeps)
+
+
+def test_debug_logging_per_attempt(caplog: pytest.LogCaptureFixture) -> None:
+    @respx.mock
+    async def scenario() -> None:
+        respx.get(URL).mock(return_value=httpx.Response(200, text="ok"))
+        async with AsyncTransport(_config()) as transport:
+            await transport.get("album/123")
+
+    with caplog.at_level(logging.DEBUG, logger="vgmdb_client.transport.async_client"):
+        _run(scenario())
+    messages = [record.getMessage() for record in caplog.records]
+    assert any("GET" in m and "200" in m and "attempt 1" in m for m in messages)

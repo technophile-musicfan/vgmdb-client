@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import asyncio
+import logging
 import time
 from types import TracebackType
 
@@ -19,13 +20,20 @@ from vgmdb_client.transport.core import (
 )
 from vgmdb_client.transport.errors import TransientTransportError
 
+logger = logging.getLogger(__name__)
+
 
 class AsyncTransport:
-    """Authenticated, Cloudflare-aware asynchronous fetcher for vgmdb pages."""
+    """Authenticated, Cloudflare-aware asynchronous fetcher for vgmdb pages.
+
+    An instance is scoped to a single event loop (its throttle lock and httpx client bind to the
+    loop they are used on); do not share one instance across concurrently-running loops.
+    """
 
     def __init__(self, config: TransportConfig) -> None:
         self._config = config
         self._last: float | None = None
+        self._throttle_lock = asyncio.Lock()
         self._client = httpx.AsyncClient(
             base_url=config.base_url,
             headers=build_headers(config.user_agent),
@@ -37,14 +45,19 @@ class AsyncTransport:
 
     async def get(self, path: str) -> str:
         """Fetch ``path`` and return the HTML body, or raise a typed transport error."""
-        await self._throttle()
         retrying = build_async_retrying(self._config)
+        attempt = 0
 
         async def _attempt() -> str:
+            nonlocal attempt
+            attempt += 1
+            await self._throttle()  # space every HTTP attempt, including retries
             try:
                 response = await self._client.get(path)
             except httpx.TransportError as exc:
+                logger.debug("GET %s failed on attempt %d: %r", path, attempt, exc)
                 raise TransientTransportError from exc
+            logger.debug("GET %s -> %s (attempt %d)", path, response.status_code, attempt)
             classify_response(response.status_code, response.headers, response.text)
             return response.text
 
@@ -83,7 +96,10 @@ class AsyncTransport:
         interval = self._config.min_interval
         if interval <= 0:
             return
-        wait = throttle_wait(self._last, time.monotonic(), interval)
-        if wait > 0:
-            await asyncio.sleep(wait)
-        self._last = time.monotonic()
+        # Serialize the gate so concurrent get() coroutines honor min_interval instead of
+        # racing on self._last; each waits its turn behind the previous request.
+        async with self._throttle_lock:
+            wait = throttle_wait(self._last, time.monotonic(), interval)
+            if wait > 0:
+                await asyncio.sleep(wait)
+            self._last = time.monotonic()

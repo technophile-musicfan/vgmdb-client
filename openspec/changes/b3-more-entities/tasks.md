@@ -11,11 +11,11 @@
 
 - [x] 2.1 `models/artist.py`: `Artist` model (id, link, names, aliases, type, birthdate, notes,
   members, units). Export + drift-guard. Model unit tests (construction, frozen, extra-forbid).
-- [ ] 2.2 Fixture: USER captures an artist page (id referenced from album fixtures) + author golden
+- [x] 2.2 Fixture: USER captures an artist page (id referenced from album fixtures) + author golden
   under `tests/fixtures/vgmdb/artists/`; add manifest entry + `load_artist_fixture`.
-- [ ] 2.3 `parsers/artist.py`: `parse_artist` on `_dom` helpers; selectors from the captured HTML;
+- [x] 2.3 `parsers/artist.py`: `parse_artist` on `_dom` helpers; selectors from the captured HTML;
   raise `NotAnArtistPageError` for non-artist pages. Parser-vs-golden + reject tests.
-- [ ] 2.4 `Client.get_artist` + `AsyncClient.get_artist` via `artist_path`. Stub-transport tests
+- [x] 2.4 `Client.get_artist` + `AsyncClient.get_artist` via `artist_path`. Stub-transport tests
   (sync + async). Gate green.
 
 ## 3. Product (vertical slice)

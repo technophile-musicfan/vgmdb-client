@@ -8,9 +8,9 @@ from typing import Any, TypeVar
 
 import pytest
 
-from tests.support.fixtures import load_album_fixture, load_search_fixture
+from tests.support.fixtures import load_album_fixture, load_artist_fixture, load_search_fixture
 from vgmdb_client import AsyncClient, Client, NotFoundError, ParseError, TransportConfig
-from vgmdb_client.client._core import album_path, search_path
+from vgmdb_client.client._core import album_path, artist_path, search_path
 
 T = TypeVar("T")
 
@@ -77,6 +77,12 @@ def test_search_multi_hit_first_10() -> None:
     assert result.albums[:10] == golden.albums
 
 
+def test_get_artist_returns_golden() -> None:
+    html, golden = load_artist_fixture(146)
+    client = Client(transport=StubSyncTransport({artist_path(146): html}))
+    assert client.get_artist(146) == golden
+
+
 def test_context_manager_closes_transport() -> None:
     stub = StubSyncTransport()
     with Client(transport=stub):
@@ -116,6 +122,12 @@ def test_async_search_returns_golden() -> None:
     html, golden = load_search_fixture("near-empty")
     client = AsyncClient(transport=StubAsyncTransport({search_path(golden.query): html}))
     assert _run(client.search(golden.query)) == golden
+
+
+def test_async_get_artist_returns_golden() -> None:
+    html, golden = load_artist_fixture(146)
+    client = AsyncClient(transport=StubAsyncTransport({artist_path(146): html}))
+    assert _run(client.get_artist(146)) == golden
 
 
 def test_async_context_manager_closes_transport() -> None:

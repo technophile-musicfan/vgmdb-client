@@ -48,6 +48,12 @@ _HEADER = re.compile(r"^\s*(?:tracks?\s+)?(M?-?\d[\dM~,\s.-]*?)\s*(?:-\s+\S.*)?$
 _ROLE_LINE = re.compile(r"^\s*([^:]{1,40}?)\s+by\s+(.+)$|^\s*([^:]{1,40}?):\s*(.+)$", re.I)
 _NAME_SPLIT = re.compile(r"\s*(?:,|;|&|/|\band\b)\s*", re.I)
 _WORD = re.compile(r"\w")
+# A name segment containing a standalone "by" is really a second role clause (e.g. "arranged by Jane").
+_ROLE_CLAUSE = re.compile(r"\bby\b", re.I)
+# A trailing parenthetical on a name (an affiliation, or a skipped range) — dropped from the name.
+_TRAILING_PAREN = re.compile(r"\s*\([^)]*\)\s*$")
+# Skip implausible ~ ranges (a typo or a non-track numeric pair) so notes can't explode a track set.
+_MAX_RANGE_SPAN = 500
 
 
 def _parse_track_set(text: str) -> set[int]:
@@ -59,7 +65,7 @@ def _parse_track_set(text: str) -> set[int]:
             continue
         if "~" in token and len(bounds) >= 2:
             start, end = int(bounds[0]), int(bounds[1])
-            if start <= end:
+            if start <= end <= start + _MAX_RANGE_SPAN:
                 tracks.update(range(start, end + 1))
         else:
             tracks.add(int(bounds[0]))
@@ -68,7 +74,13 @@ def _parse_track_set(text: str) -> set[int]:
 
 def _split_names(text: str) -> list[str]:
     """Split a names blob into individual artist names, keeping only word-bearing entries."""
-    return [name for raw in _NAME_SPLIT.split(text) if (name := raw.strip(" ,;&/")) and _WORD.search(name)]
+    return [
+        name
+        for raw in _NAME_SPLIT.split(text)
+        if (name := _TRAILING_PAREN.sub("", raw.strip(" ,;&/")).strip())
+        and _WORD.search(name)
+        and not _ROLE_CLAUSE.search(name)
+    ]
 
 
 def _has_role_keyword(phrase: str) -> bool:
@@ -127,8 +139,13 @@ class RuleBasedBackend:
             role = _role_line(line)
             if role is not None:
                 self._emit(track_credits, current, role[0], role[1])
+            else:
+                current = None  # prose breaks the block context (don't leak a header across it)
 
-        ordered = {track: track_credits[track] for track in sorted(track_credits)}
+        # Keep only credits for tracks the album actually has: drops bare-year/non-track headers and
+        # bounds anything an over-wide range produced.
+        valid = {track.number for disc in album.discs for track in disc.tracks if track.number is not None}
+        ordered = {track: track_credits[track] for track in sorted(track_credits) if track in valid}
         return AlbumEnrichment(album_id=album.id, track_credits=ordered)
 
     @staticmethod

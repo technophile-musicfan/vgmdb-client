@@ -63,6 +63,38 @@ def test_album_level_credit_without_track_reference_is_dropped() -> None:
     assert enrichment.is_empty
 
 
+def test_prose_between_header_and_role_breaks_the_block() -> None:
+    # A non-role line resets the track context, so the later credit is not mis-attributed.
+    album = _album(5, "Tracks 1,4,5\nRecorded in a studio.\nComposed by SHOGUN")
+    assert RuleBasedBackend().enrich(album, album.notes or "").is_empty
+
+
+def test_bare_year_is_not_a_track_header() -> None:
+    album = _album(5, "2020\nGuitar by Bobby")
+    assert RuleBasedBackend().enrich(album, album.notes or "").is_empty
+
+
+def test_oversized_range_does_not_explode() -> None:
+    album = _album(5, "1.\nComposed by X (1~50000)")
+    enrichment = RuleBasedBackend().enrich(album, album.notes or "")
+    # the implausible range is skipped (no 50000-entry blowup); the "1." header still credits track 1
+    assert set(enrichment.track_credits) == {1}
+    assert enrichment.track_credits[1][0].artists[0].names.default == "X"  # trailing "(...)" stripped
+
+
+def test_second_role_clause_is_not_treated_as_an_artist() -> None:
+    album = _album(2, "1.\nComposed by John, arranged by Jane")
+    enrichment = RuleBasedBackend().enrich(album, album.notes or "")
+    names = [a.names.default for a in enrichment.track_credits[1][0].artists]
+    assert names == ["John"]  # "arranged by Jane" dropped, not added as a bogus artist
+
+
+def test_credits_only_for_tracks_the_album_has() -> None:
+    # inline range names a track beyond the album -> dropped
+    album = _album(2, "Composition: X (1~3)")
+    assert set(RuleBasedBackend().enrich(album, album.notes or "").track_credits) == {1, 2}
+
+
 def test_backend_conforms_to_protocol() -> None:
     from vgmdb_client.enrich import EnrichmentBackend, enrich_album
 
@@ -104,5 +136,5 @@ def test_aggregate_recall_is_reasonable() -> None:
         matched += s.matched
         produced += s.produced
         golden += s.golden
-    assert matched / golden > 0.7  # conservative baseline still recovers most credits
-    assert matched / produced > 0.85  # and stays precise
+    assert matched / golden >= 0.8  # conservative baseline still recovers most credits
+    assert matched / produced >= 0.9  # and stays precise

@@ -18,7 +18,7 @@ stays ours; no live calls in tests.
   is the single source of truth: derives the schema for `json_schema`/`tool` modes and validates the
   reply in all modes. `_build_enrichment` consumes the validated model, applying `normalize_role`.
 - **Output modes** via `output_mode`: `json_object` (default — `response_format` json_object);
-  `json_schema` (`response_format` json_schema, `strict: true`); `tool` (forced function tool call,
+  `json_schema` (`response_format` json_schema, `strict: false` — `track_credits` is an open-keyed map); `tool` (forced function tool call,
   schema in `parameters`, read from tool-call arguments). Default is `json_object` for compatibility.
 - **Prompt**: `system_prompt` + `user_template` ({tracklist}/{notes}) constructor args, defaulting to
   the current text; `_build_messages` renders the template.

@@ -76,13 +76,30 @@ def test_openai_backend_parses_and_normalizes_roles() -> None:
     content = {
         "track_credits": {"10": [{"role_raw": "Performed by", "artists": [{"names": {"English": "MorissonPoe"}}]}]}
     }
-    respx.post(LLM_URL).mock(return_value=_chat_response(content))
+    route = respx.post(LLM_URL).mock(return_value=_chat_response(content))
     backend = OpenAICompatibleBackend(url=LLM_URL, model="m", api_key="k")
     enrichment = backend.enrich(album, album.notes or "")
     credit = enrichment.track_credits[10][0]
     assert credit.role is Role.PERFORMER  # normalize_role applied by us, not the LLM
     assert credit.role_raw == "Performed by"
     assert credit.artists[0].names.default == "MorissonPoe"
+    # the outgoing request carries auth, the configured model, and the album's freeform notes
+    request = route.calls.last.request
+    assert request.headers["Authorization"] == "Bearer k"
+    payload = json.loads(request.content)
+    assert payload["model"] == "m"
+    user_message = payload["messages"][-1]["content"]
+    assert (album.notes or "") in user_message
+
+
+@respx.mock
+def test_openai_backend_pydantic_invalid_raises() -> None:
+    _, album = load_album_fixture(271)
+    # "names" must be a dict; a list fails pydantic validation -> EnrichmentError (not a raw ValidationError)
+    bad = {"track_credits": {"10": [{"role_raw": "Composer", "artists": [{"names": ["nope"]}]}]}}
+    respx.post(LLM_URL).mock(return_value=_chat_response(bad))
+    with pytest.raises(EnrichmentError):
+        OpenAICompatibleBackend(url=LLM_URL, model="m").enrich(album, "")
 
 
 @respx.mock
@@ -112,8 +129,15 @@ def test_openai_backend_schema_invalid_raises() -> None:
 
 def test_backend_from_env(monkeypatch: pytest.MonkeyPatch) -> None:
     monkeypatch.delenv("LLM_URL", raising=False)
+    monkeypatch.delenv("LLM_MODEL", raising=False)
+    monkeypatch.delenv("LLM_API_KEY", raising=False)
     assert backend_from_env() is None
     monkeypatch.setenv("LLM_URL", LLM_URL)
     monkeypatch.setenv("LLM_MODEL", "my-model")
+    monkeypatch.setenv("LLM_API_KEY", "secret")
     backend = backend_from_env()
     assert isinstance(backend, OpenAICompatibleBackend)
+    # the env values are actually read, not defaulted
+    assert backend._url == LLM_URL
+    assert backend._model == "my-model"
+    assert backend._api_key == "secret"

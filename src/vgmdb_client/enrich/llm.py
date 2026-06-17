@@ -7,6 +7,7 @@ import os
 from typing import Any
 
 import httpx
+from pydantic import ValidationError
 
 from vgmdb_client.enrich.errors import EnrichmentError
 from vgmdb_client.enrich.models import AlbumEnrichment
@@ -94,7 +95,7 @@ def _build_enrichment(album_id: int, data: dict[str, Any]) -> AlbumEnrichment:
                 for entry in entries
             ]
         return AlbumEnrichment(album_id=album_id, track_credits=track_credits)
-    except (KeyError, TypeError, ValueError) as exc:
+    except (KeyError, TypeError, ValueError, ValidationError) as exc:
         raise EnrichmentError(_MALFORMED) from exc
 
 

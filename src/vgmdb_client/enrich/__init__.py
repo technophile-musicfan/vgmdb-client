@@ -6,6 +6,7 @@ from vgmdb_client.enrich.backend import EnrichmentBackend
 from vgmdb_client.enrich.errors import EnrichmentError
 from vgmdb_client.enrich.llm import OpenAICompatibleBackend, backend_from_env
 from vgmdb_client.enrich.models import AlbumEnrichment
+from vgmdb_client.enrich.rules import RuleBasedBackend
 from vgmdb_client.models import Album
 
 __all__ = [
@@ -13,6 +14,7 @@ __all__ = [
     "EnrichmentBackend",
     "EnrichmentError",
     "OpenAICompatibleBackend",
+    "RuleBasedBackend",
     "backend_from_env",
     "enrich_album",
 ]

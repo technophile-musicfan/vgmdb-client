@@ -103,3 +103,19 @@ class ArtistRef(VgmdbModel):
     names: LocalizedText
     id: int | None = None
     link: str | None = None
+
+
+class ProductRef(VgmdbModel):
+    """A lightweight pointer to a product (distinct from the full Product entity)."""
+
+    names: LocalizedText
+    id: int | None = None
+    link: str | None = None
+
+
+class OrgRef(VgmdbModel):
+    """A lightweight pointer to an organization (distinct from the full Organization entity)."""
+
+    names: LocalizedText
+    id: int | None = None
+    link: str | None = None

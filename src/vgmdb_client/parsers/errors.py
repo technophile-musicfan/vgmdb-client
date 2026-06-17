@@ -24,3 +24,24 @@ class NotASearchPageError(ParseError):
 
     def __init__(self) -> None:
         super().__init__("Not a vgmdb search-results page (missing results container).")
+
+
+class NotAnArtistPageError(ParseError):
+    """Raised when the HTML lacks the essential anchors of an artist page."""
+
+    def __init__(self) -> None:
+        super().__init__("Not a vgmdb artist page (missing artist id or name).")
+
+
+class NotAProductPageError(ParseError):
+    """Raised when the HTML lacks the essential anchors of a product page."""
+
+    def __init__(self) -> None:
+        super().__init__("Not a vgmdb product page (missing product id or name).")
+
+
+class NotAnOrganizationPageError(ParseError):
+    """Raised when the HTML lacks the essential anchors of an organization page."""
+
+    def __init__(self) -> None:
+        super().__init__("Not a vgmdb organization page (missing organization id or name).")

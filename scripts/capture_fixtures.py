@@ -42,6 +42,13 @@ MANIFEST_PATH = FIXTURES_DIR / "manifest.json"
 # tolerates only a limited request rate before Cloudflare re-challenges mid-batch.
 DEFAULT_CAPTURE_INTERVAL = 5.0
 
+# Manifest sections that are simple id-keyed entities: (manifest key, vgmdb URL prefix, output dir).
+_ENTITY_SECTIONS = (
+    ("artists", "artist", "artists"),
+    ("products", "product", "products"),
+    ("organizations", "org", "organizations"),
+)
+
 
 class CaptureError(Exception):
     """A capture could not proceed (bad config or manifest)."""
@@ -137,6 +144,12 @@ def _load_targets() -> list[tuple[str, str, str]]:
             slug = entry["slug"]
             path = f"/search?q={quote_plus(entry['query'])}"
             targets.append((f"search/{slug}", path, f"search/{slug}.html"))
+        for section, url_prefix, out_dir in _ENTITY_SECTIONS:
+            for entry in manifest.get(section, []):
+                entity_id = entry["id"]
+                targets.append(
+                    (f"{url_prefix}/{entity_id}", f"/{url_prefix}/{entity_id}", f"{out_dir}/{entity_id}.html")
+                )
     except KeyError as exc:
         raise MalformedManifestError(exc.args[0]) from exc
     return targets

@@ -10,3 +10,9 @@ def test_album_path() -> None:
 def test_search_path_encodes_query() -> None:
     assert _core.search_path("final fantasy") == "/search?q=final+fantasy"
     assert _core.search_path("final, fantasy") == "/search?q=final%2C+fantasy"
+
+
+def test_entity_paths() -> None:
+    assert _core.artist_path(73) == "/artist/73"
+    assert _core.product_path(108) == "/product/108"
+    assert _core.organization_path(29) == "/org/29"

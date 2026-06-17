@@ -9,7 +9,11 @@
       "source_url": "https://vgmdb.net/album/271",
       "captured_date": "2026-06-15",
       "status": "captured",
-      "diversity": ["single-disc", "english-only", "full-date"]
+      "diversity": [
+        "single-disc",
+        "english-only",
+        "full-date"
+      ]
     },
     {
       "id": 5012,
@@ -17,7 +21,11 @@
       "source_url": "https://vgmdb.net/album/5012",
       "captured_date": "2026-06-15",
       "status": "captured",
-      "diversity": ["single-disc", "multi-language", "sparse-credits"]
+      "diversity": [
+        "single-disc",
+        "multi-language",
+        "sparse-credits"
+      ]
     },
     {
       "id": 10000,
@@ -25,7 +33,11 @@
       "source_url": "https://vgmdb.net/album/10000",
       "captured_date": "2026-06-15",
       "status": "captured",
-      "diversity": ["single-disc", "sparse-credits", "near-empty"]
+      "diversity": [
+        "single-disc",
+        "sparse-credits",
+        "near-empty"
+      ]
     },
     {
       "id": 22000,
@@ -33,7 +45,10 @@
       "source_url": "https://vgmdb.net/album/22000",
       "captured_date": "2026-06-15",
       "status": "captured",
-      "diversity": ["english-only", "single-disc"]
+      "diversity": [
+        "english-only",
+        "single-disc"
+      ]
     },
     {
       "id": 33000,
@@ -41,7 +56,10 @@
       "source_url": "https://vgmdb.net/album/33000",
       "captured_date": "2026-06-15",
       "status": "captured",
-      "diversity": ["english-only", "single-disc"]
+      "diversity": [
+        "english-only",
+        "single-disc"
+      ]
     },
     {
       "id": 45000,
@@ -49,7 +67,10 @@
       "source_url": "https://vgmdb.net/album/45000",
       "captured_date": "2026-06-15",
       "status": "captured",
-      "diversity": ["multi-language", "rich-credits"]
+      "diversity": [
+        "multi-language",
+        "rich-credits"
+      ]
     },
     {
       "id": 60000,
@@ -57,7 +78,11 @@
       "source_url": "https://vgmdb.net/album/60000",
       "captured_date": "2026-06-15",
       "status": "captured",
-      "diversity": ["single-disc", "sparse-credits", "year-month-date"]
+      "diversity": [
+        "single-disc",
+        "sparse-credits",
+        "year-month-date"
+      ]
     },
     {
       "id": 90000,
@@ -65,7 +90,10 @@
       "source_url": "https://vgmdb.net/album/90000",
       "captured_date": "2026-06-15",
       "status": "captured",
-      "diversity": ["single-disc", "single-language"]
+      "diversity": [
+        "single-disc",
+        "single-language"
+      ]
     },
     {
       "id": 4,
@@ -73,7 +101,12 @@
       "source_url": "https://vgmdb.net/album/4",
       "captured_date": "2026-06-15",
       "status": "captured",
-      "diversity": ["multi-disc", "multi-language", "rich-credits", "full-date"]
+      "diversity": [
+        "multi-disc",
+        "multi-language",
+        "rich-credits",
+        "full-date"
+      ]
     },
     {
       "id": 30000,
@@ -81,7 +114,12 @@
       "source_url": "https://vgmdb.net/album/30000",
       "captured_date": "2026-06-15",
       "status": "captured",
-      "diversity": ["single-disc", "drama-cd", "no-track-titles", "freeform-heavy-notes"]
+      "diversity": [
+        "single-disc",
+        "drama-cd",
+        "no-track-titles",
+        "freeform-heavy-notes"
+      ]
     },
     {
       "id": 18536,
@@ -89,7 +127,36 @@
       "source_url": "https://vgmdb.net/album/18536",
       "captured_date": "2026-06-15",
       "status": "captured",
-      "diversity": ["year-only-date"]
+      "diversity": [
+        "year-only-date"
+      ]
+    }
+  ],
+  "artists": [
+    {
+      "id": 146,
+      "kind": "artist",
+      "source_url": "https://vgmdb.net/artist/146",
+      "status": "captured",
+      "captured_date": "2026-06-17"
+    }
+  ],
+  "products": [
+    {
+      "id": 262,
+      "kind": "product",
+      "source_url": "https://vgmdb.net/product/262",
+      "status": "captured",
+      "captured_date": "2026-06-17"
+    }
+  ],
+  "organizations": [
+    {
+      "id": 17,
+      "kind": "organization",
+      "source_url": "https://vgmdb.net/org/17",
+      "status": "captured",
+      "captured_date": "2026-06-17"
     }
   ],
   "search": [
@@ -100,7 +167,9 @@
       "source_url": "https://vgmdb.net/search?q=final+fantasy",
       "captured_date": "2026-06-15",
       "status": "captured",
-      "diversity": ["multi-hit"],
+      "diversity": [
+        "multi-hit"
+      ],
       "golden_scope": "first-10",
       "golden_note": "Page lists 1106 album results; the golden transcribes only the first 10 rows (in page order). Parser-vs-golden comparison for this fixture must compare against the first 10 results only."
     },
@@ -111,7 +180,9 @@
       "source_url": "https://vgmdb.net/search?q=zzqxnonexistentquery",
       "captured_date": "2026-06-15",
       "status": "captured",
-      "diversity": ["empty"]
+      "diversity": [
+        "empty"
+      ]
     }
   ]
 }

@@ -5,8 +5,8 @@ from __future__ import annotations
 from types import TracebackType
 
 from vgmdb_client.client import _core
-from vgmdb_client.models import Album, SearchResults
-from vgmdb_client.parsers import parse_album, parse_search
+from vgmdb_client.models import Album, Artist, Organization, Product, SearchResults
+from vgmdb_client.parsers import parse_album, parse_artist, parse_organization, parse_product, parse_search
 from vgmdb_client.transport import AsyncTransport, TransportConfig
 
 _ONE_SOURCE = "Provide exactly one of `config` or `transport`."
@@ -37,6 +37,18 @@ class AsyncClient:
     async def search(self, query: str) -> SearchResults:
         """Fetch and parse a search-results page."""
         return parse_search(await self._transport.get(_core.search_path(query)))
+
+    async def get_artist(self, artist_id: int) -> Artist:
+        """Fetch and parse an artist page."""
+        return parse_artist(await self._transport.get(_core.artist_path(artist_id)))
+
+    async def get_product(self, product_id: int) -> Product:
+        """Fetch and parse a product page."""
+        return parse_product(await self._transport.get(_core.product_path(product_id)))
+
+    async def get_organization(self, org_id: int) -> Organization:
+        """Fetch and parse an organization page."""
+        return parse_organization(await self._transport.get(_core.organization_path(org_id)))
 
     async def aclose(self) -> None:
         """Close the underlying transport."""

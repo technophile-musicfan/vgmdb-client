@@ -1,0 +1,39 @@
+{
+  "id": 262,
+  "link": "https://vgmdb.net/product/262",
+  "names": {
+    "English": "Streets of Rage",
+    "Japanese": "ベア・ナックル",
+    "Romaji": "Bare Knuckle: Ikari no Tekken"
+  },
+  "type": null,
+  "notes": null,
+  "franchises": [
+    {
+      "names": {
+        "English": "Streets of Rage",
+        "Japanese": "ベア・ナックル",
+        "Romaji": "Bare Knuckle"
+      },
+      "id": 261,
+      "link": "https://vgmdb.net/product/261"
+    }
+  ],
+  "organizations": [
+    {
+      "names": {
+        "English": "SEGA Enterprises",
+        "Japanese": "株式会社セガ・エンタープライゼス"
+      },
+      "id": 2874,
+      "link": "https://vgmdb.net/org/2874"
+    },
+    {
+      "names": {
+        "English": "SEGA of America"
+      },
+      "id": 2641,
+      "link": "https://vgmdb.net/org/2641"
+    }
+  ]
+}

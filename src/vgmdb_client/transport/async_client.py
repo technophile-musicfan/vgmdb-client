@@ -24,7 +24,11 @@ logger = logging.getLogger(__name__)
 
 
 class AsyncTransport:
-    """Authenticated, Cloudflare-aware asynchronous fetcher for vgmdb pages."""
+    """Authenticated, Cloudflare-aware asynchronous fetcher for vgmdb pages.
+
+    An instance is scoped to a single event loop (its throttle lock and httpx client bind to the
+    loop they are used on); do not share one instance across concurrently-running loops.
+    """
 
     def __init__(self, config: TransportConfig) -> None:
         self._config = config

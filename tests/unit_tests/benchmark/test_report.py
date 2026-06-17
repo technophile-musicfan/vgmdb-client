@@ -55,6 +55,7 @@ def test_markdown_ranks_named_backends() -> None:
     assert backend_names(comparisons) == ["llm", "rule"]
     assert "| llm | 1.00 | 1.00 | 1.00" in md  # perfect
     assert "| rule | 0.33 | 0.50 | 0.40" in md  # 1/3 precision, 1/2 recall
+    assert "tr" in md  # coverage (credited/total tracks) is still reported per spec
 
 
 def test_summary_reports_scorecard_and_enrichment() -> None:

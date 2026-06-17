@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from benchmarks.quality.compare import HUFMAN, AlbumComparison, FieldScore, agreement
+from benchmarks.quality.compare import HUFMAN, AlbumComparison, EnrichmentEntry, FieldScore, agreement
 from benchmarks.quality.enrichment import EnrichmentScore
 
 # Short markers for per-field status in the detail tables.
@@ -66,6 +66,16 @@ def _aggregate_enrichment(comparisons: list[AlbumComparison], backend: str) -> E
         produced += entry.score.produced
         golden += entry.score.golden
     return EnrichmentScore(matched=matched, produced=produced, golden=golden)
+
+
+def _enrichment_cell(entry: EnrichmentEntry | None) -> str:
+    """A per-album backend cell: recall / precision plus the coverage fraction."""
+    if entry is None:
+        return "—"
+    cov = entry.coverage
+    return (
+        f"R {entry.score.recall:.2f} / P {entry.score.precision:.2f} · {cov.tracks_with_credits}/{cov.total_tracks} tr"
+    )
 
 
 def render_summary(comparisons: list[AlbumComparison]) -> str:
@@ -152,13 +162,17 @@ def render_markdown(comparisons: list[AlbumComparison]) -> str:
                 f"| {backend} | {agg.precision:.2f} | {agg.recall:.2f} | {agg.f1:.2f} "
                 f"| {agg.matched}/{agg.golden} | {agg.produced} |"
             )
-        out += ["", "Per-album (recall / precision):", "", "| album | " + " | ".join(backends) + " |"]
+        out += [
+            "",
+            "Per-album (recall / precision · coverage = credited tracks / total):",
+            "",
+            "| album | " + " | ".join(backends) + " |",
+        ]
         out.append("|" + "---|" * (1 + len(backends)))
         for comparison in comparisons:
             cells = [str(comparison.album_id)]
             for backend in backends:
-                entry = comparison.enrichment.get(backend)
-                cells.append(f"R {entry.score.recall:.2f} / P {entry.score.precision:.2f}" if entry else "—")
+                cells.append(_enrichment_cell(comparison.enrichment.get(backend)))
             out.append("| " + " | ".join(cells) + " |")
         out.append("")
 

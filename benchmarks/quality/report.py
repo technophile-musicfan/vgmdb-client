@@ -87,7 +87,7 @@ def _detail_table(comparison: AlbumComparison, names: list[str]) -> list[str]:
 
 
 def _cell(value: str | None, status: str | None) -> str:
-    text = "—" if value is None else value.replace("|", "\\|")
+    text = "—" if value is None else value.replace("|", "\\|").replace("\n", " ").replace("\r", " ")
     if status is None:
         return text
     return f"{_STATUS_MARK.get(status, '?')} {text}"

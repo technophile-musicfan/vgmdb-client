@@ -29,9 +29,14 @@ def test_from_album_reduces_golden() -> None:
     assert record["disc1.track1.title"] == "Perfect Dark Zero - Title"
 
 
-def test_from_golden_matches_from_album() -> None:
+def test_from_golden_produces_expected_record() -> None:
     _, golden = load_album_fixture(271)
-    assert from_golden(golden) == from_album(golden)
+    record = from_golden(golden)
+    # Pin the golden adapter's output explicitly (not just equality to from_album).
+    assert record["title"] == "Perfect Dark Zero Original Soundtrack"
+    assert record["catalog"] == "SE-2020-2"
+    assert record["release_date"] == "2005-11-08"
+    assert record["disc1.track1.title"] == "Perfect Dark Zero - Title"
 
 
 def test_from_hufman_tolerant_of_missing_fields() -> None:

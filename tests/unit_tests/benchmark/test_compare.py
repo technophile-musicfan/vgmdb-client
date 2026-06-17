@@ -63,3 +63,16 @@ def test_coverage_with_enrichment() -> None:
     assert cov.total_tracks == 3
     assert cov.tracks_with_credits == 1  # track 2's empty list doesn't count
     assert cov.total_credits == 1
+
+
+def test_coverage_ignores_credits_for_nonexistent_tracks() -> None:
+    # A credit keyed to a track number the album doesn't have must not inflate the fraction.
+    album = _album_with_tracks(2)  # track numbers 1, 2
+    enrichment = AlbumEnrichment(
+        album_id=1,
+        track_credits={1: [Credit(role=Role.COMPOSER, role_raw="Music")], 99: [Credit(role=Role.OTHER, role_raw="?")]},
+    )
+    cov = coverage_for(album, enrichment)
+    assert cov.total_tracks == 2
+    assert cov.tracks_with_credits == 1  # track 99 doesn't exist -> excluded
+    assert cov.total_credits == 1

@@ -85,12 +85,14 @@ def coverage_for(album: Album, enrichment: AlbumEnrichment | None) -> Coverage:
     """Build enrichment coverage for an album; ``None`` enrichment means no backend was configured."""
     if enrichment is None:
         return Coverage(available=False)
-    total_tracks = sum(len(disc.tracks) for disc in album.discs)
-    tracks_with_credits = sum(1 for entries in enrichment.track_credits.values() if entries)
-    total_credits = sum(len(entries) for entries in enrichment.track_credits.values())
+    # track_credits is keyed by track number; reconcile against the album's real track numbers so the
+    # coverage fraction stays coherent (and credits keyed to a non-existent track don't inflate it).
+    valid_numbers = {track.number for disc in album.discs for track in disc.tracks if track.number is not None}
+    credited = {number: entries for number, entries in enrichment.track_credits.items() if entries}
+    in_album = {number: entries for number, entries in credited.items() if number in valid_numbers}
     return Coverage(
         available=True,
-        tracks_with_credits=tracks_with_credits,
-        total_tracks=total_tracks,
-        total_credits=total_credits,
+        tracks_with_credits=len(in_album),
+        total_tracks=len(valid_numbers),
+        total_credits=sum(len(entries) for entries in in_album.values()),
     )

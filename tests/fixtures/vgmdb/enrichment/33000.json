@@ -1,0 +1,183 @@
+{
+  "album_id": 33000,
+  "track_credits": {
+    "1": [
+      {
+        "role": "composer",
+        "role_raw": "Compose",
+        "artists": [
+          {
+            "names": {
+              "English": "Syrufit"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      }
+    ],
+    "2": [
+      {
+        "role": "arranger",
+        "role_raw": "Arrangement",
+        "artists": [
+          {
+            "names": {
+              "English": "Syrufit"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      }
+    ],
+    "3": [
+      {
+        "role": "arranger",
+        "role_raw": "Arrangement",
+        "artists": [
+          {
+            "names": {
+              "English": "Syrufit"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      }
+    ],
+    "4": [
+      {
+        "role": "arranger",
+        "role_raw": "Arrangement",
+        "artists": [
+          {
+            "names": {
+              "English": "Shibayan"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      }
+    ],
+    "5": [
+      {
+        "role": "arranger",
+        "role_raw": "Arrangement",
+        "artists": [
+          {
+            "names": {
+              "English": "Syrufit"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      }
+    ],
+    "6": [
+      {
+        "role": "arranger",
+        "role_raw": "Arrangement",
+        "artists": [
+          {
+            "names": {
+              "English": "Linjin"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      }
+    ],
+    "7": [
+      {
+        "role": "arranger",
+        "role_raw": "Arrangement",
+        "artists": [
+          {
+            "names": {
+              "English": "Syrufit"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      }
+    ],
+    "8": [
+      {
+        "role": "arranger",
+        "role_raw": "Arrangement",
+        "artists": [
+          {
+            "names": {
+              "English": "Nhato"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      }
+    ],
+    "9": [
+      {
+        "role": "composer",
+        "role_raw": "Compose",
+        "artists": [
+          {
+            "names": {
+              "English": "Syrufit"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      }
+    ],
+    "10": [
+      {
+        "role": "arranger",
+        "role_raw": "Arrangement",
+        "artists": [
+          {
+            "names": {
+              "English": "Syrufit"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      },
+      {
+        "role": "arranger",
+        "role_raw": "Arrangement",
+        "artists": [
+          {
+            "names": {
+              "English": "Taishi"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      }
+    ],
+    "12": [
+      {
+        "role": "arranger",
+        "role_raw": "Arrangement",
+        "artists": [
+          {
+            "names": {
+              "English": "Tomoyuki Sakakida"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      }
+    ]
+  }
+}

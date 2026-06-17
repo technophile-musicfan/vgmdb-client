@@ -15,6 +15,7 @@ from collections.abc import Iterator
 from pathlib import Path
 from typing import Any
 
+from vgmdb_client.enrich import AlbumEnrichment
 from vgmdb_client.models import Album, Artist, Organization, Product, SearchResults
 
 FIXTURES_DIR = Path(__file__).resolve().parent.parent / "fixtures" / "vgmdb"
@@ -24,6 +25,7 @@ SEARCH_DIR = FIXTURES_DIR / "search"
 ARTISTS_DIR = FIXTURES_DIR / "artists"
 PRODUCTS_DIR = FIXTURES_DIR / "products"
 ORGANIZATIONS_DIR = FIXTURES_DIR / "organizations"
+ENRICHMENT_DIR = FIXTURES_DIR / "enrichment"
 
 
 def load_manifest() -> dict[str, Any]:
@@ -65,6 +67,12 @@ def iter_organization_fixtures() -> Iterator[int]:
     yield from _iter_captured_ids("organizations")
 
 
+def iter_enrichment_goldens() -> Iterator[int]:
+    """Yield every album id that has a committed enrichment golden."""
+    for path in sorted(ENRICHMENT_DIR.glob("*.json"), key=lambda p: int(p.stem)):
+        yield int(path.stem)
+
+
 def load_album_fixture(album_id: int) -> tuple[str, Album]:
     """Return ``(raw_html, golden_album)`` for an album fixture.
 
@@ -83,6 +91,12 @@ def load_search_fixture(slug: str) -> tuple[str, SearchResults]:
     html = (SEARCH_DIR / f"{slug}.html").read_text(encoding="utf-8")
     golden = (SEARCH_DIR / f"{slug}.json").read_text(encoding="utf-8")
     return html, SearchResults.model_validate_json(golden)
+
+
+def load_enrichment_golden(album_id: int) -> AlbumEnrichment:
+    """Return the hand-authored enrichment golden for an album (validated on load)."""
+    golden = (ENRICHMENT_DIR / f"{album_id}.json").read_text(encoding="utf-8")
+    return AlbumEnrichment.model_validate_json(golden)
 
 
 def load_artist_fixture(artist_id: int) -> tuple[str, Artist]:

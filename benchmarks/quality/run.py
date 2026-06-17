@@ -17,12 +17,14 @@ from benchmarks.quality.compare import (
     HUFMAN,
     OURS,
     AlbumComparison,
+    EnrichmentEntry,
     coverage_for,
     score_record,
 )
+from benchmarks.quality.enrichment import score_enrichment
 from benchmarks.quality.hufman_client import fetch_album
 from benchmarks.quality.report import render_markdown, render_summary
-from tests.support.fixtures import iter_album_fixtures, load_album_fixture
+from tests.support.fixtures import iter_album_fixtures, load_album_fixture, load_enrichment_golden
 from vgmdb_client.enrich import EnrichmentBackend, backend_from_env, enrich_album
 from vgmdb_client.parsers import parse_album
 
@@ -33,9 +35,14 @@ def run(
     *,
     report_path: Path = DEFAULT_REPORT_PATH,
     hufman_enabled: bool = True,
-    backend: EnrichmentBackend | None = None,
+    backends: dict[str, EnrichmentBackend] | None = None,
 ) -> list[AlbumComparison]:
-    """Compare every album fixture, write the Markdown report, print the summary, return comparisons."""
+    """Compare every album fixture, write the Markdown report, print the summary, return comparisons.
+
+    ``backends`` is a mapping of label -> enrichment backend; each is scored against the album's
+    enrichment golden so the report ranks them. With no backends, only structural scoring is reported.
+    """
+    backends = backends or {}
     comparisons: list[AlbumComparison] = []
     for album_id in iter_album_fixtures():
         html, golden = load_album_fixture(album_id)
@@ -49,7 +56,15 @@ def run(
                 sources[HUFMAN] = from_hufman(data)
 
         scores = {name: score_record(record, golden_record) for name, record in sources.items()}
-        enrichment = enrich_album(ours, backend) if backend is not None else None
+
+        enrichment_golden = load_enrichment_golden(album_id)
+        enrichment: dict[str, EnrichmentEntry] = {}
+        for label, backend in backends.items():
+            produced = enrich_album(ours, backend)
+            enrichment[label] = EnrichmentEntry(
+                coverage=coverage_for(ours, produced),
+                score=score_enrichment(produced, enrichment_golden),
+            )
 
         comparisons.append(
             AlbumComparison(
@@ -58,7 +73,7 @@ def run(
                 golden=golden_record,
                 sources=sources,
                 scores=scores,
-                coverage=coverage_for(ours, enrichment),
+                enrichment=enrichment,
             )
         )
 
@@ -70,7 +85,8 @@ def run(
 
 def main() -> None:
     """CLI entry point: hufman + LLM backend driven entirely by the environment."""
-    run(hufman_enabled=True, backend=backend_from_env())
+    backend = backend_from_env()
+    run(hufman_enabled=True, backends={"llm": backend} if backend is not None else {})
 
 
 if __name__ == "__main__":

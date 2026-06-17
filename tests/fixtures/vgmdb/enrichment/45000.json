@@ -1,0 +1,113 @@
+{
+  "album_id": 45000,
+  "track_credits": {
+    "1": [
+      {
+        "role": "vocalist",
+        "role_raw": "Vocals",
+        "artists": [
+          {
+            "names": {
+              "English": "Yoko Oginome"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      },
+      {
+        "role": "lyricist",
+        "role_raw": "Lyrics",
+        "artists": [
+          {
+            "names": {
+              "English": "Masumi Kawamura"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      },
+      {
+        "role": "composer",
+        "role_raw": "Composed by",
+        "artists": [
+          {
+            "names": {
+              "English": "Tetsuya Komuro"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      },
+      {
+        "role": "arranger",
+        "role_raw": "Arranged by",
+        "artists": [
+          {
+            "names": {
+              "English": "Nobuyuki Shimizu"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      }
+    ],
+    "7": [
+      {
+        "role": "vocalist",
+        "role_raw": "Vocals",
+        "artists": [
+          {
+            "names": {
+              "English": "Yoko Oginome"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      },
+      {
+        "role": "lyricist",
+        "role_raw": "Lyrics",
+        "artists": [
+          {
+            "names": {
+              "English": "Keiko Aso"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      },
+      {
+        "role": "composer",
+        "role_raw": "Composed by",
+        "artists": [
+          {
+            "names": {
+              "English": "Masayoshi Takanaka"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      },
+      {
+        "role": "arranger",
+        "role_raw": "Arranged by",
+        "artists": [
+          {
+            "names": {
+              "English": "Masayoshi Takanaka"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      }
+    ]
+  }
+}

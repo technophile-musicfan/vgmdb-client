@@ -1,0 +1,89 @@
+{
+  "album_id": 18536,
+  "track_credits": {
+    "1": [
+      {
+        "role": "composer",
+        "role_raw": "Composition",
+        "artists": [
+          {
+            "names": {
+              "English": "Nobuo Uematsu"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      },
+      {
+        "role": "arranger",
+        "role_raw": "Arrangement",
+        "artists": [
+          {
+            "names": {
+              "English": "Almighty Associates"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      }
+    ],
+    "2": [
+      {
+        "role": "composer",
+        "role_raw": "Composition",
+        "artists": [
+          {
+            "names": {
+              "English": "Nobuo Uematsu"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      },
+      {
+        "role": "arranger",
+        "role_raw": "Arrangement",
+        "artists": [
+          {
+            "names": {
+              "English": "Almighty Associates"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      }
+    ],
+    "3": [
+      {
+        "role": "composer",
+        "role_raw": "Composition",
+        "artists": [
+          {
+            "names": {
+              "English": "Nobuo Uematsu"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      },
+      {
+        "role": "arranger",
+        "role_raw": "Arrangement",
+        "artists": [
+          {
+            "names": {
+              "English": "Shiro Hamaguchi"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      }
+    ]
+  }
+}

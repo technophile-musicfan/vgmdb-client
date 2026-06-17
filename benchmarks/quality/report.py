@@ -2,7 +2,8 @@
 
 from __future__ import annotations
 
-from benchmarks.quality.compare import HUFMAN, AlbumComparison, Coverage, FieldScore, agreement
+from benchmarks.quality.compare import HUFMAN, AlbumComparison, EnrichmentEntry, FieldScore, agreement
+from benchmarks.quality.enrichment import EnrichmentScore
 
 # Short markers for per-field status in the detail tables.
 _STATUS_MARK = {
@@ -44,21 +45,56 @@ def _scorecard_rows(comparisons: list[AlbumComparison], names: list[str]) -> lis
     return rows
 
 
-def _coverage_line(coverage: Coverage) -> str:
-    if not coverage.available:
-        return "n/a (no backend)"
-    return f"{coverage.tracks_with_credits}/{coverage.total_tracks} tracks, {coverage.total_credits} credits"
+def backend_names(comparisons: list[AlbumComparison]) -> list[str]:
+    """Enrichment backend labels present across the comparisons, in first-seen order."""
+    names: list[str] = []
+    for comparison in comparisons:
+        for name in comparison.enrichment:
+            if name not in names:
+                names.append(name)
+    return names
+
+
+def _aggregate_enrichment(comparisons: list[AlbumComparison], backend: str) -> EnrichmentScore:
+    """Sum a backend's matched/produced/golden counts across all albums into one score."""
+    matched = produced = golden = 0
+    for comparison in comparisons:
+        entry = comparison.enrichment.get(backend)
+        if entry is None:
+            continue
+        matched += entry.score.matched
+        produced += entry.score.produced
+        golden += entry.score.golden
+    return EnrichmentScore(matched=matched, produced=produced, golden=golden)
+
+
+def _enrichment_cell(entry: EnrichmentEntry | None) -> str:
+    """A per-album backend cell: recall / precision plus the coverage fraction."""
+    if entry is None:
+        return "—"
+    cov = entry.coverage
+    return (
+        f"R {entry.score.recall:.2f} / P {entry.score.precision:.2f} · {cov.tracks_with_credits}/{cov.total_tracks} tr"
+    )
 
 
 def render_summary(comparisons: list[AlbumComparison]) -> str:
-    """A compact scorecard + coverage summary for stdout."""
+    """A compact scorecard + enrichment-quality summary for stdout."""
     names = source_names(comparisons)
     lines = ["Parsing-quality summary", "  Field agreement vs golden:"]
     for name, pct, ratio in _scorecard_rows(comparisons, names):
         lines.append(f"    {name:<8} {pct:>5}  ({ratio})")
-    lines.append("  ours+LLM enrichment coverage:")
-    for comparison in comparisons:
-        lines.append(f"    album {comparison.album_id}: {_coverage_line(comparison.coverage)}")
+    backends = backend_names(comparisons)
+    if backends:
+        lines.append("  Enrichment quality vs golden:")
+        for backend in backends:
+            agg = _aggregate_enrichment(comparisons, backend)
+            lines.append(
+                f"    {backend:<8} P {agg.precision:.2f} / R {agg.recall:.2f} / F1 {agg.f1:.2f}"
+                f"  ({agg.matched}/{agg.golden} found, {agg.produced} produced)"
+            )
+    else:
+        lines.append("  Enrichment: no backends configured.")
     return "\n".join(lines)
 
 
@@ -94,7 +130,7 @@ def _cell(value: str | None, status: str | None) -> str:
 
 
 def render_markdown(comparisons: list[AlbumComparison]) -> str:
-    """Render the full Markdown report: scorecard, enrichment coverage, per-album field detail."""
+    """Render the full Markdown report: scorecard, enrichment quality, per-album field detail."""
     names = source_names(comparisons)
     out = ["# Parsing-quality report", ""]
     if HUFMAN not in names:
@@ -106,17 +142,39 @@ def render_markdown(comparisons: list[AlbumComparison]) -> str:
         out.append(f"| {name} | {pct} | {ratio} |")
     out.append("")
 
+    backends = backend_names(comparisons)
     out += [
-        "## Enrichment coverage (ours+LLM)",
+        "## Enrichment quality",
         "",
-        "Per-track credits extracted from notes. No golden ground truth — reported as coverage.",
+        "Per-track credits vs the enrichment golden (precision / recall / F1).",
         "",
-        "| album | coverage |",
-        "|---|---|",
     ]
-    for comparison in comparisons:
-        out.append(f"| {comparison.album_id} | {_coverage_line(comparison.coverage)} |")
-    out.append("")
+    if not backends:
+        out += ["No enrichment backends configured.", ""]
+    else:
+        out += [
+            "| backend | precision | recall | F1 | matched/golden | produced |",
+            "|---|---|---|---|---|---|",
+        ]
+        for backend in backends:
+            agg = _aggregate_enrichment(comparisons, backend)
+            out.append(
+                f"| {backend} | {agg.precision:.2f} | {agg.recall:.2f} | {agg.f1:.2f} "
+                f"| {agg.matched}/{agg.golden} | {agg.produced} |"
+            )
+        out += [
+            "",
+            "Per-album (recall / precision · coverage = credited tracks / total):",
+            "",
+            "| album | " + " | ".join(backends) + " |",
+        ]
+        out.append("|" + "---|" * (1 + len(backends)))
+        for comparison in comparisons:
+            cells = [str(comparison.album_id)]
+            for backend in backends:
+                cells.append(_enrichment_cell(comparison.enrichment.get(backend)))
+            out.append("| " + " | ".join(cells) + " |")
+        out.append("")
 
     out += ["## Per-album field detail", ""]
     legend = "  ".join(f"`{mark}` {status}" for status, mark in _STATUS_MARK.items())

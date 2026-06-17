@@ -5,6 +5,7 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 
 from benchmarks.quality.adapters import CanonicalRecord
+from benchmarks.quality.enrichment import EnrichmentScore
 from benchmarks.quality.fields import normalize
 from vgmdb_client.enrich import AlbumEnrichment
 from vgmdb_client.models import Album
@@ -42,15 +43,23 @@ class Coverage:
 
 
 @dataclass(frozen=True)
+class EnrichmentEntry:
+    """One named backend's enrichment result for an album: coverage + quality score vs the golden."""
+
+    coverage: Coverage
+    score: EnrichmentScore
+
+
+@dataclass(frozen=True)
 class AlbumComparison:
-    """Everything needed to report one album: golden, each source's record, scores, coverage."""
+    """Everything needed to report one album: golden, each source's record, scores, enrichment."""
 
     album_id: int
     title: str | None
     golden: CanonicalRecord
     sources: dict[str, CanonicalRecord]
     scores: dict[str, list[FieldScore]]
-    coverage: Coverage = field(default_factory=lambda: Coverage(available=False))
+    enrichment: dict[str, EnrichmentEntry] = field(default_factory=dict)
 
 
 def score_record(source: CanonicalRecord, golden: CanonicalRecord) -> list[FieldScore]:

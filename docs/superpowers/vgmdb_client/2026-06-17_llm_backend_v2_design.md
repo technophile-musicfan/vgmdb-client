@@ -44,7 +44,8 @@ derive their schema from `_LlmResponse.model_json_schema()`. `_build_enrichment`
 
 - **`json_object`** (default) — `response_format={"type": "json_object"}`; parse `message.content`.
 - **`json_schema`** — `response_format={"type": "json_schema", "json_schema": {"name": ...,
-  "schema": <derived>, "strict": true}}`; parse `message.content`.
+  "schema": <derived>, "strict": false}}`; parse `message.content`. (strict is false because
+  `track_credits` is an open-keyed map, which OpenAI strict mode cannot express.)
 - **`tool`** — `tools=[{"type": "function", "function": {"name": ..., "parameters": <derived>}}]`
   with forced `tool_choice`; parse the tool call's `arguments`.
 
@@ -75,7 +76,7 @@ deployment switches, not long text).
 ## Testing (all respx-mocked, no network)
 
 - Each mode's outgoing request shape: `json_object` sets the json_object response_format; `json_schema`
-  includes the derived schema with `strict: true`; `tool` forces a tool call and the schema rides in
+  includes the derived schema (strict: false — open-keyed map); `tool` forces a tool call and the schema rides in
   `parameters`.
 - Each mode parses a valid reply (content for object/schema; tool-call arguments for tool) into the
   expected `AlbumEnrichment` with `normalize_role` applied.

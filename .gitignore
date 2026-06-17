@@ -1,5 +1,8 @@
 docs/source
 
+# Generated benchmark report (B2 quality harness)
+benchmarks/quality/report.md
+
 # From https://raw.githubusercontent.com/github/gitignore/main/Python.gitignore
 
 # Byte-compiled / optimized / DLL files

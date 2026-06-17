@@ -13,7 +13,7 @@ golden dataset (M5) that can serve as ground truth, and a mature third-party par
   1. **ours** — `parse_album(html)` over the captured fixture HTML.
   2. **ours+LLM** — `ours` plus `enrich_album(album, backend_from_env())`.
   3. **hufman** — the self-hosted hufman/vgmdb service queried over HTTP.
-- Define a canonical comparison record (album title/catalog/release_date/publisher/label + per-track
+- Define a canonical comparison record (album title/catalog/release_date/classification + per-track
   titles) with per-field normalizers; score each source against the golden as ground truth
   ({match, mismatch, missing, extra}); also emit a raw N-way diff.
 - Report ours+LLM as enrichment **coverage** (tracks gaining credits, total credits) — the golden

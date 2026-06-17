@@ -58,7 +58,7 @@ Dependencies it reuses: `tests.support.fixtures` (fixture loader), `vgmdb_client
 
 A **canonical record** is a flat mapping `field_path -> value`:
 
-- Album level: `title`, `catalog`, `release_date`, `publisher`, `label`.
+- Album level: `title`, `catalog`, `release_date`, `classification`.
 - Per track: `disc{d}.track{t}.title`.
 
 Each field has a **normalizer** used only for *scoring* (fair comparison), e.g. strip + casefold for

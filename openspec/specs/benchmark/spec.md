@@ -1,9 +1,14 @@
-## ADDED Requirements
+# benchmark Specification
+
+## Purpose
+A dev-only parsing-quality harness (under `benchmarks/`, never shipped) that compares our parser, our parser + LLM enrichment, and a third-party parser (self-hosted hufman/vgmdb over HTTP) against the golden fixtures, and emits a per-field quality report (Markdown + stdout summary). hufman is an optional column queried over HTTP and is never vendored or imported into the runtime.
+
+## Requirements
 
 ### Requirement: Canonical comparison record
 
 The harness SHALL reduce an album from any source to a canonical record: a flat mapping of field
-path to value covering album `title`, `catalog`, `release_date`, `publisher`, and `label`, plus a
+path to value covering album `title`, `catalog`, `release_date`, and `classification`, plus a
 `title` per disc/track addressed as `disc{d}.track{t}.title`. It SHALL provide adapters that build
 this record from our parsed `Album`, from the golden `Album`, and from a hufman JSON response. The
 hufman adapter SHALL be tolerant: a field absent from the hufman response maps to a missing value

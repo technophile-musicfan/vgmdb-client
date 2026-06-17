@@ -92,6 +92,33 @@
       "diversity": ["year-only-date"]
     }
   ],
+  "artists": [
+    {
+      "id": 146,
+      "kind": "artist",
+      "source_url": "https://vgmdb.net/artist/146",
+      "status": "candidate",
+      "note": "CANDIDATE: artist credited on existing album fixtures. Confirm/swap at capture time; prefer a Person with a birthdate and/or unit memberships. Set status=captured + captured_date when done."
+    }
+  ],
+  "products": [
+    {
+      "id": 262,
+      "kind": "product",
+      "source_url": "https://vgmdb.net/product/262",
+      "status": "candidate",
+      "note": "CANDIDATE: product linked from existing album fixtures. Confirm/swap at capture time; prefer a Game with organizations and/or a franchise. Set status=captured + captured_date when done."
+    }
+  ],
+  "organizations": [
+    {
+      "id": 17,
+      "kind": "organization",
+      "source_url": "https://vgmdb.net/org/17",
+      "status": "candidate",
+      "note": "CANDIDATE: organization linked from existing album fixtures. Confirm/swap at capture time. Set status=captured + captured_date when done."
+    }
+  ],
   "search": [
     {
       "slug": "multi-hit",

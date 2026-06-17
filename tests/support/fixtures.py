@@ -15,12 +15,15 @@ from collections.abc import Iterator
 from pathlib import Path
 from typing import Any
 
-from vgmdb_client.models import Album, SearchResults
+from vgmdb_client.models import Album, Artist, Organization, Product, SearchResults
 
 FIXTURES_DIR = Path(__file__).resolve().parent.parent / "fixtures" / "vgmdb"
 MANIFEST_PATH = FIXTURES_DIR / "manifest.json"
 ALBUMS_DIR = FIXTURES_DIR / "albums"
 SEARCH_DIR = FIXTURES_DIR / "search"
+ARTISTS_DIR = FIXTURES_DIR / "artists"
+PRODUCTS_DIR = FIXTURES_DIR / "products"
+ORGANIZATIONS_DIR = FIXTURES_DIR / "organizations"
 
 
 def load_manifest() -> dict[str, Any]:
@@ -38,6 +41,28 @@ def iter_search_fixtures() -> Iterator[str]:
     """Yield every search slug recorded in the manifest."""
     for entry in load_manifest().get("search", []):
         yield str(entry["slug"])
+
+
+def _iter_captured_ids(section: str) -> Iterator[int]:
+    """Yield ids of manifest entries in ``section`` that have been captured."""
+    for entry in load_manifest().get(section, []):
+        if entry.get("status") == "captured":
+            yield int(entry["id"])
+
+
+def iter_artist_fixtures() -> Iterator[int]:
+    """Yield every captured artist id recorded in the manifest."""
+    yield from _iter_captured_ids("artists")
+
+
+def iter_product_fixtures() -> Iterator[int]:
+    """Yield every captured product id recorded in the manifest."""
+    yield from _iter_captured_ids("products")
+
+
+def iter_organization_fixtures() -> Iterator[int]:
+    """Yield every captured organization id recorded in the manifest."""
+    yield from _iter_captured_ids("organizations")
 
 
 def load_album_fixture(album_id: int) -> tuple[str, Album]:
@@ -58,3 +83,24 @@ def load_search_fixture(slug: str) -> tuple[str, SearchResults]:
     html = (SEARCH_DIR / f"{slug}.html").read_text(encoding="utf-8")
     golden = (SEARCH_DIR / f"{slug}.json").read_text(encoding="utf-8")
     return html, SearchResults.model_validate_json(golden)
+
+
+def load_artist_fixture(artist_id: int) -> tuple[str, Artist]:
+    """Return ``(raw_html, golden_artist)`` for an artist fixture (golden validated on load)."""
+    html = (ARTISTS_DIR / f"{artist_id}.html").read_text(encoding="utf-8")
+    golden = (ARTISTS_DIR / f"{artist_id}.json").read_text(encoding="utf-8")
+    return html, Artist.model_validate_json(golden)
+
+
+def load_product_fixture(product_id: int) -> tuple[str, Product]:
+    """Return ``(raw_html, golden_product)`` for a product fixture (golden validated on load)."""
+    html = (PRODUCTS_DIR / f"{product_id}.html").read_text(encoding="utf-8")
+    golden = (PRODUCTS_DIR / f"{product_id}.json").read_text(encoding="utf-8")
+    return html, Product.model_validate_json(golden)
+
+
+def load_organization_fixture(org_id: int) -> tuple[str, Organization]:
+    """Return ``(raw_html, golden_org)`` for an organization fixture (golden validated on load)."""
+    html = (ORGANIZATIONS_DIR / f"{org_id}.html").read_text(encoding="utf-8")
+    golden = (ORGANIZATIONS_DIR / f"{org_id}.json").read_text(encoding="utf-8")
+    return html, Organization.model_validate_json(golden)

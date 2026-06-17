@@ -7,6 +7,11 @@ from vgmdb_client.parsers import parse_artist
 from vgmdb_client.parsers.errors import NotAnArtistPageError
 
 
+def test_artist_fixtures_present() -> None:
+    # Guard against the parametrized test below silently collecting zero cases.
+    assert list(iter_artist_fixtures())
+
+
 @pytest.mark.parametrize("artist_id", sorted(iter_artist_fixtures()))
 def test_parse_artist_matches_golden(artist_id: int) -> None:
     html, golden = load_artist_fixture(artist_id)

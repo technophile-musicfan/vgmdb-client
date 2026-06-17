@@ -25,7 +25,9 @@ def parse_product(html: str) -> Product:
     if match is None:
         raise NotAProductPageError()
 
-    names = _dom.localized_text(_leading_group(tree.xpath('//span[@class="albumtitle"]')))
+    # Scope the name to the <h1> heading: other albumtitle spans (franchise/discography values) live
+    # outside it, so the heading holds only the product's own multilingual name.
+    names = _dom.localized_text(_leading_group(tree.xpath('//h1//span[@class="albumtitle"]')))
     if not names.all:
         raise NotAProductPageError()
 

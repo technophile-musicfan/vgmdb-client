@@ -7,6 +7,11 @@ from vgmdb_client.parsers import parse_product
 from vgmdb_client.parsers.errors import NotAProductPageError
 
 
+def test_product_fixtures_present() -> None:
+    # Guard against the parametrized test below silently collecting zero cases.
+    assert list(iter_product_fixtures())
+
+
 @pytest.mark.parametrize("product_id", sorted(iter_product_fixtures()))
 def test_parse_product_matches_golden(product_id: int) -> None:
     html, golden = load_product_fixture(product_id)

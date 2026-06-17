@@ -7,6 +7,11 @@ from vgmdb_client.parsers import parse_organization
 from vgmdb_client.parsers.errors import NotAnOrganizationPageError
 
 
+def test_organization_fixtures_present() -> None:
+    # Guard against the parametrized test below silently collecting zero cases.
+    assert list(iter_organization_fixtures())
+
+
 @pytest.mark.parametrize("org_id", sorted(iter_organization_fixtures()))
 def test_parse_organization_matches_golden(org_id: int) -> None:
     html, golden = load_organization_fixture(org_id)

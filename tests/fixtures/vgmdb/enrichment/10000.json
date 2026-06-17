@@ -1,0 +1,275 @@
+{
+  "album_id": 10000,
+  "track_credits": {
+    "1": [
+      {
+        "role": "composer",
+        "role_raw": "Composed & Arranged by",
+        "artists": [
+          {
+            "names": {
+              "English": "SHOGUN"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      }
+    ],
+    "2": [
+      {
+        "role": "composer",
+        "role_raw": "Composed & Arranged by",
+        "artists": [
+          {
+            "names": {
+              "English": "HEX125"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      }
+    ],
+    "3": [
+      {
+        "role": "composer",
+        "role_raw": "Composed & Arranged by",
+        "artists": [
+          {
+            "names": {
+              "English": "HEX125"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      }
+    ],
+    "4": [
+      {
+        "role": "composer",
+        "role_raw": "Composed & Arranged by",
+        "artists": [
+          {
+            "names": {
+              "English": "SHOGUN"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      }
+    ],
+    "5": [
+      {
+        "role": "composer",
+        "role_raw": "Composed & Arranged by",
+        "artists": [
+          {
+            "names": {
+              "English": "SHOGUN"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      }
+    ],
+    "6": [
+      {
+        "role": "composer",
+        "role_raw": "Composed & Arranged by",
+        "artists": [
+          {
+            "names": {
+              "English": "SHOGUN"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      }
+    ],
+    "7": [
+      {
+        "role": "composer",
+        "role_raw": "Composed & Arranged by",
+        "artists": [
+          {
+            "names": {
+              "English": "HEX125"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      }
+    ],
+    "8": [
+      {
+        "role": "composer",
+        "role_raw": "Composed & Arranged by",
+        "artists": [
+          {
+            "names": {
+              "English": "HEX125"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      }
+    ],
+    "9": [
+      {
+        "role": "composer",
+        "role_raw": "Composed & Arranged by",
+        "artists": [
+          {
+            "names": {
+              "English": "SHOGUN"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      }
+    ],
+    "10": [
+      {
+        "role": "composer",
+        "role_raw": "Composed & Arranged by",
+        "artists": [
+          {
+            "names": {
+              "English": "SHOGUN"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      }
+    ],
+    "11": [
+      {
+        "role": "composer",
+        "role_raw": "Composed & Arranged by",
+        "artists": [
+          {
+            "names": {
+              "English": "HEX125"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      }
+    ],
+    "12": [
+      {
+        "role": "composer",
+        "role_raw": "Composed & Arranged by",
+        "artists": [
+          {
+            "names": {
+              "English": "SHOGUN"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      }
+    ],
+    "13": [
+      {
+        "role": "composer",
+        "role_raw": "Composed & Arranged by",
+        "artists": [
+          {
+            "names": {
+              "English": "SHOGUN"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      }
+    ],
+    "14": [
+      {
+        "role": "composer",
+        "role_raw": "Composed & Arranged by",
+        "artists": [
+          {
+            "names": {
+              "English": "SHOGUN"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      }
+    ],
+    "15": [
+      {
+        "role": "composer",
+        "role_raw": "Composed & Arranged by",
+        "artists": [
+          {
+            "names": {
+              "English": "SHOGUN"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      }
+    ],
+    "16": [
+      {
+        "role": "composer",
+        "role_raw": "Composed & Arranged by",
+        "artists": [
+          {
+            "names": {
+              "English": "SHOGUN"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      }
+    ],
+    "17": [
+      {
+        "role": "composer",
+        "role_raw": "Composed & Arranged by",
+        "artists": [
+          {
+            "names": {
+              "English": "SHOGUN"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      }
+    ],
+    "18": [
+      {
+        "role": "composer",
+        "role_raw": "Composed & Arranged by",
+        "artists": [
+          {
+            "names": {
+              "English": "SHOGUN"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      }
+    ]
+  }
+}

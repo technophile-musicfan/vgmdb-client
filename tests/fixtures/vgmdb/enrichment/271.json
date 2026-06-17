@@ -1,0 +1,129 @@
+{
+  "album_id": 271,
+  "track_credits": {
+    "10": [
+      {
+        "role": "performer",
+        "role_raw": "Performed by",
+        "artists": [
+          {
+            "names": {
+              "English": "MorissonPoe"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      },
+      {
+        "role": "lyricist",
+        "role_raw": "Words by",
+        "artists": [
+          {
+            "names": {
+              "English": "Jean Morisson"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      },
+      {
+        "role": "other",
+        "role_raw": "Music by",
+        "artists": [
+          {
+            "names": {
+              "English": "MorissonPoe"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      }
+    ],
+    "11": [
+      {
+        "role": "performer",
+        "role_raw": "Performed by",
+        "artists": [
+          {
+            "names": {
+              "English": "Kepi"
+            },
+            "id": null,
+            "link": null
+          },
+          {
+            "names": {
+              "English": "Kat"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      },
+      {
+        "role": "lyricist",
+        "role_raw": "Written by",
+        "artists": [
+          {
+            "names": {
+              "English": "Jeff Steinmetz"
+            },
+            "id": null,
+            "link": null
+          },
+          {
+            "names": {
+              "English": "Katrina Steinmetz"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      }
+    ],
+    "27": [
+      {
+        "role": "performer",
+        "role_raw": "Performed by",
+        "artists": [
+          {
+            "names": {
+              "English": "MorissonPoe"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      },
+      {
+        "role": "lyricist",
+        "role_raw": "Words by",
+        "artists": [
+          {
+            "names": {
+              "English": "Jean Morisson"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      },
+      {
+        "role": "other",
+        "role_raw": "Music by",
+        "artists": [
+          {
+            "names": {
+              "English": "MorissonPoe"
+            },
+            "id": null,
+            "link": null
+          }
+        ]
+      }
+    ]
+  }
+}

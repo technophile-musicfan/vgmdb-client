@@ -116,3 +116,12 @@ def absolute_url(href: str | None) -> str | None:
     if href.startswith(("http://", "https://")):
         return href
     return _BASE + href if href.startswith("/") else f"{_BASE}/{href}"
+
+
+def dd_for_label(tree: HtmlElement, label: str) -> HtmlElement | None:
+    """The ``<dd>`` value following the ``<dt class="label">`` whose text equals ``label`` (vgmdb info list)."""
+    for dt in tree.xpath('//dt[contains(@class, "label")]'):
+        if text(dt) == label:
+            dd = dt.xpath("following-sibling::dd[1]")
+            return dd[0] if dd else None
+    return None

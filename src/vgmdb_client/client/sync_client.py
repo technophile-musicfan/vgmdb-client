@@ -5,8 +5,8 @@ from __future__ import annotations
 from types import TracebackType
 
 from vgmdb_client.client import _core
-from vgmdb_client.models import Album, Artist, Product, SearchResults
-from vgmdb_client.parsers import parse_album, parse_artist, parse_product, parse_search
+from vgmdb_client.models import Album, Artist, Organization, Product, SearchResults
+from vgmdb_client.parsers import parse_album, parse_artist, parse_organization, parse_product, parse_search
 from vgmdb_client.transport import SyncTransport, TransportConfig
 
 _ONE_SOURCE = "Provide exactly one of `config` or `transport`."
@@ -45,6 +45,10 @@ class Client:
     def get_product(self, product_id: int) -> Product:
         """Fetch and parse a product page."""
         return parse_product(self._transport.get(_core.product_path(product_id)))
+
+    def get_organization(self, org_id: int) -> Organization:
+        """Fetch and parse an organization page."""
+        return parse_organization(self._transport.get(_core.organization_path(org_id)))
 
     def close(self) -> None:
         """Close the underlying transport."""

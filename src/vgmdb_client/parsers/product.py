@@ -58,17 +58,8 @@ def _leading_group(spans: list[HtmlElement]) -> list[HtmlElement]:
     return group
 
 
-def _dd_for(tree: HtmlElement, label: str) -> HtmlElement | None:
-    """The ``<dd>`` value following the ``<dt class="label">`` whose text is ``label``."""
-    for dt in tree.xpath('//dt[contains(@class, "label")]'):
-        if _dom.text(dt) == label:
-            dd = dt.xpath("following-sibling::dd[1]")
-            return dd[0] if dd else None
-    return None
-
-
 def _franchises(tree: HtmlElement) -> list[ProductRef]:
-    dd = _dd_for(tree, "Franchises")
+    dd = _dom.dd_for_label(tree, "Franchises")
     if dd is None:
         return []
     refs: list[ProductRef] = []
@@ -86,7 +77,7 @@ def _organizations(tree: HtmlElement) -> list[OrgRef]:
     refs: list[OrgRef] = []
     seen: set[int] = set()
     for label in _ORG_FIELDS:
-        dd = _dd_for(tree, label)
+        dd = _dom.dd_for_label(tree, label)
         if dd is None:
             continue
         for anchor in dd.xpath('.//a[contains(@href, "/org/")]'):

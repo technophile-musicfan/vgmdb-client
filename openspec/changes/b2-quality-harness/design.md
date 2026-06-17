@@ -26,7 +26,7 @@ measure of extraction quality. The full design is in
   (httpx GET, returns dict or `None`), `compare.py` (scoring + N-way diff + coverage), `report.py`
   (Markdown + stdout), `run.py` (entry point).
 - **Canonical comparison record.** Flat `field_path -> value`: album `title`, `catalog`,
-  `release_date`, `publisher`, `label`; per track `disc{d}.track{t}.title`. Each field has a
+  `release_date`, `classification`; per track `disc{d}.track{t}.title`. Each field has a
   normalizer for fair scoring (strip+casefold, `LocalizedText -> default`, `PartialDate -> ISO`).
 - **Scoring vs golden.** Per field ∈ {match, mismatch, missing, extra}; the raw N-way diff keeps
   un-normalized values so divergences stay visible.

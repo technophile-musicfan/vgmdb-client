@@ -3,7 +3,7 @@
 ### Requirement: Canonical comparison record
 
 The harness SHALL reduce an album from any source to a canonical record: a flat mapping of field
-path to value covering album `title`, `catalog`, `release_date`, `publisher`, and `label`, plus a
+path to value covering album `title`, `catalog`, `release_date`, and `classification`, plus a
 `title` per disc/track addressed as `disc{d}.track{t}.title`. It SHALL provide adapters that build
 this record from our parsed `Album`, from the golden `Album`, and from a hufman JSON response. The
 hufman adapter SHALL be tolerant: a field absent from the hufman response maps to a missing value

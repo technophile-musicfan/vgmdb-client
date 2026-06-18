@@ -73,10 +73,12 @@ optional id and link, distinct from any full artist entity.
 ### Requirement: Album entity
 
 The models SHALL provide an `Album` model covering the core subset of album fields (id, link,
-titles, catalog, release date, classification, cover images, discs, credits, notes), composed of
-`Disc`, `Track`, and `Credit` models. Discs SHALL contain tracks. Each `Credit` SHALL carry a
-**normalized `role`** (a `Role` value from the controlled vocabulary), a **verbatim `role_raw`**
-(the original source label, always present), and a list of artist references.
+titles, catalog, release date, classification, cover images, discs, credits, notes, and an optional
+`release_event`), composed of `Disc`, `Track`, and `Credit` models. Discs SHALL contain tracks. Each
+`Credit` SHALL carry a **normalized `role`** (a `Role` value from the controlled vocabulary), a
+**verbatim `role_raw`** (the original source label, always present), and a list of artist references.
+The optional `release_event` SHALL be an `EventRef` (or `None`) referencing the event the album was
+released at.
 
 #### Scenario: Album with tracklist and credits
 
@@ -97,7 +99,13 @@ titles, catalog, release date, classification, cover images, discs, credits, not
 #### Scenario: Partial album data is valid
 
 - **WHEN** an `Album` is constructed with only id and titles
-- **THEN** construction succeeds and optional fields default to `None` or empty lists
+- **THEN** construction succeeds and optional fields default to `None` or empty lists (including
+  `release_event` defaulting to `None`)
+
+#### Scenario: Album with a release event
+
+- **WHEN** an `Album` is constructed with a `release_event` `EventRef`
+- **THEN** the `release_event` is accessible
 
 ### Requirement: Normalized credit roles
 
@@ -154,9 +162,9 @@ All models SHALL be immutable (frozen) and SHALL reject unknown fields at constr
 
 ### Requirement: Lightweight entity references
 
-The models SHALL provide lightweight reference types `ProductRef` and `OrgRef`, each wrapping
-`names` (a `LocalizedText`) with an optional `id` and `link`, mirroring the existing `ArtistRef`.
-These point to an entity without embedding its full record.
+The models SHALL provide lightweight reference types `ProductRef`, `OrgRef`, and `EventRef`, each
+wrapping `names` (a `LocalizedText`) with an optional `id` and `link`, mirroring the existing
+`ArtistRef`. These point to an entity without embedding its full record.
 
 #### Scenario: A product reference carries name, id, and link
 
@@ -167,6 +175,11 @@ These point to an entity without embedding its full record.
 
 - **WHEN** an `OrgRef` is constructed with only names
 - **THEN** `id` and `link` default to `None`
+
+#### Scenario: An event reference mirrors the others
+
+- **WHEN** an `EventRef` is constructed with names and an id
+- **THEN** the names and id are accessible and the link defaults to `None`
 
 ### Requirement: Artist model
 
@@ -208,3 +221,20 @@ SHALL be immutable and reject unknown fields.
 
 - **WHEN** an `Organization` is constructed with names and a verbatim type
 - **THEN** those values are accessible and `notes` defaults to `None`
+
+### Requirement: Event model
+
+The models SHALL provide an `Event` model covering the core subset of event fields: `id`, optional
+`link`, localized `names`, optional verbatim `type`, optional `start_date` and `end_date`
+(`PartialDate`), and optional `notes`. Released-album and related-entity lists are out of scope.
+
+#### Scenario: Event with dates
+
+- **WHEN** an `Event` is constructed with names, a `start_date`, and an `end_date`
+- **THEN** the names and both dates are accessible
+
+#### Scenario: Partial event data is valid
+
+- **WHEN** an `Event` is constructed with only `id` and `names`
+- **THEN** construction succeeds and optional fields default to `None`
+

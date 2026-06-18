@@ -7,9 +7,24 @@ edit_uri: edit/main/docs/
 repo_name: HOZHENWAI/vgmdb-client
 copyright: Maintained by <a href="https://HOZHENWAI.com">HOZHENWAI</a>.
 
+# Internal workflow docs live under docs/superpowers/ — keep them out of the published site.
+exclude_docs: |
+  superpowers/
+
 nav:
   - Home: index.md
-  - Modules: modules.md
+  - Guides:
+      - Client: guides/client.md
+      - Authentication: guides/authentication.md
+      - Entities: guides/entities.md
+      - Enrichment: guides/enrichment.md
+  - API reference:
+      - Client: reference/client.md
+      - Models: reference/models.md
+      - Transport: reference/transport.md
+      - Auth: reference/auth.md
+      - Enrichment: reference/enrich.md
+      - Parsers: reference/parsers.md
 plugins:
   - search
   - mkdocstrings:

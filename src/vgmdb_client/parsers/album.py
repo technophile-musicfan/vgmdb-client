@@ -7,11 +7,15 @@ import re
 import lxml.html
 from lxml.html import HtmlElement
 
-from vgmdb_client.models import Album, ArtistRef, Credit, Disc, LocalizedText, Track, normalize_role
+from vgmdb_client.models import Album, ArtistRef, Credit, Disc, EventRef, LocalizedText, Track, normalize_role
 from vgmdb_client.parsers import _dom
 from vgmdb_client.parsers.errors import NotAnAlbumPageError
 
 _ALBUM_ID = re.compile(r"/album/(\d+)")
+_EVENT_ID = re.compile(r"/event/(\d+)")
+# An album's "Released at <event> (<date>)" link: strip the lead-in and a trailing parenthetical date.
+_RELEASED_AT = re.compile(r"^\s*Released at\s+", re.IGNORECASE)
+_TRAILING_DATE_PAREN = re.compile(r"\s*\([^)]*\)\s*$")
 _BR = re.compile(r"<br\s*/?>", re.IGNORECASE)
 _TAB_PAREN = re.compile(r"\s*\(.*\)\s*$")
 _WORD = re.compile(r"\w")
@@ -47,6 +51,27 @@ def parse_album(html: str) -> Album:
         discs=_discs(tree),
         credits=_credits(tree),
         notes=_notes(tree),
+        release_event=_release_event(tree),
+    )
+
+
+def _release_event(tree: HtmlElement) -> EventRef | None:
+    """The event an album was released at, from the ``link_event`` anchor in the release-date cell."""
+    anchors = tree.xpath('//a[contains(@class, "link_event") and contains(@href, "/event/")]')
+    if not anchors:
+        return None
+    anchor = anchors[0]
+    href = anchor.get("href")
+    match = _EVENT_ID.search(href or "")
+    title = anchor.get("title") or _dom.text(anchor)
+    name = _TRAILING_DATE_PAREN.sub("", _RELEASED_AT.sub("", title)).strip()
+    if not name:
+        return None
+    key = "Japanese" if _dom.has_cjk(name) else "English"
+    return EventRef(
+        names=LocalizedText({key: name}),
+        id=int(match.group(1)) if match else None,
+        link=_dom.absolute_url(href),
     )
 
 

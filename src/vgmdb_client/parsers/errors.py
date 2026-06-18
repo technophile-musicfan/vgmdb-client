@@ -45,3 +45,10 @@ class NotAnOrganizationPageError(ParseError):
 
     def __init__(self) -> None:
         super().__init__("Not a vgmdb organization page (missing organization id or name).")
+
+
+class NotAnEventPageError(ParseError):
+    """Raised when the HTML lacks the essential anchors of an event page."""
+
+    def __init__(self) -> None:
+        super().__init__("Not a vgmdb event page (missing event id or name).")

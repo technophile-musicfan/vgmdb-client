@@ -119,3 +119,11 @@ class OrgRef(VgmdbModel):
     names: LocalizedText
     id: int | None = None
     link: str | None = None
+
+
+class EventRef(VgmdbModel):
+    """A lightweight pointer to an event (distinct from the full Event entity)."""
+
+    names: LocalizedText
+    id: int | None = None
+    link: str | None = None

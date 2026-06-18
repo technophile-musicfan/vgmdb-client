@@ -11,12 +11,13 @@ import pytest
 from tests.support.fixtures import (
     load_album_fixture,
     load_artist_fixture,
+    load_event_fixture,
     load_organization_fixture,
     load_product_fixture,
     load_search_fixture,
 )
 from vgmdb_client import AsyncClient, Client, NotFoundError, ParseError, TransportConfig
-from vgmdb_client.client._core import album_path, artist_path, organization_path, product_path, search_path
+from vgmdb_client.client._core import album_path, artist_path, event_path, organization_path, product_path, search_path
 
 T = TypeVar("T")
 
@@ -101,6 +102,12 @@ def test_get_organization_returns_golden() -> None:
     assert client.get_organization(17) == golden
 
 
+def test_get_event_returns_golden() -> None:
+    html, golden = load_event_fixture(149)
+    client = Client(transport=StubSyncTransport({event_path(149): html}))
+    assert client.get_event(149) == golden
+
+
 def test_context_manager_closes_transport() -> None:
     stub = StubSyncTransport()
     with Client(transport=stub):
@@ -158,6 +165,12 @@ def test_async_get_organization_returns_golden() -> None:
     html, golden = load_organization_fixture(17)
     client = AsyncClient(transport=StubAsyncTransport({organization_path(17): html}))
     assert _run(client.get_organization(17)) == golden
+
+
+def test_async_get_event_returns_golden() -> None:
+    html, golden = load_event_fixture(149)
+    client = AsyncClient(transport=StubAsyncTransport({event_path(149): html}))
+    assert _run(client.get_event(149)) == golden
 
 
 def test_async_context_manager_closes_transport() -> None:

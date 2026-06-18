@@ -16,7 +16,7 @@ from pathlib import Path
 from typing import Any
 
 from vgmdb_client.enrich import AlbumEnrichment
-from vgmdb_client.models import Album, Artist, Organization, Product, SearchResults
+from vgmdb_client.models import Album, Artist, Event, Organization, Product, SearchResults
 
 FIXTURES_DIR = Path(__file__).resolve().parent.parent / "fixtures" / "vgmdb"
 MANIFEST_PATH = FIXTURES_DIR / "manifest.json"
@@ -25,6 +25,7 @@ SEARCH_DIR = FIXTURES_DIR / "search"
 ARTISTS_DIR = FIXTURES_DIR / "artists"
 PRODUCTS_DIR = FIXTURES_DIR / "products"
 ORGANIZATIONS_DIR = FIXTURES_DIR / "organizations"
+EVENTS_DIR = FIXTURES_DIR / "events"
 ENRICHMENT_DIR = FIXTURES_DIR / "enrichment"
 
 
@@ -65,6 +66,11 @@ def iter_product_fixtures() -> Iterator[int]:
 def iter_organization_fixtures() -> Iterator[int]:
     """Yield every captured organization id recorded in the manifest."""
     yield from _iter_captured_ids("organizations")
+
+
+def iter_event_fixtures() -> Iterator[int]:
+    """Yield every captured event id recorded in the manifest."""
+    yield from _iter_captured_ids("events")
 
 
 def iter_enrichment_goldens() -> Iterator[int]:
@@ -118,3 +124,10 @@ def load_organization_fixture(org_id: int) -> tuple[str, Organization]:
     html = (ORGANIZATIONS_DIR / f"{org_id}.html").read_text(encoding="utf-8")
     golden = (ORGANIZATIONS_DIR / f"{org_id}.json").read_text(encoding="utf-8")
     return html, Organization.model_validate_json(golden)
+
+
+def load_event_fixture(event_id: int) -> tuple[str, Event]:
+    """Return ``(raw_html, golden_event)`` for an event fixture (golden validated on load)."""
+    html = (EVENTS_DIR / f"{event_id}.html").read_text(encoding="utf-8")
+    golden = (EVENTS_DIR / f"{event_id}.json").read_text(encoding="utf-8")
+    return html, Event.model_validate_json(golden)

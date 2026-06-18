@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from pydantic import Field
 
-from vgmdb_client.models.common import ArtistRef, LocalizedText, PartialDate, VgmdbModel
+from vgmdb_client.models.common import ArtistRef, EventRef, LocalizedText, PartialDate, VgmdbModel
 from vgmdb_client.models.roles import Role
 
 
@@ -46,3 +46,4 @@ class Album(VgmdbModel):
     discs: list[Disc] = Field(default_factory=list)
     credits: list[Credit] = Field(default_factory=list)
     notes: str | None = None
+    release_event: EventRef | None = None

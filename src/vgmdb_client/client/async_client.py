@@ -7,8 +7,8 @@ from typing import Any
 
 from vgmdb_client.auth import Credentials
 from vgmdb_client.client import _core
-from vgmdb_client.models import Album, Artist, Organization, Product, SearchResults
-from vgmdb_client.parsers import parse_album, parse_artist, parse_organization, parse_product, parse_search
+from vgmdb_client.models import Album, Artist, Event, Organization, Product, SearchResults
+from vgmdb_client.parsers import parse_album, parse_artist, parse_event, parse_organization, parse_product, parse_search
 from vgmdb_client.transport import AsyncTransport, TransportConfig
 
 _ONE_SOURCE = "Provide exactly one of `config` or `transport`."
@@ -69,6 +69,10 @@ class AsyncClient:
     async def get_organization(self, org_id: int) -> Organization:
         """Fetch and parse an organization page."""
         return parse_organization(await self._transport.get(_core.organization_path(org_id)))
+
+    async def get_event(self, event_id: int) -> Event:
+        """Fetch and parse an event page."""
+        return parse_event(await self._transport.get(_core.event_path(event_id)))
 
     async def aclose(self) -> None:
         """Close the underlying transport."""

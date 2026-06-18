@@ -28,3 +28,8 @@ def product_path(product_id: int) -> str:
 def organization_path(org_id: int) -> str:
     """The request path for an organization page."""
     return f"/org/{org_id}"
+
+
+def event_path(event_id: int) -> str:
+    """The request path for an event page."""
+    return f"/event/{event_id}"

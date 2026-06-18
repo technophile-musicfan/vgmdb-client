@@ -2,7 +2,8 @@
 
 from vgmdb_client.models.album import Album, Credit, Disc, Track
 from vgmdb_client.models.artist import Artist
-from vgmdb_client.models.common import ArtistRef, LocalizedText, OrgRef, PartialDate, ProductRef
+from vgmdb_client.models.common import ArtistRef, EventRef, LocalizedText, OrgRef, PartialDate, ProductRef
+from vgmdb_client.models.event import Event
 from vgmdb_client.models.organization import Organization
 from vgmdb_client.models.product import Product
 from vgmdb_client.models.roles import Role, normalize_role
@@ -15,6 +16,8 @@ __all__ = [
     "ArtistRef",
     "Credit",
     "Disc",
+    "Event",
+    "EventRef",
     "LocalizedText",
     "OrgRef",
     "Organization",

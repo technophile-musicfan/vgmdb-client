@@ -159,6 +159,16 @@
       "captured_date": "2026-06-17"
     }
   ],
+  "events": [
+    {
+      "id": 149,
+      "kind": "event",
+      "source_url": "https://vgmdb.net/event/149",
+      "status": "candidate",
+      "captured_date": null,
+      "note": "Hakurei Shrine Reitaisai 9; linked as release_event from album 33000"
+    }
+  ],
   "search": [
     {
       "slug": "multi-hit",

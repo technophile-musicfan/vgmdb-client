@@ -47,6 +47,7 @@ _ENTITY_SECTIONS = (
     ("artists", "artist", "artists"),
     ("products", "product", "products"),
     ("organizations", "org", "organizations"),
+    ("events", "event", "events"),
 )
 
 

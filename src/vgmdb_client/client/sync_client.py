@@ -3,7 +3,9 @@
 from __future__ import annotations
 
 from types import TracebackType
+from typing import Any
 
+from vgmdb_client.auth import Credentials
 from vgmdb_client.client import _core
 from vgmdb_client.models import Album, Artist, Organization, Product, SearchResults
 from vgmdb_client.parsers import parse_album, parse_artist, parse_organization, parse_product, parse_search
@@ -29,6 +31,24 @@ class Client:
             self._transport = SyncTransport(config)
         else:
             raise ValueError(_ONE_SOURCE)
+
+    @classmethod
+    def from_credentials(cls, credentials: Credentials, **config_overrides: Any) -> Client:
+        """Build a client from a :class:`Credentials` pair (initial fill).
+
+        Extra keyword arguments are forwarded to :meth:`Credentials.to_config` as
+        :class:`TransportConfig` overrides (e.g. ``timeout``, ``min_interval``, ``proxy``).
+        """
+        return cls(config=credentials.to_config(**config_overrides))
+
+    def set_credentials(self, credentials: Credentials) -> None:
+        """Apply a fresh :class:`Credentials` pair to the live client (renewal).
+
+        Use after a :class:`~vgmdb_client.transport.errors.CloudflareChallengeError`: re-solve in the
+        browser, copy a fresh cURL, and swap the pair in without rebuilding the client.
+        """
+        self._transport.set_cf_clearance(credentials.cf_clearance)
+        self._transport.set_user_agent(credentials.user_agent)
 
     def get_album(self, album_id: int) -> Album:
         """Fetch and parse an album page."""

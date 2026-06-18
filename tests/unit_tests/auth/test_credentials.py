@@ -42,3 +42,13 @@ def test_is_immutable() -> None:
     creds = Credentials(cf_clearance="TOK", user_agent=_UA)
     with pytest.raises(ValidationError):
         creds.cf_clearance = "OTHER"  # type: ignore[misc]
+
+
+def test_auth_public_surface() -> None:
+    import vgmdb_client.auth as auth
+    from vgmdb_client.auth import Credentials as ExportedCredentials
+    from vgmdb_client.auth import CurlParseError as ExportedError
+
+    assert set(auth.__all__) == {"Credentials", "CurlParseError"}
+    assert ExportedCredentials is auth.Credentials
+    assert ExportedError is auth.CurlParseError

@@ -1,17 +1,17 @@
 # vgmdb-client
 
-[![Release](https://img.shields.io/github/v/release/HOZHENWAI/vgmdb-client)](https://github.com/HOZHENWAI/vgmdb-client/releases)
-[![Build status](https://img.shields.io/github/actions/workflow/status/HOZHENWAI/vgmdb-client/main.yml?branch=main)](https://github.com/HOZHENWAI/vgmdb-client/actions/workflows/main.yml?query=branch%3Amain)
-[![codecov](https://codecov.io/gh/HOZHENWAI/vgmdb-client/branch/main/graph/badge.svg)](https://codecov.io/gh/HOZHENWAI/vgmdb-client)
-[![License](https://img.shields.io/github/license/HOZHENWAI/vgmdb-client)](https://github.com/HOZHENWAI/vgmdb-client/blob/main/LICENSE)
+[![Release](https://img.shields.io/github/v/release/technophile-musicfan/vgmdb-client)](https://github.com/technophile-musicfan/vgmdb-client/releases)
+[![Build status](https://img.shields.io/github/actions/workflow/status/technophile-musicfan/vgmdb-client/main.yml?branch=main)](https://github.com/technophile-musicfan/vgmdb-client/actions/workflows/main.yml?query=branch%3Amain)
+[![codecov](https://codecov.io/gh/technophile-musicfan/vgmdb-client/branch/main/graph/badge.svg)](https://codecov.io/gh/technophile-musicfan/vgmdb-client)
+[![License](https://img.shields.io/github/license/technophile-musicfan/vgmdb-client)](https://github.com/technophile-musicfan/vgmdb-client/blob/main/LICENSE)
 
 A typed, sync + async Python client for [vgmdb.net](https://vgmdb.net) — the community database of
 video-game and anime music. It fetches and parses albums, artists, products, organizations, and
 events into validated [pydantic](https://docs.pydantic.dev) models, with its own clean-room HTML
 parsers.
 
-- **Documentation:** <https://HOZHENWAI.github.io/vgmdb-client/>
-- **Source:** <https://github.com/HOZHENWAI/vgmdb-client/>
+- **Documentation:** <https://technophile-musicfan.github.io/vgmdb-client/>
+- **Source:** <https://github.com/technophile-musicfan/vgmdb-client/>
 
 ## Features
 
@@ -84,7 +84,7 @@ except CloudflareChallengeError:
     album = client.get_album(4)
 ```
 
-See the [documentation](https://HOZHENWAI.github.io/vgmdb-client/) for the full API, authentication,
+See the [documentation](https://technophile-musicfan.github.io/vgmdb-client/) for the full API, authentication,
 entities, and enrichment guides.
 
 ## Attribution & use

@@ -9,7 +9,7 @@ You can contribute in many ways:
 
 ## Report Bugs
 
-Report bugs at https://github.com/HOZHENWAI/vgmdb-client/issues
+Report bugs at https://github.com/technophile-musicfan/vgmdb-client/issues
 
 If you are reporting a bug, please include:
 
@@ -33,7 +33,7 @@ vgmdb-client could always use more documentation, whether as part of the officia
 
 ## Submit Feedback
 
-The best way to send feedback is to file an issue at https://github.com/HOZHENWAI/vgmdb-client/issues.
+The best way to send feedback is to file an issue at https://github.com/technophile-musicfan/vgmdb-client/issues.
 
 If you are proposing a new feature:
 

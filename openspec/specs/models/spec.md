@@ -237,4 +237,3 @@ The models SHALL provide an `Event` model covering the core subset of event fiel
 
 - **WHEN** an `Event` is constructed with only `id` and `names`
 - **THEN** construction succeeds and optional fields default to `None`
-

@@ -25,11 +25,7 @@ def test_extracts_both_from_chrome_paste() -> None:
 
 
 def test_selects_cf_clearance_from_multi_cookie_header() -> None:
-    curl = (
-        "curl 'https://vgmdb.net/album/4' "
-        "-H 'Cookie: foo=1; cf_clearance=TOK; bar=2' "
-        "-H 'User-Agent: UA/1.0'"
-    )
+    curl = "curl 'https://vgmdb.net/album/4' -H 'Cookie: foo=1; cf_clearance=TOK; bar=2' -H 'User-Agent: UA/1.0'"
     cf_clearance, _ = parse_curl(curl)
     assert cf_clearance == "TOK"
 

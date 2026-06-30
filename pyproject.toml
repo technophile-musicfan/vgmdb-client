@@ -28,9 +28,9 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://HOZHENWAI.github.io/vgmdb-client/"
-Repository = "https://github.com/HOZHENWAI/vgmdb-client"
-Documentation = "https://HOZHENWAI.github.io/vgmdb-client/"
+Homepage = "https://github.com/technophile-musicfan/vgmdb-client"
+Repository = "https://github.com/technophile-musicfan/vgmdb-client"
+Documentation = "https://github.com/technophile-musicfan/vgmdb-client"
 
 [dependency-groups]
 dev = [
@@ -136,4 +136,3 @@ skip_empty = true
 [tool.coverage.run]
 branch = true
 source = ["src"]
-

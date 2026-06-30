@@ -3,7 +3,7 @@
   "link": "https://vgmdb.net/album/10000",
   "titles": {
     "English": "Bare Knuckle Dokka~n!",
-    "Japanese": "BARE KNUCKLE ドッカ～ン！"
+    "Japanese": "BARE KNUCKLE \u30c9\u30c3\u30ab\uff5e\u30f3\uff01"
   },
   "catalog": "NAON-0002",
   "release_date": {
@@ -57,7 +57,7 @@
         {
           "titles": {
             "English": "Wangan Bare Knuckle",
-            "Japanese": "湾岸ベアナックル"
+            "Japanese": "\u6e7e\u5cb8\u30d9\u30a2\u30ca\u30c3\u30af\u30eb"
           },
           "number": 6,
           "length": "4:14"
@@ -107,7 +107,7 @@
         {
           "titles": {
             "English": "Onihime's Trap",
-            "Japanese": "鬼姫の罠"
+            "Japanese": "\u9b3c\u59eb\u306e\u7f60"
           },
           "number": 13,
           "length": "4:39"
@@ -143,7 +143,7 @@
         {
           "titles": {
             "English": "Caravan Osaka 2nd Recollection",
-            "Japanese": "キャラバン大阪2nd回想"
+            "Japanese": "\u30ad\u30e3\u30e9\u30d0\u30f3\u5927\u962a2nd\u56de\u60f3"
           },
           "number": 18,
           "length": "2:32"

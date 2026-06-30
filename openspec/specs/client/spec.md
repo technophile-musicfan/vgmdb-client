@@ -174,4 +174,3 @@ pass-through.
 
 - **WHEN** `Client` and `AsyncClient` are given the same event page HTML for the same request
 - **THEN** they return equal `Event` models
-

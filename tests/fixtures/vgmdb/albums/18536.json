@@ -20,14 +20,14 @@
       "tracks": [
         {
           "titles": {
-            "English": "Eyes On Me (12″ Almighty Mix)"
+            "English": "Eyes On Me (12\u2033 Almighty Mix)"
           },
           "number": 1,
           "length": "7:04"
         },
         {
           "titles": {
-            "English": "Eyes On Me (12″ Instrumental/PA)"
+            "English": "Eyes On Me (12\u2033 Instrumental/PA)"
           },
           "number": 2,
           "length": "7:04"
@@ -49,7 +49,7 @@
         {
           "names": {
             "English": "Nobuo Uematsu",
-            "Japanese": "植松伸夫"
+            "Japanese": "\u690d\u677e\u4f38\u592b"
           },
           "id": 77,
           "link": "https://vgmdb.net/artist/77"
@@ -70,7 +70,7 @@
         {
           "names": {
             "English": "Shiro Hamaguchi",
-            "Japanese": "浜口史郎"
+            "Japanese": "\u6d5c\u53e3\u53f2\u90ce"
           },
           "id": 125,
           "link": "https://vgmdb.net/artist/125"
@@ -84,7 +84,7 @@
         {
           "names": {
             "English": "Faye Wong",
-            "Japanese": "王菲"
+            "Japanese": "\u738b\u83f2"
           },
           "id": 137,
           "link": "https://vgmdb.net/artist/137"
@@ -98,7 +98,7 @@
         {
           "names": {
             "English": "Kako Someya",
-            "Japanese": "染谷和美"
+            "Japanese": "\u67d3\u8c37\u548c\u7f8e"
           },
           "id": 11621,
           "link": "https://vgmdb.net/artist/11621"

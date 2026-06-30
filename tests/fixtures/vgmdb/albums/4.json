@@ -3,7 +3,7 @@
   "link": "https://vgmdb.net/album/4",
   "titles": {
     "English": "CHRONO CROSS ORIGINAL SOUNDTRACK",
-    "Japanese": "クロノ・クロス オリジナル・サウンドトラック"
+    "Japanese": "\u30af\u30ed\u30ce\u30fb\u30af\u30ed\u30b9 \u30aa\u30ea\u30b8\u30ca\u30eb\u30fb\u30b5\u30a6\u30f3\u30c9\u30c8\u30e9\u30c3\u30af"
   },
   "catalog": "SSCX-10040",
   "release_date": {
@@ -22,7 +22,7 @@
         {
           "titles": {
             "English": "Chrono Cross -Scars of Time-",
-            "Japanese": "CHRONO CROSS ～時の傷跡～",
+            "Japanese": "CHRONO CROSS \uff5e\u6642\u306e\u50b7\u8de1\uff5e",
             "Romaji": "CHRONO CROSS ~Toki no Kizuato~"
           },
           "number": 1,
@@ -31,7 +31,7 @@
         {
           "titles": {
             "English": "The Brink of Death",
-            "Japanese": "死線",
+            "Japanese": "\u6b7b\u7dda",
             "Romaji": "Shisen"
           },
           "number": 2,
@@ -40,7 +40,7 @@
         {
           "titles": {
             "English": "Arni (Home World)",
-            "Japanese": "アルニ村 ホーム",
+            "Japanese": "\u30a2\u30eb\u30cb\u6751 \u30db\u30fc\u30e0",
             "Romaji": "Arni Mura: Home"
           },
           "number": 3,
@@ -49,7 +49,7 @@
         {
           "titles": {
             "English": "Plains of Time (Home World)",
-            "Japanese": "時の草原 ホーム・ワールド",
+            "Japanese": "\u6642\u306e\u8349\u539f \u30db\u30fc\u30e0\u30fb\u30ef\u30fc\u30eb\u30c9",
             "Romaji": "Toki no Sougen: Home World"
           },
           "number": 4,
@@ -58,7 +58,7 @@
         {
           "titles": {
             "English": "Dances with Lizards",
-            "Japanese": "トカゲと踊れ",
+            "Japanese": "\u30c8\u30ab\u30b2\u3068\u8e0a\u308c",
             "Romaji": "Tokage to Odore"
           },
           "number": 5,
@@ -67,7 +67,7 @@
         {
           "titles": {
             "English": "Reminisce -Enduring Thoughts-",
-            "Japanese": "回想 ～消せない想い～",
+            "Japanese": "\u56de\u60f3 \uff5e\u6d88\u305b\u306a\u3044\u60f3\u3044\uff5e",
             "Romaji": "Kaisou ~Kesenai Omoi~"
           },
           "number": 6,
@@ -76,7 +76,7 @@
         {
           "titles": {
             "English": "Shore of Dreams (Another World)",
-            "Japanese": "夢の岸辺に アナザー・ワールド",
+            "Japanese": "\u5922\u306e\u5cb8\u8fba\u306b \u30a2\u30ca\u30b6\u30fc\u30fb\u30ef\u30fc\u30eb\u30c9",
             "Romaji": "Yume no Kishibe ni: Another World"
           },
           "number": 7,
@@ -85,7 +85,7 @@
         {
           "titles": {
             "English": "Arni (Another World)",
-            "Japanese": "アルニ村 アナザー",
+            "Japanese": "\u30a2\u30eb\u30cb\u6751 \u30a2\u30ca\u30b6\u30fc",
             "Romaji": "Arni Mura: Another"
           },
           "number": 8,
@@ -94,7 +94,7 @@
         {
           "titles": {
             "English": "Fleeting Thoughts",
-            "Japanese": "うたかたの想い",
+            "Japanese": "\u3046\u305f\u304b\u305f\u306e\u60f3\u3044",
             "Romaji": "Utakata no Omoi"
           },
           "number": 9,
@@ -103,7 +103,7 @@
         {
           "titles": {
             "English": "Missing Piece",
-            "Japanese": "失われた欠片",
+            "Japanese": "\u5931\u308f\u308c\u305f\u6b20\u7247",
             "Romaji": "Ushinawareta Kakera"
           },
           "number": 10,
@@ -112,7 +112,7 @@
         {
           "titles": {
             "English": "Fossil Valley",
-            "Japanese": "溺れ谷",
+            "Japanese": "\u6eba\u308c\u8c37",
             "Romaji": "Obore Tani"
           },
           "number": 11,
@@ -121,7 +121,7 @@
         {
           "titles": {
             "English": "Termina (Another World)",
-            "Japanese": "テルミナ アナザー",
+            "Japanese": "\u30c6\u30eb\u30df\u30ca \u30a2\u30ca\u30b6\u30fc",
             "Romaji": "Termina: Another"
           },
           "number": 12,
@@ -130,7 +130,7 @@
         {
           "titles": {
             "English": "The Departed Ones",
-            "Japanese": "去りにし者ども",
+            "Japanese": "\u53bb\u308a\u306b\u3057\u8005\u3069\u3082",
             "Romaji": "Sari ni Shi Monodomo"
           },
           "number": 13,
@@ -139,7 +139,7 @@
         {
           "titles": {
             "English": "Shadow Forest",
-            "Japanese": "影切りの森",
+            "Japanese": "\u5f71\u5207\u308a\u306e\u68ee",
             "Romaji": "Kage Kiri no Mori"
           },
           "number": 14,
@@ -148,7 +148,7 @@
         {
           "titles": {
             "English": "Viper Manor",
-            "Japanese": "蛇骨館",
+            "Japanese": "\u86c7\u9aa8\u9928",
             "Romaji": "Jakotsukan"
           },
           "number": 15,
@@ -157,7 +157,7 @@
         {
           "titles": {
             "English": "Victory -Boon of Spring-",
-            "Japanese": "勝利 ～春の贈り物～",
+            "Japanese": "\u52dd\u5229 \uff5e\u6625\u306e\u8d08\u308a\u7269\uff5e",
             "Romaji": "Shouri ~Haru no Okurimono~"
           },
           "number": 16,
@@ -166,7 +166,7 @@
         {
           "titles": {
             "English": "Lost in Time",
-            "Japanese": "時の迷い子",
+            "Japanese": "\u6642\u306e\u8ff7\u3044\u5b50",
             "Romaji": "Toki no Maigo"
           },
           "number": 17,
@@ -175,7 +175,7 @@
         {
           "titles": {
             "English": "Guldove (Another World)",
-            "Japanese": "ガルドーブ アナザー",
+            "Japanese": "\u30ac\u30eb\u30c9\u30fc\u30d6 \u30a2\u30ca\u30b6\u30fc",
             "Romaji": "Guldove: Another"
           },
           "number": 18,
@@ -184,7 +184,7 @@
         {
           "titles": {
             "English": "Hydra Marshes",
-            "Japanese": "ヒドラの沼",
+            "Japanese": "\u30d2\u30c9\u30e9\u306e\u6cbc",
             "Romaji": "Hydra no Numa"
           },
           "number": 19,
@@ -193,7 +193,7 @@
         {
           "titles": {
             "English": "Fragments of a Dream",
-            "Japanese": "夢のかけら",
+            "Japanese": "\u5922\u306e\u304b\u3051\u3089",
             "Romaji": "Yume no Kakera"
           },
           "number": 20,
@@ -202,7 +202,7 @@
         {
           "titles": {
             "English": "Sailing (Another World)",
-            "Japanese": "航海 アナザー・ワールド",
+            "Japanese": "\u822a\u6d77 \u30a2\u30ca\u30b6\u30fc\u30fb\u30ef\u30fc\u30eb\u30c9",
             "Romaji": "Koukai: Another World"
           },
           "number": 21,
@@ -211,7 +211,7 @@
         {
           "titles": {
             "English": "Ghost Ship",
-            "Japanese": "幽霊船",
+            "Japanese": "\u5e7d\u970a\u8239",
             "Romaji": "Yuureisen"
           },
           "number": 22,
@@ -220,7 +220,7 @@
         {
           "titles": {
             "English": "Mount Pyre",
-            "Japanese": "死炎山",
+            "Japanese": "\u6b7b\u708e\u5c71",
             "Romaji": "Shienzan"
           },
           "number": 23,
@@ -229,7 +229,7 @@
         {
           "titles": {
             "English": "Fort Dragonia",
-            "Japanese": "古龍の砦",
+            "Japanese": "\u53e4\u9f8d\u306e\u7826",
             "Romaji": "Koryuu no Toride"
           },
           "number": 24,
@@ -238,7 +238,7 @@
         {
           "titles": {
             "English": "Sorrow",
-            "Japanese": "悲愴",
+            "Japanese": "\u60b2\u6134",
             "Romaji": "Hisou"
           },
           "number": 25,
@@ -253,7 +253,7 @@
         {
           "titles": {
             "English": "Prelude to a Dream",
-            "Japanese": "夢のはじまり",
+            "Japanese": "\u5922\u306e\u306f\u3058\u307e\u308a",
             "Romaji": "Yume no Hajimari"
           },
           "number": 1,
@@ -262,7 +262,7 @@
         {
           "titles": {
             "English": "The Bend of Time",
-            "Japanese": "次元の狭間",
+            "Japanese": "\u6b21\u5143\u306e\u72ed\u9593",
             "Romaji": "Jigen no Hazama"
           },
           "number": 2,
@@ -271,7 +271,7 @@
         {
           "titles": {
             "English": "Termina (Home World)",
-            "Japanese": "テルミナ ホーム",
+            "Japanese": "\u30c6\u30eb\u30df\u30ca \u30db\u30fc\u30e0",
             "Romaji": "Termina: Home"
           },
           "number": 3,
@@ -280,7 +280,7 @@
         {
           "titles": {
             "English": "Dragoons",
-            "Japanese": "龍の騎士",
+            "Japanese": "\u9f8d\u306e\u9a0e\u58eb",
             "Romaji": "Ryuu no Kishi"
           },
           "number": 4,
@@ -289,7 +289,7 @@
         {
           "titles": {
             "English": "Sailing (Home World)",
-            "Japanese": "航海 ホーム・ワールド",
+            "Japanese": "\u822a\u6d77 \u30db\u30fc\u30e0\u30fb\u30ef\u30fc\u30eb\u30c9",
             "Romaji": "Koukai: Home World"
           },
           "number": 5,
@@ -298,7 +298,7 @@
         {
           "titles": {
             "English": "Guldove (Home World)",
-            "Japanese": "ガルドーブ ホーム",
+            "Japanese": "\u30ac\u30eb\u30c9\u30fc\u30d6 \u30db\u30fc\u30e0",
             "Romaji": "Guldove: Home"
           },
           "number": 6,
@@ -307,7 +307,7 @@
         {
           "titles": {
             "English": "Marbule (Home World)",
-            "Japanese": "マブーレ ホーム",
+            "Japanese": "\u30de\u30d6\u30fc\u30ec \u30db\u30fc\u30e0",
             "Romaji": "Marbule: Home"
           },
           "number": 7,
@@ -316,7 +316,7 @@
         {
           "titles": {
             "English": "Zelbess",
-            "Japanese": "ゼルベス"
+            "Japanese": "\u30bc\u30eb\u30d9\u30b9"
           },
           "number": 8,
           "length": "2:42"
@@ -324,7 +324,7 @@
         {
           "titles": {
             "English": "Miraculous & Mystifying",
-            "Japanese": "天晴驚愕大奇術団",
+            "Japanese": "\u5929\u6674\u9a5a\u6115\u5927\u5947\u8853\u56e3",
             "Romaji": "Appare Kyougaku Daikijutsudan"
           },
           "number": 9,
@@ -333,7 +333,7 @@
         {
           "titles": {
             "English": "Slumber",
-            "Japanese": "まどろみ",
+            "Japanese": "\u307e\u3069\u308d\u307f",
             "Romaji": "Madoromi"
           },
           "number": 10,
@@ -342,7 +342,7 @@
         {
           "titles": {
             "English": "Chronomantic",
-            "Japanese": "クロノマンティーク",
+            "Japanese": "\u30af\u30ed\u30ce\u30de\u30f3\u30c6\u30a3\u30fc\u30af",
             "Romaji": "Chronomantique"
           },
           "number": 11,
@@ -351,7 +351,7 @@
         {
           "titles": {
             "English": "Peril",
-            "Japanese": "窮地",
+            "Japanese": "\u7aae\u5730",
             "Romaji": "Kyuuchi"
           },
           "number": 12,
@@ -360,7 +360,7 @@
         {
           "titles": {
             "English": "Paradise",
-            "Japanese": "楽天",
+            "Japanese": "\u697d\u5929",
             "Romaji": "Rakuten"
           },
           "number": 13,
@@ -369,7 +369,7 @@
         {
           "titles": {
             "English": "Isle of the Damned",
-            "Japanese": "亡者の島",
+            "Japanese": "\u4ea1\u8005\u306e\u5cf6",
             "Romaji": "Mouja no Shima"
           },
           "number": 14,
@@ -378,7 +378,7 @@
         {
           "titles": {
             "English": "The Dead Sea -Tower of Geddon-",
-            "Japanese": "死海・滅びの塔",
+            "Japanese": "\u6b7b\u6d77\u30fb\u6ec5\u3073\u306e\u5854",
             "Romaji": "Shikai / Horobi no Tou"
           },
           "number": 15,
@@ -387,7 +387,7 @@
         {
           "titles": {
             "English": "Bound by Fate",
-            "Japanese": "運命に囚われし者たち",
+            "Japanese": "\u904b\u547d\u306b\u56da\u308f\u308c\u3057\u8005\u305f\u3061",
             "Romaji": "Unmei ni Torawareshi Monotachi"
           },
           "number": 16,
@@ -396,7 +396,7 @@
         {
           "titles": {
             "English": "Light Cast on the Lost",
-            "Japanese": "あらかじめ失われし、ともしび",
+            "Japanese": "\u3042\u3089\u304b\u3058\u3081\u5931\u308f\u308c\u3057\u3001\u3068\u3082\u3057\u3073",
             "Romaji": "Arakajime Ushinawareshi, Tomoshibi"
           },
           "number": 17,
@@ -405,7 +405,7 @@
         {
           "titles": {
             "English": "Earth Dragon Isle",
-            "Japanese": "土龍の島",
+            "Japanese": "\u571f\u9f8d\u306e\u5cf6",
             "Romaji": "Doryuu no Shima"
           },
           "number": 18,
@@ -414,7 +414,7 @@
         {
           "titles": {
             "English": "Gaea's Navel",
-            "Japanese": "世界のへそ",
+            "Japanese": "\u4e16\u754c\u306e\u3078\u305d",
             "Romaji": "Sekai no Heso"
           },
           "number": 19,
@@ -423,7 +423,7 @@
         {
           "titles": {
             "English": "Whirlwind",
-            "Japanese": "疾風",
+            "Japanese": "\u75be\u98a8",
             "Romaji": "Shippuu"
           },
           "number": 20,
@@ -432,7 +432,7 @@
         {
           "titles": {
             "English": "Victory -Call of Summer-",
-            "Japanese": "勝利 ～夏の呼び声～",
+            "Japanese": "\u52dd\u5229 \uff5e\u590f\u306e\u547c\u3073\u58f0\uff5e",
             "Romaji": "Shouri ~Natsu no Yobigoe~"
           },
           "number": 21,
@@ -441,7 +441,7 @@
         {
           "titles": {
             "English": "Marbule (Another World)",
-            "Japanese": "マブーレ アナザー",
+            "Japanese": "\u30de\u30d6\u30fc\u30ec \u30a2\u30ca\u30b6\u30fc",
             "Romaji": "Marbule: Another"
           },
           "number": 22,
@@ -450,7 +450,7 @@
         {
           "titles": {
             "English": "Fairy Magic",
-            "Japanese": "妖精のくれた魔法",
+            "Japanese": "\u5996\u7cbe\u306e\u304f\u308c\u305f\u9b54\u6cd5",
             "Romaji": "Yousei no Kureta Mahou"
           },
           "number": 23,
@@ -458,8 +458,8 @@
         },
         {
           "titles": {
-            "English": "Étude 1",
-            "Japanese": "エチュード1",
+            "English": "\u00c9tude 1",
+            "Japanese": "\u30a8\u30c1\u30e5\u30fc\u30c91",
             "Romaji": "Etude 1"
           },
           "number": 24,
@@ -467,8 +467,8 @@
         },
         {
           "titles": {
-            "English": "Étude 2",
-            "Japanese": "エチュード2",
+            "English": "\u00c9tude 2",
+            "Japanese": "\u30a8\u30c1\u30e5\u30fc\u30c92",
             "Romaji": "Etude 2"
           },
           "number": 25,
@@ -477,7 +477,7 @@
         {
           "titles": {
             "English": "Magical Dreamers -Wind, Stars, and Waves-",
-            "Japanese": "MAGICAL DREAMERS ～風と星と波と～",
+            "Japanese": "MAGICAL DREAMERS \uff5e\u98a8\u3068\u661f\u3068\u6ce2\u3068\uff5e",
             "Romaji": "MAGICAL DREAMERS ~Kaze to Hoshi to Nami to~"
           },
           "number": 26,
@@ -492,7 +492,7 @@
         {
           "titles": {
             "English": "The Sea of Eden",
-            "Japanese": "神の庭",
+            "Japanese": "\u795e\u306e\u5ead",
             "Romaji": "Kami no Niwa"
           },
           "number": 1,
@@ -501,7 +501,7 @@
         {
           "titles": {
             "English": "Chronopolis",
-            "Japanese": "クロノポリス"
+            "Japanese": "\u30af\u30ed\u30ce\u30dd\u30ea\u30b9"
           },
           "number": 2,
           "length": "4:12"
@@ -509,7 +509,7 @@
         {
           "titles": {
             "English": "Fates -Divine Destiny-",
-            "Japanese": "FATES ～運命の神～",
+            "Japanese": "FATES \uff5e\u904b\u547d\u306e\u795e\uff5e",
             "Romaji": "FATES ~Unmei no Kami~"
           },
           "number": 3,
@@ -518,7 +518,7 @@
         {
           "titles": {
             "English": "The El Nido Triangle",
-            "Japanese": "海月海",
+            "Japanese": "\u6d77\u6708\u6d77",
             "Romaji": "Kuragekai"
           },
           "number": 4,
@@ -527,7 +527,7 @@
         {
           "titles": {
             "English": "Burning Orphanage",
-            "Japanese": "炎の孤児院",
+            "Japanese": "\u708e\u306e\u5b64\u5150\u9662",
             "Romaji": "Honoo no Kojiin"
           },
           "number": 5,
@@ -536,7 +536,7 @@
         {
           "titles": {
             "English": "The Girl Who Stole the Stars",
-            "Japanese": "星を盗んだ少女",
+            "Japanese": "\u661f\u3092\u76d7\u3093\u3060\u5c11\u5973",
             "Romaji": "Hoshi wo Nusunda Shoujo"
           },
           "number": 6,
@@ -545,7 +545,7 @@
         {
           "titles": {
             "English": "Dreams of the Ages",
-            "Japanese": "時のみる夢",
+            "Japanese": "\u6642\u306e\u307f\u308b\u5922",
             "Romaji": "Toki no Miru Yume"
           },
           "number": 7,
@@ -554,7 +554,7 @@
         {
           "titles": {
             "English": "Dragon Prayers",
-            "Japanese": "龍の祈り",
+            "Japanese": "\u9f8d\u306e\u7948\u308a",
             "Romaji": "Ryuu no Inori"
           },
           "number": 8,
@@ -563,7 +563,7 @@
         {
           "titles": {
             "English": "Terra Tower",
-            "Japanese": "星の塔",
+            "Japanese": "\u661f\u306e\u5854",
             "Romaji": "Hoshi no Tou"
           },
           "number": 9,
@@ -572,7 +572,7 @@
         {
           "titles": {
             "English": "The Frozen Flame",
-            "Japanese": "凍てついた炎",
+            "Japanese": "\u51cd\u3066\u3064\u3044\u305f\u708e",
             "Romaji": "Itetsuita Honoo"
           },
           "number": 10,
@@ -581,7 +581,7 @@
         {
           "titles": {
             "English": "Dragon God",
-            "Japanese": "龍神",
+            "Japanese": "\u9f8d\u795e",
             "Romaji": "Ryuujin"
           },
           "number": 11,
@@ -590,7 +590,7 @@
         {
           "titles": {
             "English": "The Darkness of Time",
-            "Japanese": "時の闇にて",
+            "Japanese": "\u6642\u306e\u95c7\u306b\u3066",
             "Romaji": "Toki no Yami nite"
           },
           "number": 12,
@@ -599,7 +599,7 @@
         {
           "titles": {
             "English": "Life -A Distant Promise-",
-            "Japanese": "生命 ～遠い約束～",
+            "Japanese": "\u751f\u547d \uff5e\u9060\u3044\u7d04\u675f\uff5e",
             "Romaji": "Seimei ~Tooi Yakusoku~"
           },
           "number": 13,
@@ -608,7 +608,7 @@
         {
           "titles": {
             "English": "Reminisce -Enduring Thoughts-",
-            "Japanese": "回想 ～消せない想い～",
+            "Japanese": "\u56de\u60f3 \uff5e\u6d88\u305b\u306a\u3044\u60f3\u3044\uff5e",
             "Romaji": "Kaisou ~Kesenai Omoi~"
           },
           "number": 14,
@@ -616,8 +616,8 @@
         },
         {
           "titles": {
-            "English": "Radical Dreamers -Le Trésor Interdit-",
-            "Japanese": "RADICAL DREAMERS ～盗めない宝石～",
+            "English": "Radical Dreamers -Le Tr\u00e9sor Interdit-",
+            "Japanese": "RADICAL DREAMERS \uff5e\u76d7\u3081\u306a\u3044\u5b9d\u77f3\uff5e",
             "Romaji": "RADICAL DREAMERS ~Nusumenai Houseki~"
           },
           "number": 15,
@@ -626,7 +626,7 @@
         {
           "titles": {
             "English": "Fragments of a Dream",
-            "Japanese": "夢のかけら",
+            "Japanese": "\u5922\u306e\u304b\u3051\u3089",
             "Romaji": "Yume no Kakera"
           },
           "number": 16,
@@ -642,7 +642,7 @@
         {
           "names": {
             "English": "Yasunori Mitsuda",
-            "Japanese": "光田康典"
+            "Japanese": "\u5149\u7530\u5eb7\u5178"
           },
           "id": 146,
           "link": "https://vgmdb.net/artist/146"
@@ -656,7 +656,7 @@
         {
           "names": {
             "English": "Yasunori Mitsuda",
-            "Japanese": "光田康典"
+            "Japanese": "\u5149\u7530\u5eb7\u5178"
           },
           "id": 146,
           "link": "https://vgmdb.net/artist/146"
@@ -670,7 +670,7 @@
         {
           "names": {
             "English": "Yasunori Mitsuda",
-            "Japanese": "光田康典"
+            "Japanese": "\u5149\u7530\u5eb7\u5178"
           },
           "id": 146,
           "link": "https://vgmdb.net/artist/146"
@@ -684,7 +684,7 @@
         {
           "names": {
             "English": "Ryo Yamazaki",
-            "Japanese": "山崎良"
+            "Japanese": "\u5c71\u5d0e\u826f"
           },
           "id": 533,
           "link": "https://vgmdb.net/artist/533"
@@ -698,7 +698,7 @@
         {
           "names": {
             "English": "Minoru Akao",
-            "Japanese": "赤尾実"
+            "Japanese": "\u8d64\u5c3e\u5b9f"
           },
           "id": 11307,
           "link": "https://vgmdb.net/artist/11307"
@@ -712,7 +712,7 @@
         {
           "names": {
             "English": "Kenzi Nagashima",
-            "Japanese": "長島賢史"
+            "Japanese": "\u9577\u5cf6\u8ce2\u53f2"
           },
           "id": 11309,
           "link": "https://vgmdb.net/artist/11309"
@@ -720,7 +720,7 @@
         {
           "names": {
             "English": "Tomohiko Kira",
-            "Japanese": "吉良知彦"
+            "Japanese": "\u5409\u826f\u77e5\u5f66"
           },
           "id": 3701,
           "link": "https://vgmdb.net/artist/3701"
@@ -734,7 +734,7 @@
         {
           "names": {
             "English": "Kenzi Nagashima",
-            "Japanese": "長島賢史"
+            "Japanese": "\u9577\u5cf6\u8ce2\u53f2"
           },
           "id": 11309,
           "link": "https://vgmdb.net/artist/11309"
@@ -742,7 +742,7 @@
         {
           "names": {
             "English": "Tomohiko Kira",
-            "Japanese": "吉良知彦"
+            "Japanese": "\u5409\u826f\u77e5\u5f66"
           },
           "id": 3701,
           "link": "https://vgmdb.net/artist/3701"
@@ -756,7 +756,7 @@
         {
           "names": {
             "English": "Ichiko Furukawa",
-            "Japanese": "古川伊知子"
+            "Japanese": "\u53e4\u5ddd\u4f0a\u77e5\u5b50"
           },
           "id": 12996,
           "link": "https://vgmdb.net/artist/12996"
@@ -764,7 +764,7 @@
         {
           "names": {
             "English": "Hitomi Misaizu",
-            "Japanese": "美斉津仁美"
+            "Japanese": "\u7f8e\u6589\u6d25\u4ec1\u7f8e"
           },
           "id": 12995,
           "link": "https://vgmdb.net/artist/12995"
@@ -778,7 +778,7 @@
         {
           "names": {
             "English": "Keiichi Yamashita",
-            "Japanese": "山下慶一"
+            "Japanese": "\u5c71\u4e0b\u6176\u4e00"
           },
           "id": 37035,
           "link": "https://vgmdb.net/artist/37035"
@@ -792,7 +792,7 @@
         {
           "names": {
             "English": "Keiichi Yamashita",
-            "Japanese": "山下慶一"
+            "Japanese": "\u5c71\u4e0b\u6176\u4e00"
           },
           "id": 37035,
           "link": "https://vgmdb.net/artist/37035"
@@ -806,7 +806,7 @@
         {
           "names": {
             "English": "Kishio Ozawa",
-            "Japanese": "小澤貴司夫"
+            "Japanese": "\u5c0f\u6fa4\u8cb4\u53f8\u592b"
           },
           "id": 37036,
           "link": "https://vgmdb.net/artist/37036"
@@ -814,7 +814,7 @@
         {
           "names": {
             "English": "Tsuyoshi Takemura",
-            "Japanese": "竹村剛史"
+            "Japanese": "\u7af9\u6751\u525b\u53f2"
           },
           "id": 37037,
           "link": "https://vgmdb.net/artist/37037"
@@ -828,7 +828,7 @@
         {
           "names": {
             "English": "Saiko Fukui",
-            "Japanese": "福井彩子"
+            "Japanese": "\u798f\u4e95\u5f69\u5b50"
           },
           "id": 37030,
           "link": "https://vgmdb.net/artist/37030"
@@ -842,7 +842,7 @@
         {
           "names": {
             "English": "Kosei Ito",
-            "Japanese": "伊藤幸正"
+            "Japanese": "\u4f0a\u85e4\u5e78\u6b63"
           },
           "id": 37038,
           "link": "https://vgmdb.net/artist/37038"
@@ -856,7 +856,7 @@
         {
           "names": {
             "English": "Emiko Funahashi",
-            "Japanese": "船橋恵美子"
+            "Japanese": "\u8239\u6a4b\u6075\u7f8e\u5b50"
           },
           "id": 37039,
           "link": "https://vgmdb.net/artist/37039"
@@ -870,7 +870,7 @@
         {
           "names": {
             "English": "Keiji Hamada",
-            "Japanese": "濱田啓路"
+            "Japanese": "\u6ff1\u7530\u5553\u8def"
           },
           "id": 37040,
           "link": "https://vgmdb.net/artist/37040"
@@ -884,7 +884,7 @@
         {
           "names": {
             "English": "Susumu Arai",
-            "Japanese": "荒井進"
+            "Japanese": "\u8352\u4e95\u9032"
           },
           "id": 37041,
           "link": "https://vgmdb.net/artist/37041"
@@ -892,7 +892,7 @@
         {
           "names": {
             "English": "Hirofumi Yokota",
-            "Japanese": "横田洋文"
+            "Japanese": "\u6a2a\u7530\u6d0b\u6587"
           },
           "id": 37033,
           "link": "https://vgmdb.net/artist/37033"
@@ -906,7 +906,7 @@
         {
           "names": {
             "English": "Kensuke Matsushita",
-            "Japanese": "松下謙介"
+            "Japanese": "\u677e\u4e0b\u8b19\u4ecb"
           },
           "id": 35973,
           "link": "https://vgmdb.net/artist/35973"
@@ -920,7 +920,7 @@
         {
           "names": {
             "English": "Nobuo Uematsu",
-            "Japanese": "植松伸夫"
+            "Japanese": "\u690d\u677e\u4f38\u592b"
           },
           "id": 77,
           "link": "https://vgmdb.net/artist/77"
@@ -934,7 +934,7 @@
         {
           "names": {
             "English": "Tomohiko Kira",
-            "Japanese": "吉良知彦"
+            "Japanese": "\u5409\u826f\u77e5\u5f66"
           },
           "id": 3701,
           "link": "https://vgmdb.net/artist/3701"
@@ -948,7 +948,7 @@
         {
           "names": {
             "English": "Tomohiko Kira",
-            "Japanese": "吉良知彦"
+            "Japanese": "\u5409\u826f\u77e5\u5f66"
           },
           "id": 3701,
           "link": "https://vgmdb.net/artist/3701"
@@ -962,7 +962,7 @@
         {
           "names": {
             "English": "Kinya Sogawa",
-            "Japanese": "素川欣也"
+            "Japanese": "\u7d20\u5ddd\u6b23\u4e5f"
           },
           "id": 4467,
           "link": "https://vgmdb.net/artist/4467"
@@ -976,7 +976,7 @@
         {
           "names": {
             "English": "Kinya Sogawa",
-            "Japanese": "素川欣也"
+            "Japanese": "\u7d20\u5ddd\u6b23\u4e5f"
           },
           "id": 4467,
           "link": "https://vgmdb.net/artist/4467"
@@ -990,7 +990,7 @@
         {
           "names": {
             "English": "Tamao Fujii",
-            "Japanese": "藤井珠緒"
+            "Japanese": "\u85e4\u4e95\u73e0\u7dd2"
           },
           "id": 4469,
           "link": "https://vgmdb.net/artist/4469"
@@ -1004,7 +1004,7 @@
         {
           "names": {
             "English": "Hitoshi Watanabe",
-            "Japanese": "渡辺等"
+            "Japanese": "\u6e21\u8fba\u7b49"
           },
           "id": 3316,
           "link": "https://vgmdb.net/artist/3316"
@@ -1018,7 +1018,7 @@
         {
           "names": {
             "English": "Yasunori Mitsuda",
-            "Japanese": "光田康典"
+            "Japanese": "\u5149\u7530\u5eb7\u5178"
           },
           "id": 146,
           "link": "https://vgmdb.net/artist/146"
@@ -1032,7 +1032,7 @@
         {
           "names": {
             "English": "Hijiri Kuwano",
-            "Japanese": "桑野聖"
+            "Japanese": "\u6851\u91ce\u8056"
           },
           "id": 3839,
           "link": "https://vgmdb.net/artist/3839"
@@ -1046,7 +1046,7 @@
         {
           "names": {
             "English": "Motoko Fujiie",
-            "Japanese": "藤家泉子"
+            "Japanese": "\u85e4\u5bb6\u6cc9\u5b50"
           },
           "id": 7948,
           "link": "https://vgmdb.net/artist/7948"
@@ -1060,7 +1060,7 @@
         {
           "names": {
             "English": "Jun Yamamoto",
-            "Japanese": "山本純"
+            "Japanese": "\u5c71\u672c\u7d14"
           },
           "id": 11682,
           "link": "https://vgmdb.net/artist/11682"
@@ -1074,7 +1074,7 @@
         {
           "names": {
             "English": "Haruki Matsuba",
-            "Japanese": "松葉春樹"
+            "Japanese": "\u677e\u8449\u6625\u6a39"
           },
           "id": 7065,
           "link": "https://vgmdb.net/artist/7065"
@@ -1088,7 +1088,7 @@
         {
           "names": {
             "English": "Ken Hiranai",
-            "Japanese": "平内健"
+            "Japanese": "\u5e73\u5185\u5065"
           },
           "id": 37042,
           "link": "https://vgmdb.net/artist/37042"
@@ -1115,7 +1115,7 @@
         {
           "names": {
             "English": "Kenichi Funayama",
-            "Japanese": "船山健一"
+            "Japanese": "\u8239\u5c71\u5065\u4e00"
           },
           "id": 17472,
           "link": "https://vgmdb.net/artist/17472"
@@ -1129,7 +1129,7 @@
         {
           "names": {
             "English": "Noriko Mitose",
-            "Japanese": "みとせのりこ"
+            "Japanese": "\u307f\u3068\u305b\u306e\u308a\u3053"
           },
           "id": 202,
           "link": "https://vgmdb.net/artist/202"
@@ -1143,7 +1143,7 @@
         {
           "names": {
             "English": "Noriko Mitose",
-            "Japanese": "みとせのりこ"
+            "Japanese": "\u307f\u3068\u305b\u306e\u308a\u3053"
           },
           "id": 202,
           "link": "https://vgmdb.net/artist/202"
@@ -1157,7 +1157,7 @@
         {
           "names": {
             "English": "Hiromichi Tanaka",
-            "Japanese": "田中弘道"
+            "Japanese": "\u7530\u4e2d\u5f18\u9053"
           },
           "id": 37043,
           "link": "https://vgmdb.net/artist/37043"
@@ -1165,7 +1165,7 @@
         {
           "names": {
             "English": "Masato Kato",
-            "Japanese": "加藤正人"
+            "Japanese": "\u52a0\u85e4\u6b63\u4eba"
           },
           "id": 7203,
           "link": "https://vgmdb.net/artist/7203"
@@ -1173,7 +1173,7 @@
         {
           "names": {
             "English": "Keiji Kawamori",
-            "Japanese": "河盛慶次"
+            "Japanese": "\u6cb3\u76db\u6176\u6b21"
           },
           "id": 1914,
           "link": "https://vgmdb.net/artist/1914"
@@ -1181,7 +1181,7 @@
         {
           "names": {
             "English": "Takeharu Ishimoto",
-            "Japanese": "石元丈晴"
+            "Japanese": "\u77f3\u5143\u4e08\u6674"
           },
           "id": 776,
           "link": "https://vgmdb.net/artist/776"
@@ -1189,7 +1189,7 @@
         {
           "names": {
             "English": "Satoshi Akamatsu",
-            "Japanese": "赤松智"
+            "Japanese": "\u8d64\u677e\u667a"
           },
           "id": 4372,
           "link": "https://vgmdb.net/artist/4372"
@@ -1197,7 +1197,7 @@
         {
           "names": {
             "English": "Hideaki Katayanagi",
-            "Japanese": "片柳英明"
+            "Japanese": "\u7247\u67f3\u82f1\u660e"
           },
           "id": 63555,
           "link": "https://vgmdb.net/artist/63555"
@@ -1205,7 +1205,7 @@
         {
           "names": {
             "English": "Fumio Takano",
-            "Japanese": "高野文男"
+            "Japanese": "\u9ad8\u91ce\u6587\u7537"
           },
           "id": 36830,
           "link": "https://vgmdb.net/artist/36830"

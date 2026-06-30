@@ -159,4 +159,3 @@ from a captured vgmdb event page using owned (clean-room) selectors. It SHALL ke
 
 - **WHEN** `parse_event` is called with HTML lacking an event canonical link or title
 - **THEN** it raises `NotAnEventPageError`
-

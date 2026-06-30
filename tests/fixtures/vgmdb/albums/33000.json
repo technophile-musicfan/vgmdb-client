@@ -146,7 +146,7 @@
         {
           "names": {
             "English": "Linjin",
-            "Japanese": "隣人"
+            "Japanese": "\u96a3\u4eba"
           },
           "id": 2498,
           "link": "https://vgmdb.net/artist/2498"
@@ -181,7 +181,7 @@
         {
           "names": {
             "English": "Mei Ayakura",
-            "Japanese": "綾倉盟"
+            "Japanese": "\u7dbe\u5009\u76df"
           },
           "id": 7301,
           "link": "https://vgmdb.net/artist/7301"
@@ -195,7 +195,7 @@
         {
           "names": {
             "English": "Mei Ayakura",
-            "Japanese": "綾倉盟"
+            "Japanese": "\u7dbe\u5009\u76df"
           },
           "id": 7301,
           "link": "https://vgmdb.net/artist/7301"
@@ -203,7 +203,7 @@
         {
           "names": {
             "English": "Linjin",
-            "Japanese": "隣人"
+            "Japanese": "\u96a3\u4eba"
           },
           "id": 2498,
           "link": "https://vgmdb.net/artist/2498"
@@ -212,7 +212,7 @@
       "role_raw": "Lyricist"
     }
   ],
-  "notes": "Reitaisai 9 release.\n\nArrangement by\n   Syrufit (2, 3, 5, 7, 10 -- Compose: 1, 9)\n   Shibayan [Shibayan Records] (4)\n   Linjin [ZYTOKINE] (6)\n   Nhato [Otographic Music] (8)\n   Taishi [Compllege] (10)\n   Tomoyuki Sakakida (12)\n\nVocals by Mei Ayakura.\n\nLyrics by\n   Linjin\n   Mei Ayakura\n\nJacket Illustration by duca.\n\nTrack origins:\n1. --\n2. Touhou Kaikidan / Doll Story ~ Doll of Misery\n3. Touhou Kaikidan / Romantic Children\n4. Touhou Chireiden / Corpse Voyage ~ Be of good cheer!\n5. Touhou Reiiden / Now, Until the Moment You Die\n6. Touhou Eiyashou / Cinderella Cage ~ Kagome-Kagome\n7. Touhou Yumejikuu / Ghostly Person's Holiday\n8. Touhou Fuujinroku / The Venerable Ancient Battlefield ~ Suwa Foughten Field\n9. --\n10. Touhou Youyoumu / Ghostly Band ~ Phantom Ensemble\n11. Touhou Fuumaroku / Forest of Tohno\n12. Touhou Kaikidan / Doll Story ~ Doll of Misery",
+  "notes": "Reitaisai 9 release.\n\nArrangement by\n\u00a0\u00a0 Syrufit (2, 3, 5, 7, 10 -- Compose: 1, 9)\n\u00a0\u00a0 Shibayan [Shibayan Records] (4)\n\u00a0\u00a0 Linjin [ZYTOKINE] (6)\n\u00a0\u00a0 Nhato [Otographic Music] (8)\n\u00a0\u00a0 Taishi [Compllege] (10)\n\u00a0\u00a0 Tomoyuki Sakakida (12)\n\nVocals by Mei Ayakura.\n\nLyrics by\n\u00a0\u00a0 Linjin\n\u00a0\u00a0 Mei Ayakura\n\nJacket Illustration by duca.\n\nTrack origins:\n1. --\n2. Touhou Kaikidan / Doll Story ~ Doll of Misery\n3. Touhou Kaikidan / Romantic Children\n4. Touhou Chireiden / Corpse Voyage ~ Be of good cheer!\n5. Touhou Reiiden / Now, Until the Moment You Die\n6. Touhou Eiyashou / Cinderella Cage ~ Kagome-Kagome\n7. Touhou Yumejikuu / Ghostly Person's Holiday\n8. Touhou Fuujinroku / The Venerable Ancient Battlefield ~ Suwa Foughten Field\n9. --\n10. Touhou Youyoumu / Ghostly Band ~ Phantom Ensemble\n11. Touhou Fuumaroku / Forest of Tohno\n12. Touhou Kaikidan / Doll Story ~ Doll of Misery",
   "release_event": {
     "names": {
       "English": "Hakurei Shrine Reitaisai 9"

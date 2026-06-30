@@ -2,7 +2,7 @@
   "id": 22000,
   "link": "https://vgmdb.net/album/22000",
   "titles": {
-    "English": "From 8 to ∞"
+    "English": "From 8 to \u221e"
   },
   "catalog": "BC008",
   "release_date": {
@@ -105,7 +105,7 @@
         {
           "names": {
             "English": "Hirokazu Tanaka",
-            "Japanese": "田中宏和"
+            "Japanese": "\u7530\u4e2d\u5b8f\u548c"
           },
           "id": 363,
           "link": "https://vgmdb.net/artist/363"
@@ -113,7 +113,7 @@
         {
           "names": {
             "English": "Kiyohiro Sada",
-            "Japanese": "禎清宏"
+            "Japanese": "\u798e\u6e05\u5b8f"
           },
           "id": 2891,
           "link": "https://vgmdb.net/artist/2891"

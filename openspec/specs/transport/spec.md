@@ -145,4 +145,3 @@ base error, so that callers can catch transport failures broadly or by specific 
 
 - **WHEN** a `CloudflareChallengeError`, `NotFoundError`, `RateLimitedError`, or `TransientTransportError` is raised
 - **THEN** it can be caught as the transport base error and as the library-wide base error
-

@@ -148,9 +148,11 @@ def _load_targets() -> list[tuple[str, str, str]]:
         for section, url_prefix, out_dir in _ENTITY_SECTIONS:
             for entry in manifest.get(section, []):
                 entity_id = entry["id"]
-                targets.append(
-                    (f"{url_prefix}/{entity_id}", f"/{url_prefix}/{entity_id}", f"{out_dir}/{entity_id}.html")
-                )
+                targets.append((
+                    f"{url_prefix}/{entity_id}",
+                    f"/{url_prefix}/{entity_id}",
+                    f"{out_dir}/{entity_id}.html",
+                ))
     except KeyError as exc:
         raise MalformedManifestError(exc.args[0]) from exc
     return targets

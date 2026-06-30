@@ -91,4 +91,3 @@ I/O — it does not validate the token against vgmdb and does not solve the Clou
 
 - **WHEN** a consumer does `from vgmdb_client.auth import Credentials, CurlParseError`
 - **THEN** the import succeeds
-

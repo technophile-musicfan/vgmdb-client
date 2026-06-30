@@ -3,7 +3,7 @@
   "link": "https://vgmdb.net/album/30000",
   "titles": {
     "English": "Till I Reach Your Tomorrow Drama CD 'Kyou no Kimi ni, Shukuhai wo!'",
-    "Japanese": "ドラマCD 明日の君と逢うために 「今日の君に、祝杯を!」"
+    "Japanese": "\u30c9\u30e9\u30deCD \u660e\u65e5\u306e\u541b\u3068\u9022\u3046\u305f\u3081\u306b \u300c\u4eca\u65e5\u306e\u541b\u306b\u3001\u795d\u676f\u3092!\u300d"
   },
   "catalog": "PURPLE-047",
   "release_date": {
@@ -85,7 +85,7 @@
         {
           "names": {
             "English": "Kenji Nojima",
-            "Japanese": "野島健児"
+            "Japanese": "\u91ce\u5cf6\u5065\u5150"
           },
           "id": 4106,
           "link": "https://vgmdb.net/artist/4106"
@@ -93,7 +93,7 @@
         {
           "names": {
             "English": "Hikaru Isshiki",
-            "Japanese": "一色ヒカル"
+            "Japanese": "\u4e00\u8272\u30d2\u30ab\u30eb"
           },
           "id": 3417,
           "link": "https://vgmdb.net/artist/3417"
@@ -101,14 +101,14 @@
         {
           "names": {
             "English": "Oto Agumi",
-            "Japanese": "安玖深音"
+            "Japanese": "\u5b89\u7396\u6df1\u97f3"
           },
           "id": 2005,
           "link": "https://vgmdb.net/artist/2005"
         },
         {
           "names": {
-            "Japanese": "祢乃照果"
+            "Japanese": "\u7962\u4e43\u7167\u679c"
           },
           "id": null,
           "link": null
@@ -116,7 +116,7 @@
         {
           "names": {
             "English": "Nazuna Gogyou",
-            "Japanese": "五行なずな"
+            "Japanese": "\u4e94\u884c\u306a\u305a\u306a"
           },
           "id": 6921,
           "link": "https://vgmdb.net/artist/6921"
@@ -124,14 +124,14 @@
         {
           "names": {
             "English": "Honoka Imuraya",
-            "Japanese": "井村屋ほのか"
+            "Japanese": "\u4e95\u6751\u5c4b\u307b\u306e\u304b"
           },
           "id": 4829,
           "link": "https://vgmdb.net/artist/4829"
         },
         {
           "names": {
-            "Japanese": "沢野みりか"
+            "Japanese": "\u6ca2\u91ce\u307f\u308a\u304b"
           },
           "id": null,
           "link": null
@@ -139,7 +139,7 @@
         {
           "names": {
             "English": "Kazane",
-            "Japanese": "風音"
+            "Japanese": "\u98a8\u97f3"
           },
           "id": 1797,
           "link": "https://vgmdb.net/artist/1797"
@@ -147,14 +147,14 @@
         {
           "names": {
             "English": "Minami Hokuto",
-            "Japanese": "北都南"
+            "Japanese": "\u5317\u90fd\u5357"
           },
           "id": 2040,
           "link": "https://vgmdb.net/artist/2040"
         },
         {
           "names": {
-            "Japanese": "城樹翔"
+            "Japanese": "\u57ce\u6a39\u7fd4"
           },
           "id": null,
           "link": null
@@ -162,7 +162,7 @@
         {
           "names": {
             "English": "Takezou Koike",
-            "Japanese": "小池竹蔵"
+            "Japanese": "\u5c0f\u6c60\u7af9\u8535"
           },
           "id": 9308,
           "link": "https://vgmdb.net/artist/9308"
@@ -171,5 +171,5 @@
       "role_raw": "Performer"
     }
   ],
-  "notes": "Volume 6 in the drama series. Released at 秋葉原電気外祭り２.\n\nM01~M07 - Drama tracks\nM08 - Cast Comment\n\nCast:\n　八代修司： Kenji Nojima\n　御風里佳： Hikaru Isshiki\n　若宮明日香： Oto Agumi\n　泉水小夜： 祢乃照果\n　夕霧瑠璃子： Nazuna Gogyou\n　藤崎あさひ： Honoka Imuraya\n　月野舞： 沢野みりか\n　七海美菜： Kazane\n　御風りん： Minami Hokuto\n　瀬戸和也： 城樹翔\n　夕霧直輝： Takezou Koike"
+  "notes": "Volume 6 in the drama series. Released at \u79cb\u8449\u539f\u96fb\u6c17\u5916\u796d\u308a\uff12.\n\nM01~M07 - Drama tracks\nM08 - Cast Comment\n\nCast:\n\u3000\u516b\u4ee3\u4fee\u53f8\uff1a Kenji Nojima\n\u3000\u5fa1\u98a8\u91cc\u4f73\uff1a Hikaru Isshiki\n\u3000\u82e5\u5bae\u660e\u65e5\u9999\uff1a Oto Agumi\n\u3000\u6cc9\u6c34\u5c0f\u591c\uff1a \u7962\u4e43\u7167\u679c\n\u3000\u5915\u9727\u7460\u7483\u5b50\uff1a Nazuna Gogyou\n\u3000\u85e4\u5d0e\u3042\u3055\u3072\uff1a Honoka Imuraya\n\u3000\u6708\u91ce\u821e\uff1a \u6ca2\u91ce\u307f\u308a\u304b\n\u3000\u4e03\u6d77\u7f8e\u83dc\uff1a Kazane\n\u3000\u5fa1\u98a8\u308a\u3093\uff1a Minami Hokuto\n\u3000\u702c\u6238\u548c\u4e5f\uff1a \u57ce\u6a39\u7fd4\n\u3000\u5915\u9727\u76f4\u8f1d\uff1a Takezou Koike"
 }

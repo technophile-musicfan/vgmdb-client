@@ -3,7 +3,7 @@
   "link": "https://vgmdb.net/album/5012",
   "titles": {
     "English": "Akumajo Dracula: Yami no Juin Prelude of Revenge",
-    "Japanese": "悪魔城ドラキュラ 闇の呪印 復讐の序曲",
+    "Japanese": "\u60aa\u9b54\u57ce\u30c9\u30e9\u30ad\u30e5\u30e9 \u95c7\u306e\u546a\u5370 \u5fa9\u8b90\u306e\u5e8f\u66f2",
     "Romaji": "Akumajo Dracula: Yami no Juin Fukusyuu no Jyokyoku"
   },
   "catalog": "KMJ-00050",
@@ -23,7 +23,7 @@
         {
           "titles": {
             "English": "\"the Baljhet Mountains\" a Background of the Mountains",
-            "Japanese": "「バルジット山脈」 山岳地帯BGM",
+            "Japanese": "\u300c\u30d0\u30eb\u30b8\u30c3\u30c8\u5c71\u8108\u300d \u5c71\u5cb3\u5730\u5e2fBGM",
             "Romaji": "\"Baljhet Sanmyaku\" Sangakuchitai BGM"
           },
           "number": 1,
@@ -32,7 +32,7 @@
         {
           "titles": {
             "English": "\"the Garibaldi Cathedral\" a Background for the Stained Glass",
-            "Japanese": "「ガリバルディ大聖堂」 大聖堂ステンドグラスのBGM",
+            "Japanese": "\u300c\u30ac\u30ea\u30d0\u30eb\u30c7\u30a3\u5927\u8056\u5802\u300d \u5927\u8056\u5802\u30b9\u30c6\u30f3\u30c9\u30b0\u30e9\u30b9\u306eBGM",
             "Romaji": "\"Garibaldi Daiseidou\" Daiseidou Stained Glass no BGM"
           },
           "number": 2,
@@ -41,7 +41,7 @@
         {
           "titles": {
             "English": "\"Belmondo - The Legend\" the Fight against Bermont",
-            "Japanese": "「伝説のベルモンド」 対ベルモンド戦",
+            "Japanese": "\u300c\u4f1d\u8aac\u306e\u30d9\u30eb\u30e2\u30f3\u30c9\u300d \u5bfe\u30d9\u30eb\u30e2\u30f3\u30c9\u6226",
             "Romaji": "\"Densetsu no Belmont\" Tai Belmont Ikusa"
           },
           "number": 3,
@@ -50,7 +50,7 @@
         {
           "titles": {
             "English": "\"the Portrait of Zead\" an Arrangement of the Zeado's Event",
-            "Japanese": "「ゼアドの肖像」 ゼアド、イベントBGMのアレンジ",
+            "Japanese": "\u300c\u30bc\u30a2\u30c9\u306e\u8096\u50cf\u300d \u30bc\u30a2\u30c9\u3001\u30a4\u30d9\u30f3\u30c8BGM\u306e\u30a2\u30ec\u30f3\u30b8",
             "Romaji": "\"Zead no Shouzou\" Zead, Event BGM no Arrange"
           },
           "number": 4,
@@ -66,7 +66,7 @@
         {
           "names": {
             "English": "Michiru Yamane",
-            "Japanese": "山根ミチル"
+            "Japanese": "\u5c71\u6839\u30df\u30c1\u30eb"
           },
           "id": 334,
           "link": "https://vgmdb.net/artist/334"
@@ -80,7 +80,7 @@
         {
           "names": {
             "English": "Michiru Yamane",
-            "Japanese": "山根ミチル"
+            "Japanese": "\u5c71\u6839\u30df\u30c1\u30eb"
           },
           "id": 334,
           "link": "https://vgmdb.net/artist/334"

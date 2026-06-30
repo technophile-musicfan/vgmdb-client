@@ -86,7 +86,7 @@ $(document).ready(function() {
 				beforeSend: function() {
 					$('#navoptions').css('visibility', 'hidden').parent('li').css('background', 'transparent url(/db/img/ajax_loader_small.gif) center center no-repeat');
 				},
-				success: function(data) { 
+				success: function(data) {
 					$('#navoptions').css('visibility', 'visible').parent('li').css('background', 'transparent url(/db/img/vgmdbsubnav2010.gif) -593px 0 no-repeat');
 					$('#pref_content').html(data.html);
 					$('#pref_content form label.tristate').tristate();
@@ -126,7 +126,7 @@ $(document).ready(function() {
 		location.href = item[2];
 	});
 	$('label.tristate').tristate(); // 'sup IRA
-	
+
 });</script>
 <meta name="google-site-verification" content="3hoyGArPHzn4HMMeNfYCjhqM5Ci_675U7M7NxbiLJ1A" />
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-6WE0F947BF"></script>
@@ -173,15 +173,15 @@ $(document).ready(function() {
 		}
 	});
 	$('textarea.resizable:not(.processed), select.resizable:not(.processed), div.resizable:not(.processed)').TextAreaResizer();
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
+
 	$(document).ready(function() {
 		$('.collapsible_section').click(function() {
 			var src = $(this).find('img').attr('src');
@@ -195,8 +195,8 @@ $(document).ready(function() {
 			return false;
 		});
 	});
-	
-	
+
+
 	function dfilter(tablename, filtername, showtype="") {
 		$("#" + tablename + " tbody, #" + tablename + " tr").hide();
 		var elements = $("#" + tablename + " tr").not("[rel='year']");
@@ -238,16 +238,16 @@ $(document).ready(function() {
 	$("#thankedproducttablefilter_menu :checkbox").click(function() { dfilter("thankedproducttable", "thankedproducttable", ".productshow"); });
 	$("#featuredtablefilter_menu :checkbox").click(function() { dfilter("featuredtable", "featuredtable", ".albumshow"); });
 	$("#featuredproducttablefilter_menu :checkbox").click(function() { dfilter("featuredproducttable", "featuredproducttable", ".productshow"); });
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
+
+
 	// shamelessly ripped from Digg
 	var cheatCode = '';
 	var maxCode = 40;
@@ -276,10 +276,10 @@ $(document).ready(function() {
 <div class="page" style="background-color: #1B273D; height: 100px; width: 100%;">
 <div style="float: right; margin-top: 10px; margin-right: 10px;">
 	<ul class="pipelist tinyfont">
-	
+
 	<li class="smallfont first-child"><span id="navlogin"><a href="#">Login</a><script type="text/javascript"> vBmenu.register('navlogin'); </script></span></li>
 	<li class="smallfont"><a title="Register a new account" href="/forums/register.php">Register</a></li>
-	
+
 	</ul>
 </div>
 <div style="white-space: nowrap;">
@@ -295,7 +295,7 @@ $(document).ready(function() {
 	<li id="nav_label"><a title="Music Labels, Publishers, Organizations and Groups" href="/db/org.php">Organizations</a><a class="buttonSubmit" href="/db/org-submit.php" title="Submit a new publisher"><img src="/db/img/button-add-big.png" alt="" /></a></li>
 	<li id="nav_product"><a title="Games, Video, Radio/Drama Programs, Print Publications" href="/db/product.php">Products</a><a class="buttonSubmit" href="/db/product-submit.php" title="Submit a new product"><img src="/db/img/button-add-big.png" alt="" /></a></li>
 	<li id="nav_event"><a title="Conventions, Gatherings and Shows" href="/db/events.php">Events</a><a class="buttonSubmit" href="/db/event-submit.php" title="Submit a new event"><img src="/db/img/button-add-big.png" alt="" /></a></li>
-	
+
 	<!--li id="nav_podcast"><a title="VGM Decibel, our bi-monthly podcast" href="/cast">Podcast</a></li-->
 </ul>
 </div>
@@ -325,7 +325,7 @@ $(document).ready(function() {
 	<li id="nav_market"><a title="Trade with other members" href="/db/marketplace.php?do=view">Marketplace</a></li>
 	<!--li id="nav_users"><a title="User collections" href="/db/collection.php">Users</a></li-->
 	<li id="nav_chat"><a title="Real-time chat" rel="nofollow" href="https://discord.gg/VXgKQUa" target="vgmdbchat">Discord</a></li>
-	
+
 	<li id="nav_submit"><a title="Submit an album" href="/album/new">Submit Album</a></li>
 	<li id="nav_customize"><span id="navoptions"><a title="Edit your preferences" href="#">Customize</a></span></li>
 </ul>
@@ -350,7 +350,7 @@ $(document).ready(function() {
 	</table>
 	<input type="hidden" name="s" value="" />
 	<input type="hidden" name="securitytoken" value="guest" />
-	<input type="hidden" name="do" value="login" />		
+	<input type="hidden" name="do" value="login" />
 	<input type="hidden" name="vb_login_md5password" />
 	<input type="hidden" name="vb_login_md5password_utf" />
 	</form>
@@ -382,7 +382,7 @@ $(document).ready(function() {
 	<span style="float:right;" class="label smallfont"><a href="/db/product-discuss.php?id=262">Discuss</a>
 </span>
 
-	
+
 
 	<h1 id="maintitle" style="display: inline"><span class="albumtitle" lang="en" style="display:inline">Streets of Rage</span><span class="albumtitle" lang="ja" style="display:none"><em> / </em>ベア・ナックル</span><span class="albumtitle" lang="ja-Latn" style="display:none"><em> / </em>Bare Knuckle: Ikari no Tekken</span></h1> <span class="smallfont time">(Game)</span>
 	<div id="subtitle" class="label" style="padding: 0px 10px 0px 10px"><span class="albumtitle" lang="en" style="display:inline">ベア・ナックル<br />Bare Knuckle: Ikari no Tekken<br /></span><span class="albumtitle" lang="ja" style="display:none">Streets of Rage<br />Bare Knuckle: Ikari no Tekken<br /></span><span class="albumtitle" lang="ja-Latn" style="display:none">Streets of Rage<br />ベア・ナックル<br /></span></div>
@@ -390,7 +390,7 @@ $(document).ready(function() {
 	<div id="innercontent" style="padding: 10px 10px 0px 10px">
 	<style>dl {margin: 0; padding: 0} dt {margin-bottom: 6px; float: left; clear: both} dd {margin-bottom: 6px; margin-left: 11em}</style>
 
-	
+
 	<div id="innermain" style="margin: 6px 10px 6px 10px">
 	<style>dl {margin: 0; padding: 0} dt {margin-bottom: 6px; float: left; clear: both} dd {margin-bottom: 6px; margin-left: 11em}</style>
 	<div style="float: left; text-align:center;  width: 200px; margin: 10px 10px 0 10px;"><a id='thumb_' href='https://media.vgm.io/products/26/262/262-1731749330.png' class='highslide' rel='highslide'><img src='https://thumb-media.vgm.io/products/26/262/262-1731749330.png' alt='' border='0' style='max-height: 250px;' /></a><div class='highslide-caption'><span class="smallfont">Submitted by <b>Enja Hamman</b> on Nov 16, 2024 <span class="time">01:28 AM</span></span></div></div>
@@ -405,9 +405,9 @@ $(document).ready(function() {
 </dd>
 		<dt class="label" style="padding-bottom: 3px" ><b>Release Date</b></dt>
 		<dd style="padding-bottom: 3px" >August 02, 1991</dd>
-		<dt class="label" style="padding-bottom: 3px;"><b>Developer</b></dt><dd style="padding-bottom: 3px"><a href="/org/2874?tab=products"><span class="productname" lang="en" style="display:inline">SEGA Enterprises</span><span style="display:none"><em> / </em></span><span class="productname" lang="ja" style="display:none">株式会社セガ・エンタープライゼス</span><span style="display:none"><em> / </em></span><span class="productname" lang="ja-Latn" style="display:none">SEGA Enterprises</span></a></dd><dt class="label" style="padding-bottom: 3px;"><b>Publisher</b></dt><dd style="padding-bottom: 3px"><a href="/org/2641?tab=products"><span class="productname" lang="en" style="display:inline">SEGA of America</span><span style="display:none"><em> / </em></span><span class="productname" lang="ja" style="display:none">SEGA of America</span><span style="display:none"><em> / </em></span><span class="productname" lang="ja-Latn" style="display:none">SEGA of America</span></a> <span class="label">(<img src="/db/img/flags/usd.png" /> Genesis/MD)</span><span class="label">,</span> <a href="/org/2874?tab=products"><span class="productname" lang="en" style="display:inline">SEGA Enterprises</span><span style="display:none"><em> / </em></span><span class="productname" lang="ja" style="display:none">株式会社セガ・エンタープライゼス</span><span style="display:none"><em> / </em></span><span class="productname" lang="ja-Latn" style="display:none">SEGA Enterprises</span></a> <span class="label">(<img src="/db/img/flags/jpy.png" /> Game 
+		<dt class="label" style="padding-bottom: 3px;"><b>Developer</b></dt><dd style="padding-bottom: 3px"><a href="/org/2874?tab=products"><span class="productname" lang="en" style="display:inline">SEGA Enterprises</span><span style="display:none"><em> / </em></span><span class="productname" lang="ja" style="display:none">株式会社セガ・エンタープライゼス</span><span style="display:none"><em> / </em></span><span class="productname" lang="ja-Latn" style="display:none">SEGA Enterprises</span></a></dd><dt class="label" style="padding-bottom: 3px;"><b>Publisher</b></dt><dd style="padding-bottom: 3px"><a href="/org/2641?tab=products"><span class="productname" lang="en" style="display:inline">SEGA of America</span><span style="display:none"><em> / </em></span><span class="productname" lang="ja" style="display:none">SEGA of America</span><span style="display:none"><em> / </em></span><span class="productname" lang="ja-Latn" style="display:none">SEGA of America</span></a> <span class="label">(<img src="/db/img/flags/usd.png" /> Genesis/MD)</span><span class="label">,</span> <a href="/org/2874?tab=products"><span class="productname" lang="en" style="display:inline">SEGA Enterprises</span><span style="display:none"><em> / </em></span><span class="productname" lang="ja" style="display:none">株式会社セガ・エンタープライゼス</span><span style="display:none"><em> / </em></span><span class="productname" lang="ja-Latn" style="display:none">SEGA Enterprises</span></a> <span class="label">(<img src="/db/img/flags/jpy.png" /> Game
 Gear, <img src="/db/img/flags/eur.png" /> <img src="/db/img/flags/jpy.png" /> Genesis/MD)</span></dd>
-		
+
 		</dl></div>
 		<div style="clear: both; height: 1px; font-size: 1px; overflow: hidden"></div>
 	</div>
@@ -1073,20 +1073,20 @@ $(document).ready(function() {
 		<a href="https://vgmdb.net">Home</a>
 
 		<div class="smallfont" style="font-family: Arial; margin-top: 10px">
-		
-		
-		
+
+
+
 		<a href="/forums/archive/index.php">Archive</a> &bull;
-		
+
 		<a href="/privacy">Privacy Statement</a> &bull;
-		
+
 		<a href="#top" onclick="self.scrollTo(0, 0); return false;">Top</a>
 		</div>
 
 	<div style="margin-top: 10px"><form action="index.php" method="get">
-	
-	
-	
+
+
+
 
 	</form></div>
 	</div>
@@ -1094,7 +1094,7 @@ $(document).ready(function() {
 	<div class="label">
 		<h3>VGMdb 1.4</h3>
 		<div class="smallfont"><!-- Do not remove this copyright notice -->
-		
+
 		<!-- Do not remove this copyright notice --></div>
 		<div class="smallfont">Site code and design copyright VGMdb.net</div>
 		<div class="smallfont">Site material is property of their respective owners.</div>
